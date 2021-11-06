@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="fixed z-50">
     <div class="fixed top-60 left-60 h-full indexMargin">
       <router-link to="/">
         <img src="../assets/logo_jothr.png" class="logo" />
@@ -183,7 +183,6 @@ export default {
 
 <style>
 .indexMargin {
-  position: relative;
   z-index: 1000;
 }
 .logo {
@@ -255,8 +254,9 @@ export default {
 
 .full-menu {
   position: relative;
-  width: 91.4%;
-  height: 100vh;
+  width: 91.4vw;
+  top: 80px;
+  height: 84.8vh;
   display: flex;
   align-items: center;
   justify-content: center;

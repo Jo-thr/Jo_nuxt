@@ -1,9 +1,17 @@
 <template>
   <div
-    class="relative flex flex-col items-center h-full w-full bg-offwhite overflow-scroll"
+    class="
+      relative
+      flex flex-col
+      items-center
+      h-full
+      w-full
+      bg-offwhite
+      overflow-scroll
+    "
   >
     <div class="w-70p mb-12 text-left mt-28">
-      <h2 class="font-black ">ABOUT</h2>
+      <h2 class="font-black">ABOUT</h2>
       <h2 class="titleContour">Jonathan Thr</h2>
     </div>
 
@@ -56,7 +64,8 @@
 <script>
 export default {
   name: 'About',
-};
+  layout: 'page',
+}
 </script>
 
 <style>

@@ -129,16 +129,7 @@
             btnBottom
           "
         >
-          <nuxt-link
-            :to="
-              localePath({
-                name: 'slug',
-                params: { slug: post.name },
-              })
-            "
-          >
-            voir le projet</nuxt-link
-          >
+          voir le projet
         </button>
       </slide>
 

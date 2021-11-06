@@ -1,18 +1,13 @@
 <template>
-  <Navbar />
+  <div>
+    <div class="flex w-full h-screen justify-center items-center text-blue">
+      <h1 class="text-blue">Hello</h1>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
+  layout: 'page',
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-}
-</style>
