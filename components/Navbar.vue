@@ -31,7 +31,6 @@
             <router-link
               to="/"
               class="flex flex-row items-center cursor-pointer"
-              active-class="activeLink"
             >
               <span class="text-orange text-xl mr-8">01</span>
               <li class="hoverContour">Acceuil</li></router-link
@@ -55,7 +54,6 @@
             <router-link
               to="/"
               class="flex flex-row items-center cursor-pointer"
-              active-class="activeLink"
             >
               <span class="text-orange text-xl mr-8">04</span>
               <li class="hoverContour">Contact</li></router-link
