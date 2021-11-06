@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@tailwind base;
+@layer base {
+  h1 {
+    @apply uppercase font-fontTitle text-5xl font-semibold;
+  }
+  h2 {
+    @apply text-5xl font-bold;
+  }
+  h4 {
+    @apply uppercase font-bold font-fontTitle text-xl py-2 border-b-3  border-blue;
+  }
+}
+@tailwind components;
+@tailwind utilities;

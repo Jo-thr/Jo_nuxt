@@ -1,0 +1,23 @@
+body:before,
+body:after {
+  content: '';
+  position: fixed;
+  background: #fcfcfc;
+  left: 0;
+  right: 0;
+  height: 80px;
+  z-index: 100;
+}
+body:before {
+  top: 0;
+}
+body:after {
+  bottom: 0;
+}
+body {
+  overflow: hidden;
+  height: 100vh;
+  z-index: 100;
+  border-left: 80px solid #fcfcfc;
+  border-right: 80px solid #fcfcfc;
+}

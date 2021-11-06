@@ -1,0 +1,147 @@
+{
+  "prenom": "Jonathan",
+  "nom": "Thr",
+  "catchphrase": "INSPIRER, CRÉER, DÉVELOPPER.",
+  "introduction": "Développeur Full-Stack & Designer Ux Freelance, je réponds à vos demandes de développement web et mobile.",
+
+  "a_propos": {
+    "metier": "Développeur",
+    "spec": "Front-End"
+  },
+
+  "reseaux": {
+    "linkedin": "https://www.linkedin.com/in/jonathan-thuayre-374739b0/",
+    "instagram": "https://www.instagram.com/jonathan.thr/",
+    "github": "https://github.com/Jo-thr"
+  },
+
+  "projects": [
+    {
+      "id": 1,
+      "name": "France TV Lab",
+      "categorie": "Développement Front",
+      "description": "En charge de la gestion globale de l’identité visuelle de One4You. J'assure la cohérence et construis l’image de One4You, la fait évoluer dans le respect des contraintes économiques et des objectifs stratégiques et commerciaux définis par la direction générale. Je conçois et coordonne l’ensemble des supports qui véhiculent l’identité visuelle de One4You, ainsi que des marques, enseignes et jeunes talents qui lui sont rattachées.",
+      "imgBgColor": "bg-FTV",
+      "imgFirst": "FTV-MOCKUP.png",
+      "font": "France Tv Lab",
+      "poste": "Developpeur Front-end",
+      "techno": "Nuxt.js, Tailwind, Laravel 7",
+      "site": "https://www.francetvlab.fr"
+    },
+    {
+      "id": 2,
+      "name": "Paris.Shopping",
+      "categorie": "Webdesign & Ui",
+      "description": "Paris.Shopping, l’e-shop de Paris, met à l’honneur les meilleures boutiques et marques parisiennes, et propose chaque semaine LA sélection des produits préférés des parisiens : les plus stylés, les plus tendance, les plus so chic, bref… les plus parisiens. Pour que chacun, qu’il vienne en voisin ou depuis l’autre bout du monde, puisse accéder aux meilleures adresses de shopping. Et à l’esprit de Paris.",
+      "imgBgColor": "bg-PPS",
+      "imgFirst": "PARIS-SHOPPING-MOCKUP.png",
+      "font": "Radikal",
+      "poste": "Directeur Artistique",
+      "techno": "Magento II, Suite Adobe"
+    },
+    {
+      "id": 3,
+      "name": "WeDigital.Garden",
+      "categorie": "Développement Full-Stack",
+      "description": "En charge de la gestion globale de l’identité visuelle de One4You. J'assure la cohérence et construis l’image de One4You, la fait évoluer dans le respect des contraintes économiques et des objectifs stratégiques et commerciaux définis par la direction générale. Je conçois et coordonne l’ensemble des supports qui véhiculent l’identité visuelle de One4You, ainsi que des marques, enseignes et jeunes talents qui lui sont rattachées.",
+      "imgBgColor": "bg-WDG",
+      "imgFirst": "WDG-MOCKUP.png",
+      "font": "Poppins",
+      "poste": "Developpeur Full-Stack",
+      "techno": "Nuxt.js, Tailwind, Laravel 7",
+      "site": "https://wedigital.garden"
+    },
+    {
+      "id": 4,
+      "name": "Kérastase",
+      "categorie": "Développement Front",
+      "description": "En charge de la gestion globale de l’identité visuelle de One4You. J'assure la cohérence et construis l’image de One4You, la fait évoluer dans le respect des contraintes économiques et des objectifs stratégiques et commerciaux définis par la direction générale. Je conçois et coordonne l’ensemble des supports qui véhiculent l’identité visuelle de One4You, ainsi que des marques, enseignes et jeunes talents qui lui sont rattachées.",
+      "imgBgColor": "bg-KERA",
+      "imgFirst": "KERASTASE-MOCKUP.png",
+      "font": "AvenirLTStd",
+      "poste": "Développeur Front-End",
+      "techno": "Vue.js, Tailwind",
+      "site": "https://www.kerastase.fr"
+    },
+    {
+      "id": 5,
+      "name": "One4You",
+      "categorie": "Webdesign & Ui",
+      "description": "En charge de la gestion globale de l’identité visuelle de One4You. J'assure la cohérence et construis l’image de One4You, la fait évoluer dans le respect des contraintes économiques et des objectifs stratégiques et commerciaux définis par la direction générale. Je conçois et coordonne l’ensemble des supports qui véhiculent l’identité visuelle de One4You, ainsi que des marques, enseignes et jeunes talents qui lui sont rattachées.",
+      "imgBgColor": "bg-O4Y",
+      "imgFirst": "ONE4YOU-MOCKUP.png",
+      "font": "Campton",
+      "poste": "Responsable Artistique",
+      "techno": "Prestashop, Suite adobe",
+      "site": "https://www.one4you.com"
+    },
+    {
+      "id": 6,
+      "name": "Maëlys PDL",
+      "categorie": "Développement Full-Stack",
+      "description": "Née Nantaise, et revendiquant la part de Bretagne en elle, Maëlys atterri à Paris suite à ces études de Stylisme. Après son passage à L’Atelier Chardon Savard, elle se passionne pour l’art fin, l’élégance, le délicat, c’est donc le milieu du Luxe qui s’impose à elle, puis s'installe à Genève. Elle partage son temps entre des projets de couture, de broderie, de dessin, sa passion pour le monde animal et son Piano. Niveau mode, elle a un attrait pour tout ce qui est ancien, une attirance pour les belles coupes, et un travail du textile très particulier. Notamment pour la broderie.",
+      "imgBgColor": "bg-MAE",
+      "imgFirst": "MAELYS-MOCKUP.png",
+      "font": "Lato",
+      "poste": "Dev Freelance",
+      "techno": "React.js, Figma",
+      "site": "https://www.maelys-pdl.fr"
+    },
+    {
+      "id": 7,
+      "name": "Champagne Barfontarc",
+      "categorie": "Développement Full-Stack",
+      "description": "L'objectif principal était de créer des supports numériques et imprimés qui reflètent les principes de la cave. Nous avons conçu un site web qui affiche un sens de la nature et de la qualité avec une attention à chaque détail. Le logo a également été mis à jour afin de rendre l'esthétique contemporaine et pure. combinaison de polices délicates, palette de couleurs naturelles et photos traitées avec un effet de bruit. Tous ces éléments ont contribué à recréer l'atmosphère de l'établissement viticole de Barfontarc",
+      "imgBgColor": "bg-BF",
+      "imgFirst": "BARFONTARC-MOCKUP.png",
+      "font": "Montserrat",
+      "poste": "Freelance",
+      "techno": "Vue.js, Figma"
+    },
+    {
+      "id": 8,
+      "name": "Jo Weather",
+      "categorie": "Développement Full-Stack",
+      "description": "Cette application météo utilisera la géolocalisation HTML pour détecter automatiquement la latitude et la longitude de l'utilisateur, puis utilisera ces coordonnées pour déterminer la météo à l'aide d'une API. Comme vous l'avez probablement vu dans l'aperçu ci-dessus, nous allons afficher la température actuelle, un bref résumé des jours à venir et les coordonnées en fonction de l'emplacement de l'utilisateur.",
+      "imgBgColor": "bg-JW",
+      "imgFirst": "WEATHER-MOCKUP.png",
+      "font": "Circe",
+      "poste": "Dev Freelance",
+      "techno": "Vue.js, Adobe XD",
+      "site": "https://jo-thr.github.io/Jo.Weather/"
+    },
+    {
+      "id": 9,
+      "name": "Wikipédia",
+      "categorie": "Webdesign & Ui",
+      "description": "Nous connaissons tous Wikipédia, le site incontournable pour en savoir plus sur n'importe quel sujet recherché : une vraie encyclopédie. Mais nous nous le cachons pas : le site est très moche ! Comment le rendre plus ludique et agréable ? Comment rendre l'information à emmagaziner plus lisible ? Voici mon axe de recherche pour ce nouveau Webdesign.",
+      "imgBgColor": "bg-WIKI",
+      "imgFirst": "WIKI-MOCKUP.png",
+      "font": "Poly",
+      "poste": "Ui Freelance",
+      "techno": "Adobe XD"
+    },
+    {
+      "id": 10,
+      "name": "Village Map",
+      "categorie": "Webdesign & Ui",
+      "description": "Village Map, l’e-shop de Paris, met à l’honneur les meilleures boutiques indépendantes et commerces de proximité parisiens. Village Map propose chaque semaine LA sélection des produits préférés des parisiens : les plus stylés, les plus tendance, les plus so chic, bref… les plus parisiens. Pour que chacun, qu’il vienne en voisin ou depuis l’autre bout du monde, puisse accéder aux meilleures adresses de shopping. Et à l’esprit de Paris.",
+      "imgBgColor": "bg-VM",
+      "imgFirst": "VILLAGEMAP-MOCKUP.png",
+      "font": "Lato",
+      "poste": "Responsable Artistique",
+      "techno": "Wordpress"
+    },
+    {
+      "id": 11,
+      "name": "MVP of the Night",
+      "categorie": "Développement Full-Stack",
+      "description": "Description à écrire",
+      "imgBgColor": "bg-MVP",
+      "imgFirst": "NBA-MOCKUP.png",
+      "font": "????",
+      "poste": "Freelance",
+      "techno": "Vue.js"
+    }
+  ]
+}
