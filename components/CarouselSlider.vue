@@ -19,8 +19,8 @@
         <!-- BOUTON -->
         <button
           class="
-          absolute
-          bottom-120 
+            absolute
+            bottom-120
             z-50
             py-4
             px-12
@@ -125,13 +125,7 @@
             >
               <p>
                 <b class="text-blue">Site : </b>
-                <a
-                  :href="post.site"
-                  target="_blank"
-                  class="
-                    italic
-                    hover:text-blue hover:font-semibold hover:not-italic
-                  "
+                <a :to="post.site" class="hoverWeb"
                   >Aperçu <span class="text-blue font-semibold">→</span></a
                 >
               </p>
@@ -177,9 +171,18 @@ export default {
   display: flex !important;
   flex-direction: row !important;
 }
-.btnBottom {
-  bottom: 80px;
-}
 .shadowBlue {
   box-shadow: 0px 0px 0px 2px #002fc7 !important;
 }
+.hoverWeb {
+  font-style: italic;
+  z-index: 6000;
+}
+.hoverWeb:hover {
+  z-index: 6000;
+  cursor: pointer !important;
+  color: #002fc7 !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+}
+</style>
