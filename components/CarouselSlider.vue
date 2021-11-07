@@ -10,15 +10,37 @@
       bg-offwhite
     "
   >
-    <carousel class="slider w-full h-screen" :items-to-show="1">
-      <slide
+    <VueSlickCarousel v-bind="settings" class="flex w-full h-screen">
+      <div
         v-for="post in posts"
         :key="post.id"
-        class="flex slide-h justify-center items-center w-full"
+        class="position justify-center items-center w-full"
       >
+        <!-- BOUTON -->
+        <button
+          class="
+            absolute
+            bottom-120
+            z-50
+            py-4
+            px-12
+            bg-blue
+            border-white border-opacity-0 border-4
+            text-white
+            hover:cursor-pointer
+            font-bold
+            uppercase
+            hover:border-blue hover:border-4 hover:text-blue hover:bg-white
+            btnBottom
+          "
+        >
+          voir le projet
+        </button>
+
         <!-- IMAGE & BACKGROUND -->
         <div
           class="
+            relative
             flex
             w-50p
             h-screen
@@ -39,8 +61,10 @@
           />
         </div>
 
+        <!-- INFOS -->
         <div
           class="
+            relative
             flex flex-row
             w-50p
             flex-nowrap
@@ -101,72 +125,64 @@
             >
               <p>
                 <b class="text-blue">Site : </b>
-                <a
-                  :href="post.site"
-                  target="_blank"
-                  class="
-                    italic
-                    hover:text-blue hover:font-semibold hover:not-italic
-                  "
+                <a :to="post.site" class="hoverWeb"
                   >Aperçu <span class="text-blue font-semibold">→</span></a
                 >
               </p>
             </div>
           </div>
         </div>
-        <button
-          class="
-            absolute
-            z-50
-            py-4
-            px-12
-            bg-blue
-            border-white border-opacity-0 border-4
-            text-white
-            font-bold
-            uppercase
-            hover:border-blue hover:border-4 hover:text-blue hover:bg-white
-            btnBottom
-          "
-        >
-          voir le projet
-        </button>
-      </slide>
-
-      <template #addons>
-        <navigation />
-        <pagination />
-      </template>
-    </carousel>
+      </div>
+    </VueSlickCarousel>
   </div>
 </template>
 
 <script>
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
-import 'vue3-carousel/dist/carousel.css'
-import datas from '../datas/data.json'
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+// optional style for arrows & dots
+import '@/assets/css/slides.css'
+import datas from '@/datas/data.json'
 
 export default {
   name: 'CarouselSlider',
   components: {
-    Carousel,
-    Slide,
-    Pagination,
-    Navigation,
+    VueSlickCarousel,
   },
   data() {
     return {
       posts: datas.projects,
+      settings: {
+        arrows: true,
+        dots: true,
+        edgeFriction: 0.35,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
     }
   },
 }
 </script>
 
 <style>
-.btnBottom {
-  bottom: 15vh;
+.position {
+  display: flex !important;
+  flex-direction: row !important;
 }
 .shadowBlue {
-  box-shadow: 0px 0px 0px 2px #002fc7;
+  box-shadow: 0px 0px 0px 2px #002fc7 !important;
+}
+.hoverWeb {
+  font-style: italic;
+  z-index: 6000;
+}
+.hoverWeb:hover {
+  z-index: 6000;
+  cursor: pointer !important;
+  color: #002fc7 !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
 }
 </style>
