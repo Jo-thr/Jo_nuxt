@@ -142,11 +142,18 @@
 </template>
 
 <script>
-import datas from '../datas/data.json'
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
+import datas from '../datas/data.json'
 
 export default {
   name: 'CarouselSlider',
+  components: {
+    Carousel,
+    Slide,
+    Pagination,
+    Navigation,
+  },
   data() {
     return {
       posts: datas.projects,
