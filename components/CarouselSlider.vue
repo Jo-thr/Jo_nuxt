@@ -34,7 +34,7 @@
             btnBottom
           "
         >
-          voir le projet
+          <nuxt-link :to="post.slug" :post="post"> voir le projet</nuxt-link>
         </button>
 
         <!-- IMAGE & BACKGROUND -->

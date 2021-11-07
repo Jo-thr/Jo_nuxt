@@ -1,9 +1,10 @@
 {
-  "prenom": "Jonathan",
-  "nom": "Thr",
-  "catchphrase": "INSPIRER, CRÉER, DÉVELOPPER.",
-  "introduction": "Développeur Full-Stack & Designer Ux Freelance, je réponds à vos demandes de développement web et mobile.",
-
+  "home": {
+    "prenom": "Jonathan",
+    "nom": "Thr",
+    "catchphrase": "INSPIRER, CRÉER, DÉVELOPPER.",
+    "introduction": "Développeur Full-Stack & Designer Ux Freelance, je réponds à vos demandes de développement web et mobile."
+  },
   "a_propos": {
     "metier": "Développeur",
     "spec": "Front-End"
@@ -18,6 +19,7 @@
   "projects": [
     {
       "id": 1,
+      "slug": "francetv",
       "name": "France TV Lab",
       "categorie": "Développement Front",
       "description": "En charge de la gestion globale de l’identité visuelle de One4You. J'assure la cohérence et construis l’image de One4You, la fait évoluer dans le respect des contraintes économiques et des objectifs stratégiques et commerciaux définis par la direction générale. Je conçois et coordonne l’ensemble des supports qui véhiculent l’identité visuelle de One4You, ainsi que des marques, enseignes et jeunes talents qui lui sont rattachées.",
@@ -30,6 +32,7 @@
     },
     {
       "id": 2,
+      "slug": "parisshopping",
       "name": "Paris.Shopping",
       "categorie": "Webdesign & Ui",
       "description": "Paris.Shopping, l’e-shop de Paris, met à l’honneur les meilleures boutiques et marques parisiennes, et propose chaque semaine LA sélection des produits préférés des parisiens : les plus stylés, les plus tendance, les plus so chic, bref… les plus parisiens. Pour que chacun, qu’il vienne en voisin ou depuis l’autre bout du monde, puisse accéder aux meilleures adresses de shopping. Et à l’esprit de Paris.",
@@ -41,6 +44,7 @@
     },
     {
       "id": 3,
+      "slug": "wedigitalgarden",
       "name": "WeDigital.Garden",
       "categorie": "Développement Full-Stack",
       "description": "En charge de la gestion globale de l’identité visuelle de One4You. J'assure la cohérence et construis l’image de One4You, la fait évoluer dans le respect des contraintes économiques et des objectifs stratégiques et commerciaux définis par la direction générale. Je conçois et coordonne l’ensemble des supports qui véhiculent l’identité visuelle de One4You, ainsi que des marques, enseignes et jeunes talents qui lui sont rattachées.",
@@ -53,6 +57,7 @@
     },
     {
       "id": 4,
+      "slug": "kerastase",
       "name": "Kérastase",
       "categorie": "Développement Front",
       "description": "En charge de la gestion globale de l’identité visuelle de One4You. J'assure la cohérence et construis l’image de One4You, la fait évoluer dans le respect des contraintes économiques et des objectifs stratégiques et commerciaux définis par la direction générale. Je conçois et coordonne l’ensemble des supports qui véhiculent l’identité visuelle de One4You, ainsi que des marques, enseignes et jeunes talents qui lui sont rattachées.",
@@ -65,6 +70,7 @@
     },
     {
       "id": 5,
+      "slug": "one4you",
       "name": "One4You",
       "categorie": "Webdesign & Ui",
       "description": "En charge de la gestion globale de l’identité visuelle de One4You. J'assure la cohérence et construis l’image de One4You, la fait évoluer dans le respect des contraintes économiques et des objectifs stratégiques et commerciaux définis par la direction générale. Je conçois et coordonne l’ensemble des supports qui véhiculent l’identité visuelle de One4You, ainsi que des marques, enseignes et jeunes talents qui lui sont rattachées.",
@@ -77,6 +83,7 @@
     },
     {
       "id": 6,
+      "slug": "maelyspdl",
       "name": "Maëlys PDL",
       "categorie": "Développement Full-Stack",
       "description": "Née Nantaise, et revendiquant la part de Bretagne en elle, Maëlys atterri à Paris suite à ces études de Stylisme. Après son passage à L’Atelier Chardon Savard, elle se passionne pour l’art fin, l’élégance, le délicat, c’est donc le milieu du Luxe qui s’impose à elle, puis s'installe à Genève. Elle partage son temps entre des projets de couture, de broderie, de dessin, sa passion pour le monde animal et son Piano. Niveau mode, elle a un attrait pour tout ce qui est ancien, une attirance pour les belles coupes, et un travail du textile très particulier. Notamment pour la broderie.",
@@ -89,6 +96,7 @@
     },
     {
       "id": 7,
+      "slug": "barfontarc",
       "name": "Champagne Barfontarc",
       "categorie": "Développement Full-Stack",
       "description": "L'objectif principal était de créer des supports numériques et imprimés qui reflètent les principes de la cave. Nous avons conçu un site web qui affiche un sens de la nature et de la qualité avec une attention à chaque détail. Le logo a également été mis à jour afin de rendre l'esthétique contemporaine et pure. combinaison de polices délicates, palette de couleurs naturelles et photos traitées avec un effet de bruit. Tous ces éléments ont contribué à recréer l'atmosphère de l'établissement viticole de Barfontarc",
@@ -100,6 +108,7 @@
     },
     {
       "id": 8,
+      "slug": "joweather",
       "name": "Jo Weather",
       "categorie": "Développement Full-Stack",
       "description": "Cette application météo utilisera la géolocalisation HTML pour détecter automatiquement la latitude et la longitude de l'utilisateur, puis utilisera ces coordonnées pour déterminer la météo à l'aide d'une API. Comme vous l'avez probablement vu dans l'aperçu ci-dessus, nous allons afficher la température actuelle, un bref résumé des jours à venir et les coordonnées en fonction de l'emplacement de l'utilisateur.",
@@ -112,6 +121,7 @@
     },
     {
       "id": 9,
+      "slug": "wikipedia",
       "name": "Wikipédia",
       "categorie": "Webdesign & Ui",
       "description": "Nous connaissons tous Wikipédia, le site incontournable pour en savoir plus sur n'importe quel sujet recherché : une vraie encyclopédie. Mais nous nous le cachons pas : le site est très moche ! Comment le rendre plus ludique et agréable ? Comment rendre l'information à emmagaziner plus lisible ? Voici mon axe de recherche pour ce nouveau Webdesign.",
@@ -123,6 +133,7 @@
     },
     {
       "id": 10,
+      "slug": "villagemap",
       "name": "Village Map",
       "categorie": "Webdesign & Ui",
       "description": "Village Map, l’e-shop de Paris, met à l’honneur les meilleures boutiques indépendantes et commerces de proximité parisiens. Village Map propose chaque semaine LA sélection des produits préférés des parisiens : les plus stylés, les plus tendance, les plus so chic, bref… les plus parisiens. Pour que chacun, qu’il vienne en voisin ou depuis l’autre bout du monde, puisse accéder aux meilleures adresses de shopping. Et à l’esprit de Paris.",
@@ -134,6 +145,7 @@
     },
     {
       "id": 11,
+      "slug": "mvp",
       "name": "MVP of the Night",
       "categorie": "Développement Full-Stack",
       "description": "Description à écrire",
