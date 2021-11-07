@@ -125,7 +125,7 @@
             >
               <p>
                 <b class="text-blue">Site : </b>
-                <a :to="post.site" class="hoverWeb"
+                <a :href="post.site" target="_blank" class="hoverWeb"
                   >Aperçu <span class="text-blue font-semibold">→</span></a
                 >
               </p>

@@ -1,6 +1,6 @@
 <template>
   <div class="fixed z-50">
-    <div class="fixed top-60 left-60 h-full indexMargin">
+    <div class="fixed top-60 left-60 indexMargin">
       <router-link to="/">
         <img src="../assets/logo_jothr.png" class="logo" />
       </router-link>
@@ -254,22 +254,20 @@ export default {
   position: relative;
   width: 91.4vw;
   top: 80px;
+  display: none;
   height: 84.8vh;
-  display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.full-menu {
-  position: relative;
   background-color: #002fc7;
   transform: translateX(120%);
   transition: all 300ms ease-in;
+  opacity: 0;
 }
 .full-menu ul {
   list-style: none;
 }
 .full-menu.active {
+  display: flex;
   transform: translateX(0%);
   opacity: 1;
   z-index: 30;
