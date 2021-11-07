@@ -18,7 +18,7 @@
       <h3 class="text-offwhite uppercase spacing tracking-widest">
         - A front-end developper & ui designer -
       </h3>
-      <img src="~/assets/icons/hand-peace-white.png" class="hello" />
+      <img src="../assets/icons/hand-peace-white.png" class="hello" />
     </div>
   </div>
 </template>
@@ -45,7 +45,7 @@ export default {
   line-height: 100%;
 }
 
-h1:hover > .hello {
+#shake:hover > .hello {
   opacity: 1 !important;
   transform: rotate(15deg);
 }
