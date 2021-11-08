@@ -28,7 +28,22 @@
       "font": "France Tv Lab",
       "poste": "Developpeur Front-end",
       "techno": "Nuxt.js, Tailwind, Laravel 7",
-      "site": "https://www.francetvlab.fr"
+      "site": "https://www.francetvlab.fr",
+
+      "projet": {
+        "img_0": "00-PPS.png",
+        "title_0": "Storybook",
+        "img_1": "01-PPS.png",
+        "title_1": "Home Page",
+        "img_2": "02-PPS.png",
+        "title_2": "Article & Shop Page",
+        "img_3": "03-PPS.png",
+        "title_3": "Product Page",
+        "img_4": "04-PPS.png",
+        "title_4": "About & Cart Page",
+        "img_5": "05-PPS.png",
+        "title_5": "Order Mail"
+      }
     },
     {
       "id": 2,
@@ -67,7 +82,21 @@
       "font": "Poppins",
       "poste": "Developpeur Full-Stack",
       "techno": "Nuxt.js, Tailwind, Laravel 7",
-      "site": "https://wedigital.garden"
+      "site": "https://wedigital.garden",
+      "projet": {
+        "img_0": "00-PPS.png",
+        "title_0": "Storybook",
+        "img_1": "01-PPS.png",
+        "title_1": "Home Page",
+        "img_2": "02-PPS.png",
+        "title_2": "Article & Shop Page",
+        "img_3": "03-PPS.png",
+        "title_3": "Product Page",
+        "img_4": "04-PPS.png",
+        "title_4": "About & Cart Page",
+        "img_5": "05-PPS.png",
+        "title_5": "Order Mail"
+      }
     },
     {
       "id": 4,
@@ -80,7 +109,21 @@
       "font": "AvenirLTStd",
       "poste": "Développeur Front-End",
       "techno": "Vue.js, Tailwind",
-      "site": "https://www.kerastase.fr"
+      "site": "https://www.kerastase.fr",
+      "projet": {
+        "img_0": "00-PPS.png",
+        "title_0": "Storybook",
+        "img_1": "01-PPS.png",
+        "title_1": "Home Page",
+        "img_2": "02-PPS.png",
+        "title_2": "Article & Shop Page",
+        "img_3": "03-PPS.png",
+        "title_3": "Product Page",
+        "img_4": "04-PPS.png",
+        "title_4": "About & Cart Page",
+        "img_5": "05-PPS.png",
+        "title_5": "Order Mail"
+      }
     },
     {
       "id": 5,
@@ -93,7 +136,21 @@
       "font": "Campton",
       "poste": "Responsable Artistique",
       "techno": "Prestashop, Suite adobe",
-      "site": "https://www.one4you.com"
+      "site": "https://www.one4you.com",
+      "projet": {
+        "img_0": "00-PPS.png",
+        "title_0": "Storybook",
+        "img_1": "01-PPS.png",
+        "title_1": "Home Page",
+        "img_2": "02-PPS.png",
+        "title_2": "Article & Shop Page",
+        "img_3": "03-PPS.png",
+        "title_3": "Product Page",
+        "img_4": "04-PPS.png",
+        "title_4": "About & Cart Page",
+        "img_5": "05-PPS.png",
+        "title_5": "Order Mail"
+      }
     },
     {
       "id": 6,
@@ -106,7 +163,21 @@
       "font": "Lato",
       "poste": "Dev Freelance",
       "techno": "React.js, Figma",
-      "site": "https://www.maelys-pdl.fr"
+      "site": "https://www.maelys-pdl.fr",
+      "projet": {
+        "img_0": "00-PPS.png",
+        "title_0": "Storybook",
+        "img_1": "01-PPS.png",
+        "title_1": "Home Page",
+        "img_2": "02-PPS.png",
+        "title_2": "Article & Shop Page",
+        "img_3": "03-PPS.png",
+        "title_3": "Product Page",
+        "img_4": "04-PPS.png",
+        "title_4": "About & Cart Page",
+        "img_5": "05-PPS.png",
+        "title_5": "Order Mail"
+      }
     },
     {
       "id": 7,
@@ -118,7 +189,21 @@
       "imgFirst": "BARFONTARC-MOCKUP.png",
       "font": "Montserrat",
       "poste": "Freelance",
-      "techno": "Vue.js, Figma"
+      "techno": "Vue.js, Figma",
+      "projet": {
+        "img_0": "00-PPS.png",
+        "title_0": "Storybook",
+        "img_1": "01-PPS.png",
+        "title_1": "Home Page",
+        "img_2": "02-PPS.png",
+        "title_2": "Article & Shop Page",
+        "img_3": "03-PPS.png",
+        "title_3": "Product Page",
+        "img_4": "04-PPS.png",
+        "title_4": "About & Cart Page",
+        "img_5": "05-PPS.png",
+        "title_5": "Order Mail"
+      }
     },
     {
       "id": 8,
@@ -131,7 +216,21 @@
       "font": "Circe",
       "poste": "Dev Freelance",
       "techno": "Vue.js, Adobe XD",
-      "site": "https://jo-thr.github.io/Jo.Weather/"
+      "site": "https://jo-thr.github.io/Jo.Weather/",
+      "projet": {
+        "img_0": "00-PPS.png",
+        "title_0": "Storybook",
+        "img_1": "01-PPS.png",
+        "title_1": "Home Page",
+        "img_2": "02-PPS.png",
+        "title_2": "Article & Shop Page",
+        "img_3": "03-PPS.png",
+        "title_3": "Product Page",
+        "img_4": "04-PPS.png",
+        "title_4": "About & Cart Page",
+        "img_5": "05-PPS.png",
+        "title_5": "Order Mail"
+      }
     },
     {
       "id": 9,
@@ -143,7 +242,21 @@
       "imgFirst": "WIKI-MOCKUP.png",
       "font": "Poly",
       "poste": "Ui Freelance",
-      "techno": "Adobe XD"
+      "techno": "Adobe XD",
+      "projet": {
+        "img_0": "00-PPS.png",
+        "title_0": "Storybook",
+        "img_1": "01-PPS.png",
+        "title_1": "Home Page",
+        "img_2": "02-PPS.png",
+        "title_2": "Article & Shop Page",
+        "img_3": "03-PPS.png",
+        "title_3": "Product Page",
+        "img_4": "04-PPS.png",
+        "title_4": "About & Cart Page",
+        "img_5": "05-PPS.png",
+        "title_5": "Order Mail"
+      }
     },
     {
       "id": 10,
@@ -155,7 +268,21 @@
       "imgFirst": "VILLAGEMAP-MOCKUP.png",
       "font": "Lato",
       "poste": "Responsable Artistique",
-      "techno": "Wordpress"
+      "techno": "Wordpress",
+      "projet": {
+        "img_0": "00-PPS.png",
+        "title_0": "Storybook",
+        "img_1": "01-PPS.png",
+        "title_1": "Home Page",
+        "img_2": "02-PPS.png",
+        "title_2": "Article & Shop Page",
+        "img_3": "03-PPS.png",
+        "title_3": "Product Page",
+        "img_4": "04-PPS.png",
+        "title_4": "About & Cart Page",
+        "img_5": "05-PPS.png",
+        "title_5": "Order Mail"
+      }
     },
     {
       "id": 11,
@@ -167,7 +294,21 @@
       "imgFirst": "NBA-MOCKUP.png",
       "font": "????",
       "poste": "Freelance",
-      "techno": "Vue.js"
+      "techno": "Vue.js",
+      "projet": {
+        "img_0": "00-PPS.png",
+        "title_0": "Storybook",
+        "img_1": "01-PPS.png",
+        "title_1": "Home Page",
+        "img_2": "02-PPS.png",
+        "title_2": "Article & Shop Page",
+        "img_3": "03-PPS.png",
+        "title_3": "Product Page",
+        "img_4": "04-PPS.png",
+        "title_4": "About & Cart Page",
+        "img_5": "05-PPS.png",
+        "title_5": "Order Mail"
+      }
     }
   ]
 }
