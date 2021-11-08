@@ -40,7 +40,21 @@
       "imgFirst": "PARIS-SHOPPING-MOCKUP.png",
       "font": "Radikal",
       "poste": "Directeur Artistique",
-      "techno": "Magento II, Suite Adobe"
+      "techno": "Magento II, Suite Adobe",
+      "projet": {
+        "img_0": "00-PPS.png",
+        "title_0": "Storybook",
+        "img_1": "01-PPS.png",
+        "title_1": "Home Page",
+        "img_2": "02-PPS.png",
+        "title_2": "Article & Shop Page",
+        "img_3": "03-PPS.png",
+        "title_3": "Product Page",
+        "img_4": "04-PPS.png",
+        "title_4": "About & Cart Page",
+        "img_5": "05-PPS.png",
+        "title_5": "Order Mail"
+      }
     },
     {
       "id": 3,
