@@ -31,18 +31,12 @@
       "site": "https://www.francetvlab.fr",
 
       "projet": {
-        "img_0": "00-PPS.png",
+        "img_0": "00-FTV.png",
         "title_0": "Storybook",
-        "img_1": "01-PPS.png",
-        "title_1": "Home Page",
-        "img_2": "02-PPS.png",
-        "title_2": "Article & Shop Page",
-        "img_3": "03-PPS.png",
-        "title_3": "Product Page",
-        "img_4": "04-PPS.png",
-        "title_4": "About & Cart Page",
-        "img_5": "05-PPS.png",
-        "title_5": "Order Mail"
+        "img_1": "01-FTV.png",
+        "title_1": "Rubrique Page",
+        "img_2": "02-FTV.png",
+        "title_2": "Article Page"
       }
     },
     {
@@ -84,18 +78,22 @@
       "techno": "Nuxt.js, Tailwind, Laravel 7",
       "site": "https://wedigital.garden",
       "projet": {
-        "img_0": "00-PPS.png",
+        "img_0": "00-WDG.png",
         "title_0": "Storybook",
-        "img_1": "01-PPS.png",
+        "img_1": "01-WDG.png",
         "title_1": "Home Page",
-        "img_2": "02-PPS.png",
-        "title_2": "Article & Shop Page",
-        "img_3": "03-PPS.png",
-        "title_3": "Product Page",
-        "img_4": "04-PPS.png",
-        "title_4": "About & Cart Page",
-        "img_5": "05-PPS.png",
-        "title_5": "Order Mail"
+        "img_2": "02-WDG.png",
+        "title_2": "Culture Page",
+        "img_3": "03-WDG.png",
+        "title_3": "Methods Page",
+        "img_4": "04-WDG.png",
+        "title_4": "Teams Page",
+        "img_5": "05-WDG.png",
+        "title_5": "Products Page",
+        "img_6": "05-WDG.png",
+        "title_6": "Projet Page",
+        "img_7": "05-WDG.png",
+        "title_7": "Mentions Page"
       }
     },
     {

@@ -65,7 +65,7 @@
         </p>
         <div class="bg-blue bgTitle z-10"></div>
         <img
-          v-if="proj[0].projet.img_0"
+          v-if="proj[0].projet.img_0 != null"
           :src="
             require('@/assets/projects/' +
               proj[0].slug +
