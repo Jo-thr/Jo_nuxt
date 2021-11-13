@@ -9,154 +9,282 @@
       overflow-y-scroll
     "
   >
-    <!-- HEADER -->
-    <div
+    <!-- RETURN -->
+    <nuxt-link
+      to="/projects"
       class="
-        relative
-        mt-20
-        flex
-        w-full
-        header
-        justify-center
-        items-center
-        bg-indigo-100 bg-cover bg-center
-      "
-      :style="{
-        backgroundImage:
-          'url(' +
-          require('@/assets/bgProjects/' + proj[0].imgBgColor + '.jpg') +
-          ')',
-      }"
-    >
-      <img
-        :src="require(`@/assets/imgProjects/${proj[0].imgFirst}`)"
-        class="h-full z-10 py-20 mb-12"
-      />
-    </div>
-    <h1
-      class="
-        px-12
-        py-8
-        bg-offwhite
-        -mt-14
-        z-50
-        text-6xl
-        tracking-wider
+        close
+        border-blue border-solid border-6
+        px-3
+        py-1
+        bg-white
+        m-auto
         text-blue
+        font-xl
       "
     >
-      {{ proj[0].name }}
-    </h1>
-    <p>
-      {{ proj[0].poste }} <span class="text-blue px-3">⁃</span>
-      {{ proj[0].techno }}
-    </p>
-    <p v-if="proj[0].site" class="py-3 text-blue">
-      <span class="font-semibold pr-2">→</span>{{ proj[0].site }}
-    </p>
-    <p class="py-28 max-w-screen-md">{{ proj[0].description }}</p>
+      ✖
+    </nuxt-link>
+    <!-- HEADER ROND -->
+    <div class="w-75p flex justify-between items-center mt-20">
+      <div class="flex flex-col py-10">
+        <h1 class="text-6xl font-bold" :style="{ color: proj[0].color }">
+          {{ proj[0].name }}
+        </h1>
 
+        <p class="py-8">
+          {{ proj[0].techno }}
+        </p>
+        <p
+          class="w-90p border-l-2 border-solid pl-5 mt-5 mb-11"
+          :style="{ borderColor: proj[0].color }"
+        >
+          {{ proj[0].description }}
+        </p>
+        <div v-if="proj[0].site" class="flex items-center flex-row">
+          <div
+            class="flex items-center justify-center goToSite mr-3 text-xl"
+            :style="{ backgroundColor: proj[0].color }"
+          >
+            ↬
+          </div>
+          <div class="flex">{{ proj[0].site }}</div>
+        </div>
+      </div>
+      <div
+        class="flex items-center bg-blue circle mb-10"
+        :style="{ backgroundColor: proj[0].color }"
+      >
+        <img
+          :src="require(`@/assets/imgProjects/${proj[0].imgFirst}`)"
+          class="relative z-10"
+        />
+      </div>
+    </div>
     <!-- IMAGES PROJET -->
-    <div class="text-center w-full">
+    <div class="w-full">
       <!-- 0 -->
-      <div v-if="proj[0].projet.title_0">
-        <p class="relative titlePage mt-3 px-3 text-4xl z-30 italic">
+      <div class="w-75p text-left m-auto">
+        <p
+          v-if="proj[0].projet.title_0"
+          class="
+            relative
+            titlePage
+            mt-3
+            text-4xl
+            z-30
+            border-b-2 border-solid border-blue
+            pb-2
+          "
+        >
           {{ proj[0].projet.title_0 }}
         </p>
-        <div class="bg-blue bgTitle z-10"></div>
-        <img
-          v-if="proj[0].projet.img_0"
-          :src="
-            require('@/assets/projects/' +
-              proj[0].slug +
-              '/' +
-              proj[0].projet.img_0)
-          "
-          class="w-full"
-        />
       </div>
+      <img
+        v-if="proj[0].projet.img_0 != null"
+        :src="
+          require('@/assets/projects/' +
+            proj[0].slug +
+            '/' +
+            proj[0].projet.img_0)
+        "
+        class="w-full"
+      />
       <!-- 1 -->
-      <div v-if="proj[0].projet.title_1" class="pt-10">
-        <p class="relative titlePage mt-3 px-3 text-4xl z-30 italic">
+      <div class="w-75p text-left m-auto">
+        <p
+          v-if="proj[0].projet.title_1"
+          class="
+            relative
+            titlePage
+            mt-3
+            text-4xl
+            z-30
+            border-b-2 border-solid border-blue
+            pb-2
+          "
+        >
           {{ proj[0].projet.title_1 }}
         </p>
-        <div class="bg-blue bgTitle z-10"></div>
-        <img
-          v-if="proj[0].projet.img_1"
-          :src="
-            require('@/assets/projects/' +
-              proj[0].slug +
-              '/' +
-              proj[0].projet.img_1)
-          "
-          class="w-full"
-        />
       </div>
+      <img
+        v-if="proj[0].projet.img_1"
+        :src="
+          require('@/assets/projects/' +
+            proj[0].slug +
+            '/' +
+            proj[0].projet.img_1)
+        "
+        class="w-full"
+      />
+
       <!-- 2 -->
-      <div v-if="proj[0].projet.title_2" class="pt-10">
-        <p class="relative titlePage mt-3 px-3 text-4xl z-30 italic">
+      <div class="w-75p text-left m-auto">
+        <p
+          v-if="proj[0].projet.title_2"
+          class="
+            relative
+            titlePage
+            mt-3
+            text-4xl
+            z-30
+            border-b-2 border-solid border-blue
+            pb-2
+          "
+        >
           {{ proj[0].projet.title_2 }}
         </p>
-        <div class="bg-blue bgTitle z-10"></div>
-
-        <img
-          :src="
-            require('@/assets/projects/' +
-              proj[0].slug +
-              '/' +
-              proj[0].projet.img_2)
-          "
-          class="w-full"
-        />
       </div>
+      <img
+        v-if="proj[0].projet.img_2"
+        :src="
+          require('@/assets/projects/' +
+            proj[0].slug +
+            '/' +
+            proj[0].projet.img_2)
+        "
+        class="w-full"
+      />
+
       <!-- 3 -->
-      <div v-if="proj[0].projet.title_3" class="pt-10">
-        <p class="relative titlePage mt-3 px-3 text-4xl z-30 italic">
+      <div class="w-75p text-left m-auto">
+        <p
+          v-if="proj[0].projet.title_3"
+          class="
+            relative
+            titlePage
+            mt-3
+            text-4xl
+            z-30
+            border-b-2 border-solid border-blue
+            pb-2
+          "
+        >
           {{ proj[0].projet.title_3 }}
         </p>
-        <div class="bg-blue bgTitle z-10"></div>
-        <img
-          :src="
-            require('@/assets/projects/' +
-              proj[0].slug +
-              '/' +
-              proj[0].projet.img_3)
-          "
-          class="w-full"
-        />
       </div>
+      <img
+        v-if="proj[0].projet.img_3"
+        :src="
+          require('@/assets/projects/' +
+            proj[0].slug +
+            '/' +
+            proj[0].projet.img_3)
+        "
+        class="w-full"
+      />
+
       <!-- 4 -->
-      <div v-if="proj[0].projet.title_4" class="pt-10">
-        <p class="relative titlePage mt-3 px-3 text-4xl z-30 italic">
+      <div class="w-75p text-left m-auto">
+        <p
+          v-if="proj[0].projet.title_4"
+          class="
+            relative
+            titlePage
+            mt-3
+            text-4xl
+            z-30
+            border-b-2 border-solid border-blue
+            pb-2
+          "
+        >
           {{ proj[0].projet.title_4 }}
         </p>
-        <div class="bg-blue bgTitle z-10"></div>
-        <img
-          :src="
-            require('@/assets/projects/' +
-              proj[0].slug +
-              '/' +
-              proj[0].projet.img_4)
-          "
-          class="w-full"
-        />
       </div>
+      <img
+        v-if="proj[0].projet.img_4"
+        :src="
+          require('@/assets/projects/' +
+            proj[0].slug +
+            '/' +
+            proj[0].projet.img_4)
+        "
+        class="w-full"
+      />
+
       <!-- 5 -->
-      <div v-if="proj[0].projet.title_5" class="pt-10">
-        <p class="relative titlePage mt-3 px-3 text-4xl z-30 italic">
+      <div class="w-75p text-left m-auto">
+        <p
+          v-if="proj[0].projet.title_5"
+          class="
+            relative
+            titlePage
+            mt-3
+            text-4xl
+            z-30
+            border-b-2 border-solid border-blue
+            pb-2
+          "
+        >
           {{ proj[0].projet.title_5 }}
         </p>
-        <div class="bg-blue bgTitle z-10"></div>
-        <img
-          :src="
-            require('@/assets/projects/' +
-              proj[0].slug +
-              '/' +
-              proj[0].projet.img_5)
-          "
-          class="w-full"
-        />
       </div>
+      <img
+        v-if="proj[0].projet.img_5"
+        :src="
+          require('@/assets/projects/' +
+            proj[0].slug +
+            '/' +
+            proj[0].projet.img_5)
+        "
+        class="w-full"
+      />
+
+      <!-- 6 -->
+      <div class="w-75p text-left m-auto">
+        <p
+          v-if="proj[0].projet.title_6"
+          class="
+            relative
+            titlePage
+            mt-3
+            text-4xl
+            z-30
+            border-b-2 border-solid border-blue
+            pb-2
+          "
+        >
+          {{ proj[0].projet.title_6 }}
+        </p>
+      </div>
+      <img
+        v-if="proj[0].projet.img_6"
+        :src="
+          require('@/assets/projects/' +
+            proj[0].slug +
+            '/' +
+            proj[0].projet.img_6)
+        "
+        class="w-full"
+      />
+
+      <!-- 7 -->
+      <div class="w-75p text-left m-auto">
+        <p
+          v-if="proj[0].projet.title_7"
+          class="
+            relative
+            titlePage
+            mt-3
+            text-4xl
+            z-30
+            border-b-2 border-solid border-blue
+            pb-2
+          "
+        >
+          {{ proj[0].projet.title_7 }}
+        </p>
+      </div>
+      <img
+        v-if="proj[0].projet.img_7"
+        :src="
+          require('@/assets/projects/' +
+            proj[0].slug +
+            '/' +
+            proj[0].projet.img_7)
+        "
+        class="w-full"
+      />
     </div>
   </div>
 </template>
@@ -176,19 +304,36 @@ export default {
 
 <style>
 .header {
-  height: 60vh;
-  min-height: 60vh;
+  height: 70vh;
+  min-height: 70vh;
+}
+.intro {
+  height: max-content;
+  width: 30%;
+  margin-left: 220px;
+  margin-top: 160px;
+}
+
+.close {
+  position: fixed;
+  top: 62px;
+  width: max-content;
+  z-index: 500;
+}
+.circle {
+  min-width: 700px;
+  min-height: 70vh;
+  border-radius: 0 0 350px 350px;
+}
+.goToSite {
+  min-width: 30px;
+  min-height: 30px;
+  color: #fff;
+  content: '↬';
 }
 .titlePage {
   color: #fcfcfc;
   text-shadow: -0.6px 0 #002fc7, 0 0.6px #002fc7, 0.6px 0 #002fc7,
     0 -0.6px #002fc7;
-}
-.bgTitle {
-  position: relative;
-  background-color: #002fc7;
-  min-height: 4px;
-  width: 360px;
-  margin: -18px auto 0 auto;
 }
 </style>

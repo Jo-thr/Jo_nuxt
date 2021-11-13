@@ -29,20 +29,14 @@
       "poste": "Developpeur Front-end",
       "techno": "Nuxt.js, Tailwind, Laravel 7",
       "site": "https://www.francetvlab.fr",
-
+      "color": "#0123FF",
       "projet": {
-        "img_0": "00-PPS.png",
+        "img_0": "00-FTV.png",
         "title_0": "Storybook",
-        "img_1": "01-PPS.png",
-        "title_1": "Home Page",
-        "img_2": "02-PPS.png",
-        "title_2": "Article & Shop Page",
-        "img_3": "03-PPS.png",
-        "title_3": "Product Page",
-        "img_4": "04-PPS.png",
-        "title_4": "About & Cart Page",
-        "img_5": "05-PPS.png",
-        "title_5": "Order Mail"
+        "img_1": "01-FTV.png",
+        "title_1": "Rubrique Page",
+        "img_2": "02-FTV.png",
+        "title_2": "Article Page"
       }
     },
     {
@@ -56,6 +50,7 @@
       "font": "Radikal",
       "poste": "Directeur Artistique",
       "techno": "Magento II, Suite Adobe",
+      "color": "#F04249",
       "projet": {
         "img_0": "00-PPS.png",
         "title_0": "Storybook",
@@ -83,20 +78,7 @@
       "poste": "Developpeur Full-Stack",
       "techno": "Nuxt.js, Tailwind, Laravel 7",
       "site": "https://wedigital.garden",
-      "projet": {
-        "img_0": "00-PPS.png",
-        "title_0": "Storybook",
-        "img_1": "01-PPS.png",
-        "title_1": "Home Page",
-        "img_2": "02-PPS.png",
-        "title_2": "Article & Shop Page",
-        "img_3": "03-PPS.png",
-        "title_3": "Product Page",
-        "img_4": "04-PPS.png",
-        "title_4": "About & Cart Page",
-        "img_5": "05-PPS.png",
-        "title_5": "Order Mail"
-      }
+      "color": "#36A364"
     },
     {
       "id": 4,
@@ -110,20 +92,7 @@
       "poste": "Développeur Front-End",
       "techno": "Vue.js, Tailwind",
       "site": "https://www.kerastase.fr",
-      "projet": {
-        "img_0": "00-PPS.png",
-        "title_0": "Storybook",
-        "img_1": "01-PPS.png",
-        "title_1": "Home Page",
-        "img_2": "02-PPS.png",
-        "title_2": "Article & Shop Page",
-        "img_3": "03-PPS.png",
-        "title_3": "Product Page",
-        "img_4": "04-PPS.png",
-        "title_4": "About & Cart Page",
-        "img_5": "05-PPS.png",
-        "title_5": "Order Mail"
-      }
+      "color": "#DF9993"
     },
     {
       "id": 5,
@@ -137,20 +106,7 @@
       "poste": "Responsable Artistique",
       "techno": "Prestashop, Suite adobe",
       "site": "https://www.one4you.com",
-      "projet": {
-        "img_0": "00-PPS.png",
-        "title_0": "Storybook",
-        "img_1": "01-PPS.png",
-        "title_1": "Home Page",
-        "img_2": "02-PPS.png",
-        "title_2": "Article & Shop Page",
-        "img_3": "03-PPS.png",
-        "title_3": "Product Page",
-        "img_4": "04-PPS.png",
-        "title_4": "About & Cart Page",
-        "img_5": "05-PPS.png",
-        "title_5": "Order Mail"
-      }
+      "color": "#50E1C3"
     },
     {
       "id": 6,
@@ -164,20 +120,7 @@
       "poste": "Dev Freelance",
       "techno": "React.js, Figma",
       "site": "https://www.maelys-pdl.fr",
-      "projet": {
-        "img_0": "00-PPS.png",
-        "title_0": "Storybook",
-        "img_1": "01-PPS.png",
-        "title_1": "Home Page",
-        "img_2": "02-PPS.png",
-        "title_2": "Article & Shop Page",
-        "img_3": "03-PPS.png",
-        "title_3": "Product Page",
-        "img_4": "04-PPS.png",
-        "title_4": "About & Cart Page",
-        "img_5": "05-PPS.png",
-        "title_5": "Order Mail"
-      }
+      "color": "#E2BF8F"
     },
     {
       "id": 7,
@@ -190,20 +133,7 @@
       "font": "Montserrat",
       "poste": "Freelance",
       "techno": "Vue.js, Figma",
-      "projet": {
-        "img_0": "00-PPS.png",
-        "title_0": "Storybook",
-        "img_1": "01-PPS.png",
-        "title_1": "Home Page",
-        "img_2": "02-PPS.png",
-        "title_2": "Article & Shop Page",
-        "img_3": "03-PPS.png",
-        "title_3": "Product Page",
-        "img_4": "04-PPS.png",
-        "title_4": "About & Cart Page",
-        "img_5": "05-PPS.png",
-        "title_5": "Order Mail"
-      }
+      "color": "#E2ECC2"
     },
     {
       "id": 8,
@@ -217,20 +147,7 @@
       "poste": "Dev Freelance",
       "techno": "Vue.js, Adobe XD",
       "site": "https://jo-thr.github.io/Jo.Weather/",
-      "projet": {
-        "img_0": "00-PPS.png",
-        "title_0": "Storybook",
-        "img_1": "01-PPS.png",
-        "title_1": "Home Page",
-        "img_2": "02-PPS.png",
-        "title_2": "Article & Shop Page",
-        "img_3": "03-PPS.png",
-        "title_3": "Product Page",
-        "img_4": "04-PPS.png",
-        "title_4": "About & Cart Page",
-        "img_5": "05-PPS.png",
-        "title_5": "Order Mail"
-      }
+      "color": "#FB723F"
     },
     {
       "id": 9,
@@ -243,20 +160,7 @@
       "font": "Poly",
       "poste": "Ui Freelance",
       "techno": "Adobe XD",
-      "projet": {
-        "img_0": "00-PPS.png",
-        "title_0": "Storybook",
-        "img_1": "01-PPS.png",
-        "title_1": "Home Page",
-        "img_2": "02-PPS.png",
-        "title_2": "Article & Shop Page",
-        "img_3": "03-PPS.png",
-        "title_3": "Product Page",
-        "img_4": "04-PPS.png",
-        "title_4": "About & Cart Page",
-        "img_5": "05-PPS.png",
-        "title_5": "Order Mail"
-      }
+      "color": "#327ADC"
     },
     {
       "id": 10,
@@ -269,20 +173,7 @@
       "font": "Lato",
       "poste": "Responsable Artistique",
       "techno": "Wordpress",
-      "projet": {
-        "img_0": "00-PPS.png",
-        "title_0": "Storybook",
-        "img_1": "01-PPS.png",
-        "title_1": "Home Page",
-        "img_2": "02-PPS.png",
-        "title_2": "Article & Shop Page",
-        "img_3": "03-PPS.png",
-        "title_3": "Product Page",
-        "img_4": "04-PPS.png",
-        "title_4": "About & Cart Page",
-        "img_5": "05-PPS.png",
-        "title_5": "Order Mail"
-      }
+      "color": "#027D8C"
     },
     {
       "id": 11,
@@ -295,20 +186,7 @@
       "font": "????",
       "poste": "Freelance",
       "techno": "Vue.js",
-      "projet": {
-        "img_0": "00-PPS.png",
-        "title_0": "Storybook",
-        "img_1": "01-PPS.png",
-        "title_1": "Home Page",
-        "img_2": "02-PPS.png",
-        "title_2": "Article & Shop Page",
-        "img_3": "03-PPS.png",
-        "title_3": "Product Page",
-        "img_4": "04-PPS.png",
-        "title_4": "About & Cart Page",
-        "img_5": "05-PPS.png",
-        "title_5": "Order Mail"
-      }
+      "color": "#FFD14E"
     }
   ]
 }
