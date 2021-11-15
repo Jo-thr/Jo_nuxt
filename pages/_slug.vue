@@ -41,15 +41,20 @@
         >
           {{ proj[0].description }}
         </p>
-        <div v-if="proj[0].site" class="flex items-center flex-row">
-          <div
-            class="flex items-center justify-center goToSite mr-3 text-xl"
-            :style="{ backgroundColor: proj[0].color }"
-          >
-            ↬
-          </div>
-          <div class="flex">{{ proj[0].site }}</div>
-        </div>
+
+        <a :href="proj[0].site" target="_blank">
+          <div v-if="proj[0].site" class="flex items-center flex-row">
+            <div
+              class="flex items-center justify-center goToSite mr-3 text-xl"
+              :style="{ backgroundColor: proj[0].color }"
+            >
+              ↬
+            </div>
+            <div class="flex italic text-blue">
+              Aller sur {{ proj[0].name }}
+            </div>
+          </div></a
+        >
       </div>
       <div
         class="flex items-center bg-blue circle mb-10"
@@ -316,9 +321,14 @@ export default {
 
 .close {
   position: fixed;
-  top: 62px;
+  bottom: 62px;
+  right: 62px;
   width: max-content;
   z-index: 500;
+}
+.close:hover {
+  animation: shake 0.3s;
+  animation-iteration-count: initial;
 }
 .circle {
   min-width: 700px;
@@ -335,5 +345,40 @@ export default {
   color: #fcfcfc;
   text-shadow: -0.6px 0 #002fc7, 0 0.6px #002fc7, 0.6px 0 #002fc7,
     0 -0.6px #002fc7;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 </style>
