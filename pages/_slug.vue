@@ -26,8 +26,8 @@
       ✖
     </nuxt-link>
     <!-- HEADER ROND -->
-    <div class="w-75p flex justify-between items-center mt-20">
-      <div class="flex flex-col py-10">
+    <div class="w-80p flex justify-between items-center mt-20">
+      <div class="flex flex-col py-10 px-5">
         <h1 class="text-6xl font-bold" :style="{ color: proj[0].color }">
           {{ proj[0].name }}
         </h1>
@@ -50,14 +50,14 @@
             >
               ↬
             </div>
-            <div class="flex italic text-blue">
+            <div class="flex italic" :style="{ color: proj[0].color }">
               Aller sur {{ proj[0].name }}
             </div>
           </div></a
         >
       </div>
       <div
-        class="flex items-center bg-blue circle mb-10"
+        class="flex items-center bg-blue circle mb-10 ml-5"
         :style="{ backgroundColor: proj[0].color }"
       >
         <img

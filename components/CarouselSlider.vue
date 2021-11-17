@@ -86,7 +86,7 @@
                 w-auto
                 text-right
                 py-8
-                px-12
+                px-10
                 shadowBlue
                 text-blue
               "

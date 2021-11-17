@@ -31,12 +31,12 @@
       "site": "https://www.francetvlab.fr",
       "color": "#0123FF",
       "projet": {
-        "img_0": "00-FTV.png",
-        "title_0": "Storybook",
         "img_1": "01-FTV.png",
-        "title_1": "Rubrique Page",
+        "title_1": "Storybook",
         "img_2": "02-FTV.png",
-        "title_2": "Article Page"
+        "title_2": "Rubrique Page",
+        "img_3": "03-FTV.png",
+        "title_3": "Article Page"
       }
     },
     {
@@ -69,7 +69,7 @@
     {
       "id": 3,
       "slug": "wedigitalgarden",
-      "name": "WeDigital.Garden",
+      "name": "WeDigital Garden",
       "categorie": "Développement Full-Stack",
       "description": "En charge de la gestion globale de l’identité visuelle de One4You. J'assure la cohérence et construis l’image de One4You, la fait évoluer dans le respect des contraintes économiques et des objectifs stratégiques et commerciaux définis par la direction générale. Je conçois et coordonne l’ensemble des supports qui véhiculent l’identité visuelle de One4You, ainsi que des marques, enseignes et jeunes talents qui lui sont rattachées.",
       "imgBgColor": "bg-WDG",
@@ -78,7 +78,8 @@
       "poste": "Developpeur Full-Stack",
       "techno": "Nuxt.js, Tailwind, Laravel 7",
       "site": "https://wedigital.garden",
-      "color": "#36A364"
+      "color": "#36A364",
+      "projet": {}
     },
     {
       "id": 4,
@@ -92,7 +93,8 @@
       "poste": "Développeur Front-End",
       "techno": "Vue.js, Tailwind",
       "site": "https://www.kerastase.fr",
-      "color": "#DF9993"
+      "color": "#DF9993",
+      "projet": {}
     },
     {
       "id": 5,
@@ -106,7 +108,21 @@
       "poste": "Responsable Artistique",
       "techno": "Prestashop, Suite adobe",
       "site": "https://www.one4you.com",
-      "color": "#50E1C3"
+      "color": "#50E1C3",
+      "projet": {
+        "img_0": "00-O4Y.png",
+        "title_0": "Storybook",
+        "img_1": "01-O4Y.png",
+        "title_1": "Home Page",
+        "img_2": "02-O4Y.png",
+        "title_2": "Shopping Page",
+        "img_3": "03-O4Y.png",
+        "title_3": "Product Page",
+        "img_4": "04-O4Y.png",
+        "title_4": "Account Page",
+        "img_5": "05-O4Y.png",
+        "title_5": "Order Page"
+      }
     },
     {
       "id": 6,
@@ -120,7 +136,15 @@
       "poste": "Dev Freelance",
       "techno": "React.js, Figma",
       "site": "https://www.maelys-pdl.fr",
-      "color": "#E2BF8F"
+      "color": "#E2BF8F",
+      "projet": {
+        "img_0": "00-MAE.png",
+        "title_0": "Storybook",
+        "img_1": "01-MAE.png",
+        "title_1": "Home Page",
+        "img_2": "02-MAE.png",
+        "title_2": "Project Page"
+      }
     },
     {
       "id": 7,
@@ -133,7 +157,17 @@
       "font": "Montserrat",
       "poste": "Freelance",
       "techno": "Vue.js, Figma",
-      "color": "#E2ECC2"
+      "color": "#E2ECC2",
+      "projet": {
+        "img_0": "00-BARFONTARC.png",
+        "title_0": "Storybook",
+        "img_1": "01-BARFONTARC.png",
+        "title_1": "Home Page",
+        "img_2": "02-BARFONTARC.png",
+        "title_2": "Shopping Page",
+        "img_3": "03-BARFONTARC.png",
+        "title_3": "Product Page"
+      }
     },
     {
       "id": 8,
@@ -147,7 +181,9 @@
       "poste": "Dev Freelance",
       "techno": "Vue.js, Adobe XD",
       "site": "https://jo-thr.github.io/Jo.Weather/",
-      "color": "#FB723F"
+      "color": "#FB723F",
+
+      "projet": {}
     },
     {
       "id": 9,
@@ -160,7 +196,12 @@
       "font": "Poly",
       "poste": "Ui Freelance",
       "techno": "Adobe XD",
-      "color": "#327ADC"
+      "color": "#327ADC",
+
+      "projet": {
+        "img_0": "00-WIKI.png",
+        "title_0": "Storybook"
+      }
     },
     {
       "id": 10,
@@ -173,7 +214,19 @@
       "font": "Lato",
       "poste": "Responsable Artistique",
       "techno": "Wordpress",
-      "color": "#027D8C"
+      "color": "#027D8C",
+      "projet": {
+        "img_0": "00-VM.png",
+        "title_0": "Storybook",
+        "img_1": "01-VM.png",
+        "title_1": "Home Page",
+        "img_2": "02-VM.png",
+        "title_2": "Categorie & Distict Page",
+        "img_3": "03-VM.png",
+        "title_3": "Product & Shop Page",
+        "img_4": "04-VM.png",
+        "title_4": "Contact & About Page"
+      }
     },
     {
       "id": 11,
@@ -186,7 +239,8 @@
       "font": "????",
       "poste": "Freelance",
       "techno": "Vue.js",
-      "color": "#FFD14E"
+      "color": "#FFD14E",
+      "projet": {}
     }
   ]
 }
