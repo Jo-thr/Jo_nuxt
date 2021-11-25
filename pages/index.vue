@@ -15,7 +15,9 @@
       class="relative flex flex-col justify-center items-center w-full"
     >
       <h1 class="text-white font-size">JO•THR</h1>
-      <h3 class="text-offwhite uppercase spacing tracking-widest">
+      <h3
+        class="md:flex hidden text-offwhite uppercase spacing tracking-widest"
+      >
         - A front-end developper & ui designer -
       </h3>
       <img src="../assets/icons/hand-peace-white.png" class="hello" />
@@ -41,14 +43,30 @@ export default {
 }
 
 .font-size {
-  font-size: 12rem;
-  line-height: 100%;
+  font-size: 192px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 192px;
+  text-align: center;
 }
 
 #shake:hover > .hello {
   opacity: 1 !important;
   transform: rotate(15deg);
 }
+
+@media (max-width: 767px) {
+  .font-size {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 85px;
+    text-align: center;
+  }
+}
+
 @keyframes shake {
   0% {
     transform: translate(1px, 1px) rotate(0deg);
