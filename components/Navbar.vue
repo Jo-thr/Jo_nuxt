@@ -1,6 +1,6 @@
 <template>
   <div class="fixed z-50">
-    <div class="fixed top-60 left-60 indexMargin">
+    <div class="fixed md:top-60 top-20 md:left-60 left-20 indexMargin">
       <router-link to="/">
         <img src="../assets/logo_jothr.png" class="logo" />
       </router-link>
@@ -130,8 +130,10 @@
         border-6 border-blue border-solid
         hamburguer
         indexMargin
-        right-60
-        top-60
+        md:right-60
+        right-20
+        md:top-60
+        top-20
         -mt-0.5
         :active:shadow-sm
       "
@@ -141,7 +143,7 @@
         <div class="lines line-mid"></div>
         <div class="lines line-bottom"></div>
       </div>
-      <div class="flex font-black pl-4">MENU</div>
+      <div class="md:flex font-black pl-4 hidden">MENU</div>
     </button>
   </div>
 </template>

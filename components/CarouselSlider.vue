@@ -42,8 +42,10 @@
           class="
             relative
             flex
-            w-50p
-            h-screen
+            md:w-50p
+            w-full
+            md:h-screen
+            h-50v
             justify-center
             items-center
             bg-indigo-100 bg-cover bg-center
@@ -66,7 +68,9 @@
           class="
             relative
             flex flex-row
-            w-50p
+            md:w-50p
+            w-full
+            h-
             flex-nowrap
             justify-center
             items-center

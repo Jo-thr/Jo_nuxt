@@ -51,6 +51,8 @@ module.exports = {
       screen: '100vh',
     },
     inset: {
+      20: '20px',
+      40: '40px',
       60: '60px',
       80: '80px',
       120: '120px',

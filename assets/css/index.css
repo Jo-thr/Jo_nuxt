@@ -21,3 +21,29 @@ body {
   border-left: 80px solid #fcfcfc;
   border-right: 80px solid #fcfcfc;
 }
+
+@media (max-width: 767px) {
+  body:before,
+  body:after {
+    content: '';
+    position: fixed;
+    background: #fcfcfc;
+    left: 0;
+    right: 0;
+    height: 40px;
+    z-index: 100;
+  }
+  body:before {
+    top: 0;
+  }
+  body:after {
+    bottom: 0;
+  }
+  body {
+    overflow: hidden;
+    height: 100vh;
+    z-index: 100;
+    border-left: 40px solid #fcfcfc;
+    border-right: 40px solid #fcfcfc;
+  }
+}
