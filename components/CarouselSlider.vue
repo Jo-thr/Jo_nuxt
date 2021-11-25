@@ -14,29 +14,8 @@
       <div
         v-for="post in posts"
         :key="post.id"
-        class="position justify-center items-center w-full"
+        class="flex position justify-center items-center w-full"
       >
-        <!-- BOUTON -->
-        <button
-          class="
-            absolute
-            bottom-120
-            z-50
-            py-4
-            px-12
-            bg-blue
-            border-white border-opacity-0 border-4
-            text-white
-            hover:cursor-pointer
-            font-bold
-            uppercase
-            hover:border-blue hover:border-4 hover:text-blue hover:bg-white
-            btnBottom
-          "
-        >
-          <nuxt-link :to="post.slug"> voir le projet</nuxt-link>
-        </button>
-
         <!-- IMAGE & BACKGROUND -->
         <div
           class="
@@ -45,7 +24,9 @@
             md:w-50p
             w-full
             md:h-screen
-            h-50v
+            h-40v
+            md:mt-0
+            mt-10
             justify-center
             items-center
             bg-indigo-100 bg-cover bg-center
@@ -70,35 +51,76 @@
             flex flex-row
             md:w-50p
             w-full
-            h-
             flex-nowrap
             justify-center
             items-center
             pb-16
+            md:-mt-0
+            -mt-9
           "
         >
           <!-- COLONNE DE GAUCHE -->
-          <div class="flex flex-col w-60p justify-center items-end">
+          <div
+            class="
+              flex flex-col
+              md:w-60p
+              w-90p
+              justify-center
+              md:items-end
+              items-center
+            "
+          >
             <!-- CATEGORIE -->
-            <div class="w-max uppercase py-4 px-8 shadowBlue ml-32 mb-0.5">
+            <div
+              class="
+                md:flex
+                hidden
+                w-max
+                uppercase
+                py-4
+                px-8
+                shadowBlue
+                md:ml-32
+                ml-0
+                mb-0.5
+                bg-offwhite
+              "
+            >
               {{ post.categorie }}
             </div>
             <!-- NOM -->
-            <h1
+            <h3
               class="
                 flex-wrap
                 w-auto
-                text-right
-                py-8
-                px-10
+                md:py-8
+                py-4
+                md:px-10
+                px-5
+                font-fontTitle
+                uppercase
                 shadowBlue
+                textTitleProj
                 text-blue
+                bg-offwhite
               "
             >
               {{ post.name }}
-            </h1>
+            </h3>
             <!-- DESCRIPTION -->
-            <div class="w-full p-5 px-7 shadowBlue text-justify mt-0.5 ml-0.5">
+            <div
+              class="
+                md:w-full
+                w-90p
+                p-5
+                px-7
+                shadowBlue
+                textParagraph
+                mt-0.5
+                md:ml-0.5
+                ml-0
+              "
+            >
               <p>{{ post.description }}</p>
             </div>
           </div>
@@ -106,7 +128,9 @@
           <!-- COLONNE DE DROITE -->
           <div
             class="
-              flex flex-col
+              md:flex
+              hidden
+              flex-col
               w-20p
               justify-center
               items-start
@@ -136,6 +160,28 @@
             </div>
           </div>
         </div>
+
+        <!-- BOUTON -->
+        <button
+          class="
+            absolute
+            md:bottom-120
+            bottom-40
+            z-50
+            py-4
+            px-12
+            bg-blue
+            border-white border-opacity-0 border-4
+            text-white
+            hover:cursor-pointer
+            font-bold
+            uppercase
+            hover:border-blue hover:border-4 hover:text-blue hover:bg-white
+            btnBottom
+          "
+        >
+          <nuxt-link :to="post.slug"> voir le projet</nuxt-link>
+        </button>
       </div>
     </VueSlickCarousel>
   </div>
@@ -188,5 +234,35 @@ export default {
   color: #002fc7 !important;
   font-weight: 700 !important;
   font-style: normal !important;
+}
+.textTitleProj {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: right;
+}
+.textParagraph {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: justify;
+}
+@media (max-width: 767px) {
+  .position {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .textTitleProj {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+  }
+  .textParagraph {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: justify;
+  }
 }
 </style>
