@@ -7,10 +7,11 @@
     </div>
 
     <!-- NEW MENU -->
-    <div class="fixed full-menu z-50 flex flex-row text-white">
+    <div class="fixed full-menu z-50 flex md:flex-row flex-col text-white">
       <div
         class="
-          flex
+          md:flex
+          hidden
           w-10p
           h-60v
           border-solid border-r-3 border-white
@@ -65,7 +66,8 @@
         class="
           w-40p
           h-60v
-          flex
+          md:flex
+          hidden
           border-solid border-l-3 border-white
           items-center
           justify-center
@@ -92,25 +94,32 @@
       <div
         class="
           w-10p
-          h-60v
+          md:h-60v
+          h-20v
           flex
-          justify-end
-          items-center
-          text-right
-          border-solid border-l-3 border-white
-          -ml-12
-          pr-4
+          md:justify-end
+          justify-center
+          md:items-center
+          items-end
+          md:text-right
+          text-center
+          md:border-solid md:border-l-3 md:border-white md:-ml-12
+          -ml-0
+          md:pr-4
+          pr-0
+          md:pt-0
+          mt-5
         "
       >
-        <ul class="leading-10 font-bold">
-          <li class="py-2">
+        <ul class="leading-10 md:font-bold">
+          <li class="md:py-2">
             <a :href="reseaux.instagram" target="_blank">INSTAGRAM</a>
           </li>
-          <li class="py-2">
+          <li class="md:py-2">
             <a :href="reseaux.linkedin" target="_blank">LINKEDIN</a>
           </li>
 
-          <li class="py-2">
+          <li class="md:py-2">
             <a :href="reseaux.github" target="_blank">GITHUB</a>
           </li>
         </ul>
@@ -297,6 +306,26 @@ export default {
 }
 .close-hamburguer .line-bottom {
   transform: translateY(-200%) rotate(135deg);
+}
+
+@media (max-width: 767px) {
+  .full-menu {
+    position: relative;
+    width: 81.2vw;
+    top: 40px;
+    display: none;
+    height: 90.8vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #002fc7;
+    transform: translateX(120%);
+    transition: all 300ms ease-in;
+    opacity: 0;
+  }
+
+  .lien {
+    font-size: 2.5rem;
+  }
 }
 
 @keyframes shake {
