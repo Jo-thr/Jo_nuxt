@@ -21,7 +21,7 @@
           class="
             relative
             flex
-            tablet:w-50p
+            tablet:w-1/2
             w-full
             tablet:h-screen
             h-40v
@@ -29,7 +29,7 @@
             mt-10
             justify-center
             items-center
-            bg-indigo-100 bg-cover bg-center
+            bg-cover bg-center
           "
           :style="{
             backgroundImage:
@@ -40,7 +40,7 @@
         >
           <img
             :src="require(`../assets/imgProjects/${post.imgFirst}`)"
-            class="w-80p z-10 pb-12"
+            class="w-80% z-10 pb-12"
           />
         </div>
 
@@ -49,7 +49,7 @@
           class="
             relative
             flex flex-row
-            tablet:w-50p
+            tablet:w-1/2
             w-full
             flex-nowrap
             justify-center
@@ -63,8 +63,8 @@
           <div
             class="
               flex flex-col
-              tablet:w-60p
-              w-90p
+              tablet:w-3/5
+              w-90%
               justify-center
               tablet:items-end
               items-center
@@ -111,7 +111,7 @@
             <div
               class="
                 tablet:w-full
-                w-90p
+                w-90%
                 p-5
                 px-7
                 shadowBlue
@@ -131,7 +131,7 @@
               tablet:flex
               hidden
               flex-col
-              w-20p
+              w-20%
               justify-center
               items-start
               text-left

@@ -15,7 +15,8 @@ body:after {
   bottom: 0;
 }
 body {
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
   height: 100vh;
   z-index: 100;
   border-left: 80px solid #fcfcfc;
@@ -40,7 +41,8 @@ body {
     bottom: 0;
   }
   body {
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
     height: 100vh;
     z-index: 100;
     border-left: 40px solid #fcfcfc;

@@ -14,7 +14,17 @@
       id="shake"
       class="relative flex flex-col justify-center items-center w-full"
     >
-      <h1 class="text-white font-size">JO•THR</h1>
+      <h1
+        class="
+          alignFont
+          font-fontTitle font-bold
+          text-center text-white
+          tablet:text-header-h1
+          text-mobile-h1
+        "
+      >
+        JO•THR
+      </h1>
       <h3
         class="
           tablet:flex
@@ -38,40 +48,27 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .hello {
-  opacity: 0;
-  position: absolute;
+  @apply opacity-0 absolute z-30;
   width: 60px;
-  z-index: 30;
   margin-left: 40%;
   margin-bottom: 22vh;
   transition: all 200ms ease-in-out;
 }
 
-.font-size {
-  font-size: 192px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 192px;
-  text-align: center;
+.alignFont {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+
+  @screen tablet {
+    writing-mode: horizontal-tb;
+  }
 }
 
 #shake:hover > .hello {
   opacity: 1 !important;
   transform: rotate(15deg);
-}
-
-@media (max-width: 767px) {
-  .font-size {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    font-size: 70px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 85px;
-    text-align: center;
-  }
 }
 
 @keyframes shake {

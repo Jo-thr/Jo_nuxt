@@ -1,3 +1,4 @@
+const percentageWidth = require('tailwindcss-percentage-width')
 module.exports = {
   // purge: { content: ['./public/**/*.html', './src/**/*.vue'] },
   darkMode: false, // or 'media' or 'class'
@@ -21,37 +22,34 @@ module.exports = {
     extend: {
       fontFamily: {
         fontTitle: ['Cormorant Infant'],
+        paragraph: ['Noto Sans'],
       },
-    },
-    width: {
-      '10p': '10%',
-      '20p': '20%',
-      '25p': '25%',
-      '30p': '30%',
-      '40p': '40%',
-      '50p': '50%',
-      '60p': '60%',
-      '70p': '70%',
-      '75p': '75%',
-      '80p': '80%',
-      '90p': '90%',
-      full: '100%',
-      auto: 'auto',
-      max: 'max-content',
-    },
-    height: {
-      '5v': '5vh',
-      '10v': '10vh',
-      '20v': '20vh',
-      '30v': '30vh',
-      '40v': '40vh',
-      '50v': '50vh',
-      '60v': '60vh',
-      '70v': '70vh',
-      '80v': '80vh',
-      '90v': '90vh',
-      full: '100%',
-      screen: '100vh',
+
+      // Font Size
+      // name: [fontSize, lineHeight],
+      fontSize: {
+        'header-h1': ['192px', '192px'],
+        'header-h2': ['42px', '48px'],
+        'mobile-h1': ['70px', '76px'],
+        'mobile-h2': ['30px', '36px'],
+
+        'desktop-paragraph': ['14px', '22px'],
+        'mobile-paragraph': ['12px', '20px'],
+      },
+      height: {
+        '5v': '5vh',
+        '10v': '10vh',
+        '20v': '20vh',
+        '30v': '30vh',
+        '40v': '40vh',
+        '50v': '50vh',
+        '60v': '60vh',
+        '70v': '70vh',
+        '80v': '80vh',
+        '90v': '90vh',
+        full: '100%',
+        screen: '100vh',
+      },
     },
     inset: {
       20: '20px',
@@ -109,5 +107,5 @@ module.exports = {
       borderWidth: ['hover', 'focus'],
     },
   },
-  plugins: [],
+  plugins: [percentageWidth],
 }

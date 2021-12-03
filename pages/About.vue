@@ -1,31 +1,24 @@
 <template>
-  <div
-    class="
-      relative
-      flex flex-col
-      items-center
-      h-full
-      w-full
-      bg-offwhite
-      overflow-scroll
-    "
-  >
-    <div class="w-70p mb-12 text-left mt-28">
-      <h2 class="font-black">ABOUT</h2>
-      <h2 class="titleContour">Jonathan Thr</h2>
-    </div>
-
-    <div class="flex w-80p h-40v">
-      <div class="relative w-full h-40v bg-header-about z-20"></div>
-      <div class="absolute right-20p w-30p h-40v -mt-12 bg-blue z-10"></div>
-    </div>
-
-    <div class="flex w-30p items-center justify-center mt-12">
-      <img src="../assets/icons/bottom.png" class="w-10p p-4" />
-    </div>
-
-    <div class="flex w-70p flex-nowrap items-start justify-around mt-12">
-      <p class="w-40p text-justify">
+  <div class="relative flex flex-col items-center w-full bg-offwhite">
+    <div class="container flex flex-col items-center">
+      <div class="bg-blue w-full bg-header-about mt-40"></div>
+      <div
+        class="
+          bg-offwhite
+          w-70%
+          text-center
+          pt-12
+          -mt-14
+          font-fontTitle
+          text-header-h2
+          uppercase
+          font-bold
+          text-blue
+        "
+      >
+        Tout savoir sur moi
+      </div>
+      <p class="w-70% text-justify my-14 font-paragraph text-desktop-paragraph">
         Depuis plusieurs années, je suis connecté professionnellement à
         l'industrie du développement Web et au design d'interfaces.<br /><br />
 
@@ -42,7 +35,12 @@
         adore la curiosité, la littérature et, plus récemment, jeune promeneur
         de chien.
       </p>
-      <p class="w-40p text-justify">
+    </div>
+
+    <div class="bg-blue w-full h-60v mt-2"></div>
+
+    <div class="container flex flex-col items-center">
+      <p class="w-70% text-justify my-14 font-paragraph text-desktop-paragraph">
         D'abord Designer d'interface, je me suis peu à peu spécialisé dans le
         développement front-end pour lequel j'ai développé une grande passion au
         point de vouloir m'y consacrer aujourd'hui : à temps plein !
@@ -58,6 +56,8 @@
         domaines dans lesquels vous pouvez me faire confiance.
       </p>
     </div>
+
+    <div class="bg-blue w-full h-80 mt-2"></div>
   </div>
 </template>
 
@@ -68,15 +68,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .bg-header-about {
-  background-image: url('../assets/images/SFAC-05174.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.titleContour {
-  color: #f7f7f7;
-  text-shadow: -1px 0 #2c2c2c, 0 1px #2c2c2c, 1px 0 #2c2c2c, 0 -1px #2c2c2c;
+  height: 350px;
 }
 </style>

@@ -12,7 +12,7 @@
         class="
           tablet:flex
           hidden
-          w-10p
+          w-10%
           h-60v
           border-solid border-r-3 border-white
           items-center
@@ -26,7 +26,7 @@
           >
         </div>
       </div>
-      <div class="w-40p flex justify-center items-center">
+      <div class="w-40% flex justify-center items-center">
         <nav id="menu" class="menu text-left font-bold">
           <ul class="lien leading-loose">
             <router-link
@@ -93,7 +93,7 @@
       </div>
       <div
         class="
-          w-10p
+          w-10%
           tablet:h-60v
           h-20v
           flex
