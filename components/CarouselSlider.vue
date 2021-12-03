@@ -21,11 +21,11 @@
           class="
             relative
             flex
-            md:w-50p
+            tablet:w-50p
             w-full
-            md:h-screen
+            tablet:h-screen
             h-40v
-            md:mt-0
+            tablet:mt-0
             mt-10
             justify-center
             items-center
@@ -49,13 +49,13 @@
           class="
             relative
             flex flex-row
-            md:w-50p
+            tablet:w-50p
             w-full
             flex-nowrap
             justify-center
             items-center
             pb-16
-            md:-mt-0
+            tablet:-mt-0
             -mt-9
           "
         >
@@ -63,24 +63,24 @@
           <div
             class="
               flex flex-col
-              md:w-60p
+              tablet:w-60p
               w-90p
               justify-center
-              md:items-end
+              tablet:items-end
               items-center
             "
           >
             <!-- CATEGORIE -->
             <div
               class="
-                md:flex
+                tablet:flex
                 hidden
                 w-max
                 uppercase
                 py-4
                 px-8
                 shadowBlue
-                md:ml-32
+                tablet:ml-32
                 ml-0
                 mb-0.5
                 bg-offwhite
@@ -93,9 +93,9 @@
               class="
                 flex-wrap
                 w-auto
-                md:py-8
+                tablet:py-8
                 py-4
-                md:px-10
+                tablet:px-10
                 px-5
                 font-fontTitle
                 uppercase
@@ -110,14 +110,14 @@
             <!-- DESCRIPTION -->
             <div
               class="
-                md:w-full
+                tablet:w-full
                 w-90p
                 p-5
                 px-7
                 shadowBlue
                 textParagraph
                 mt-0.5
-                md:ml-0.5
+                tablet:ml-0.5
                 ml-0
               "
             >
@@ -128,7 +128,7 @@
           <!-- COLONNE DE DROITE -->
           <div
             class="
-              md:flex
+              tablet:flex
               hidden
               flex-col
               w-20p
@@ -165,7 +165,7 @@
         <button
           class="
             absolute
-            md:bottom-120
+            tablet:bottom-120
             bottom-40
             z-50
             py-4
@@ -216,7 +216,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .position {
   display: flex !important;
   flex-direction: row !important;

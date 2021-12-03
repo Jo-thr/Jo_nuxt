@@ -16,7 +16,14 @@
     >
       <h1 class="text-white font-size">JO•THR</h1>
       <h3
-        class="md:flex hidden text-offwhite uppercase spacing tracking-widest"
+        class="
+          tablet:flex
+          hidden
+          text-offwhite
+          uppercase
+          spacing
+          tracking-widest
+        "
       >
         - A front-end developper & ui designer -
       </h3>

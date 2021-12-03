@@ -1,16 +1,16 @@
 <template>
   <div class="fixed z-50">
-    <div class="fixed md:top-60 top-20 md:left-60 left-20 indexMargin">
+    <div class="fixed tablet:top-60 top-20 tablet:left-60 left-20 indexMargin">
       <router-link to="/">
         <img src="../assets/logo_jothr.png" class="logo" />
       </router-link>
     </div>
 
     <!-- NEW MENU -->
-    <div class="fixed full-menu z-50 flex md:flex-row flex-col text-white">
+    <div class="fixed full-menu z-50 flex tablet:flex-row flex-col text-white">
       <div
         class="
-          md:flex
+          tablet:flex
           hidden
           w-10p
           h-60v
@@ -66,7 +66,7 @@
         class="
           w-40p
           h-60v
-          md:flex
+          tablet:flex
           hidden
           border-solid border-l-3 border-white
           items-center
@@ -94,32 +94,35 @@
       <div
         class="
           w-10p
-          md:h-60v
+          tablet:h-60v
           h-20v
           flex
-          md:justify-end
+          tablet:justify-end
           justify-center
-          md:items-center
+          tablet:items-center
           items-end
-          md:text-right
+          tablet:text-right
           text-center
-          md:border-solid md:border-l-3 md:border-white md:-ml-12
+          tablet:border-solid
+          tablet:border-l-3
+          tablet:border-white
+          tablet:-ml-12
           -ml-0
-          md:pr-4
+          tablet:pr-4
           pr-0
-          md:pt-0
+          tablet:pt-0
           mt-5
         "
       >
-        <ul class="leading-10 md:font-bold">
-          <li class="md:py-2">
+        <ul class="leading-10 tablet:font-bold">
+          <li class="tablet:py-2">
             <a :href="reseaux.instagram" target="_blank">INSTAGRAM</a>
           </li>
-          <li class="md:py-2">
+          <li class="tablet:py-2">
             <a :href="reseaux.linkedin" target="_blank">LINKEDIN</a>
           </li>
 
-          <li class="md:py-2">
+          <li class="tablet:py-2">
             <a :href="reseaux.github" target="_blank">GITHUB</a>
           </li>
         </ul>
@@ -139,9 +142,9 @@
         border-6 border-blue border-solid
         hamburguer
         indexMargin
-        md:right-60
+        tablet:right-60
         right-20
-        md:top-60
+        tablet:top-60
         top-20
         -mt-0.5
         :active:shadow-sm
@@ -152,7 +155,7 @@
         <div class="lines line-mid"></div>
         <div class="lines line-bottom"></div>
       </div>
-      <div class="md:flex font-black pl-4 hidden">MENU</div>
+      <div class="tablet:flex font-black pl-4 hidden">MENU</div>
     </button>
   </div>
 </template>
@@ -190,7 +193,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .indexMargin {
   z-index: 1000;
 }
@@ -206,19 +209,19 @@ export default {
   transform: rotate(180deg);
 }
 .contourText {
-  color: #002fc7;
+  @apply text-blue;
   text-shadow: -0.6px 0 #fcfcfc, 0 0.6px #fcfcfc, 0.6px 0 #fcfcfc,
     0 -0.6px #fcfcfc;
 }
 .hoverContour {
-  color: #fcfcfc;
+  @apply text-offwhite;
 }
 .hoverContour:hover {
-  color: #002fc7;
+  @apply text-blue;
   text-shadow: -1px 0 #fcfcfc, 0 1px #fcfcfc, 1px 0 #fcfcfc, 0 -1px #fcfcfc;
 }
 .menu-trait {
-  position: relative;
+  @apply relative;
   width: 20px;
   z-index: 60;
 }

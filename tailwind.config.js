@@ -2,11 +2,14 @@ module.exports = {
   // purge: { content: ['./public/**/*.html', './src/**/*.vue'] },
   darkMode: false, // or 'media' or 'class'
   theme: {
+    // Breakpoints
     screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1280px',
+      mobile: { max: '768px' },
+      tablet: '768px',
+      // => @media (min-width: 768px) { ... }
+
+      desktop: '1024px',
+      // => @media (min-width: 1024px) { ... }
     },
     colors: {
       white: '#FCFCFC',
