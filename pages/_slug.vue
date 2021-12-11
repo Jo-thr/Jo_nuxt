@@ -28,50 +28,50 @@
     <!-- HEADER ROND -->
     <div class="w-80p flex justify-between items-center mt-20">
       <div class="flex flex-col py-10 px-5">
-        <h1 class="text-6xl font-bold" :style="{ color: proj[0].color }">
-          {{ proj[0].name }}
+        <h1 class="text-6xl font-bold" :style="{ color: dossier.color }">
+          {{ dossier.name }}
         </h1>
 
         <p class="py-8">
-          {{ proj[0].techno }}
+          {{ dossier.techno }}
         </p>
         <p
           class="w-90p border-l-2 border-solid pl-5 mt-5 mb-11"
-          :style="{ borderColor: proj[0].color }"
+          :style="{ borderColor: dossier.color }"
         >
-          {{ proj[0].description }}
+          {{ dossier.description }}
         </p>
 
-        <a :href="proj[0].site" target="_blank">
-          <div v-if="proj[0].site" class="flex items-center flex-row">
+        <a :href="dossier.site" target="_blank">
+          <div v-if="dossier.site" class="flex items-center flex-row">
             <div
               class="flex items-center justify-center goToSite mr-3 text-xl"
-              :style="{ backgroundColor: proj[0].color }"
+              :style="{ backgroundColor: dossier.color }"
             >
               ↬
             </div>
-            <div class="flex italic" :style="{ color: proj[0].color }">
-              Aller sur {{ proj[0].name }}
+            <div class="flex italic" :style="{ color: dossier.color }">
+              Aller sur {{ dossier.name }}
             </div>
           </div></a
         >
       </div>
       <div
         class="flex items-center bg-blue circle mb-10 ml-5"
-        :style="{ backgroundColor: proj[0].color }"
+        :style="{ backgroundColor: dossier.color }"
       >
         <img
-          :src="require(`@/assets/imgProjects/${proj[0].imgFirst}`)"
+          :src="require(`@/assets/imgProjects/${dossier.imgFirst}`)"
           class="relative z-10"
         />
       </div>
     </div>
     <!-- IMAGES PROJET -->
-    <div class="w-full">
+    <div v-if="dossier.length > 0" class="w-full">
       <!-- 0 -->
       <div class="w-75p text-left m-auto">
         <p
-          v-if="proj[0].projet.title_0"
+          v-if="dossier[0].projet.title_0"
           class="
             relative
             titlePage
@@ -82,23 +82,23 @@
             pb-2
           "
         >
-          {{ proj[0].projet.title_0 }}
+          {{ dossier[0].projet.title_0 }}
         </p>
       </div>
       <img
-        v-if="proj[0].projet.img_0 != null"
+        v-if="dossier[0].projet.img_0 != null"
         :src="
           require('@/assets/projects/' +
-            proj[0].slug +
+            dossier[0].slug +
             '/' +
-            proj[0].projet.img_0)
+            dossier[0].projet.img_0)
         "
         class="w-full"
       />
       <!-- 1 -->
       <div class="w-75p text-left m-auto">
         <p
-          v-if="proj[0].projet.title_1"
+          v-if="dossier[0].projet.title_1"
           class="
             relative
             titlePage
@@ -109,16 +109,16 @@
             pb-2
           "
         >
-          {{ proj[0].projet.title_1 }}
+          {{ dossier[0].projet.title_1 }}
         </p>
       </div>
       <img
-        v-if="proj[0].projet.img_1"
+        v-if="dossier[0].projet.img_1"
         :src="
           require('@/assets/projects/' +
-            proj[0].slug +
+            dossier[0].slug +
             '/' +
-            proj[0].projet.img_1)
+            dossier[0].projet.img_1)
         "
         class="w-full"
       />
@@ -126,7 +126,7 @@
       <!-- 2 -->
       <div class="w-75p text-left m-auto">
         <p
-          v-if="proj[0].projet.title_2"
+          v-if="dossier[0].projet.title_2"
           class="
             relative
             titlePage
@@ -137,16 +137,16 @@
             pb-2
           "
         >
-          {{ proj[0].projet.title_2 }}
+          {{ dossier[0].projet.title_2 }}
         </p>
       </div>
       <img
-        v-if="proj[0].projet.img_2"
+        v-if="dossier[0].projet.img_2"
         :src="
           require('@/assets/projects/' +
-            proj[0].slug +
+            dossier[0].slug +
             '/' +
-            proj[0].projet.img_2)
+            dossier[0].projet.img_2)
         "
         class="w-full"
       />
@@ -154,7 +154,7 @@
       <!-- 3 -->
       <div class="w-75p text-left m-auto">
         <p
-          v-if="proj[0].projet.title_3"
+          v-if="dossier[0].projet.title_3"
           class="
             relative
             titlePage
@@ -165,16 +165,16 @@
             pb-2
           "
         >
-          {{ proj[0].projet.title_3 }}
+          {{ dossier[0].projet.title_3 }}
         </p>
       </div>
       <img
-        v-if="proj[0].projet.img_3"
+        v-if="dossier[0].projet.img_3"
         :src="
           require('@/assets/projects/' +
-            proj[0].slug +
+            dossier[0].slug +
             '/' +
-            proj[0].projet.img_3)
+            dossier[0].projet.img_3)
         "
         class="w-full"
       />
@@ -182,7 +182,7 @@
       <!-- 4 -->
       <div class="w-75p text-left m-auto">
         <p
-          v-if="proj[0].projet.title_4"
+          v-if="dossier[0].projet.title_4"
           class="
             relative
             titlePage
@@ -193,16 +193,16 @@
             pb-2
           "
         >
-          {{ proj[0].projet.title_4 }}
+          {{ dossier[0].projet.title_4 }}
         </p>
       </div>
       <img
-        v-if="proj[0].projet.img_4"
+        v-if="dossier[0].projet.img_4"
         :src="
           require('@/assets/projects/' +
-            proj[0].slug +
+            dossier[0].slug +
             '/' +
-            proj[0].projet.img_4)
+            dossier[0].projet.img_4)
         "
         class="w-full"
       />
@@ -210,7 +210,7 @@
       <!-- 5 -->
       <div class="w-75p text-left m-auto">
         <p
-          v-if="proj[0].projet.title_5"
+          v-if="dossier[0].projet.title_5"
           class="
             relative
             titlePage
@@ -221,16 +221,16 @@
             pb-2
           "
         >
-          {{ proj[0].projet.title_5 }}
+          {{ dossier[0].projet.title_5 }}
         </p>
       </div>
       <img
-        v-if="proj[0].projet.img_5"
+        v-if="dossier[0].projet.img_5"
         :src="
           require('@/assets/projects/' +
-            proj[0].slug +
+            dossier[0].slug +
             '/' +
-            proj[0].projet.img_5)
+            dossier[0].projet.img_5)
         "
         class="w-full"
       />
@@ -238,7 +238,7 @@
       <!-- 6 -->
       <div class="w-75p text-left m-auto">
         <p
-          v-if="proj[0].projet.title_6"
+          v-if="dossier[0].projet.title_6"
           class="
             relative
             titlePage
@@ -249,16 +249,16 @@
             pb-2
           "
         >
-          {{ proj[0].projet.title_6 }}
+          {{ dossier[0].projet.title_6 }}
         </p>
       </div>
       <img
-        v-if="proj[0].projet.img_6"
+        v-if="dossier[0].projet.img_6"
         :src="
           require('@/assets/projects/' +
-            proj[0].slug +
+            dossier[0].slug +
             '/' +
-            proj[0].projet.img_6)
+            dossier[0].projet.img_6)
         "
         class="w-full"
       />
@@ -266,7 +266,7 @@
       <!-- 7 -->
       <div class="w-75p text-left m-auto">
         <p
-          v-if="proj[0].projet.title_7"
+          v-if="dossier[0].projet.title_7"
           class="
             relative
             titlePage
@@ -277,16 +277,16 @@
             pb-2
           "
         >
-          {{ proj[0].projet.title_7 }}
+          {{ dossier[0].projet.title_7 }}
         </p>
       </div>
       <img
-        v-if="proj[0].projet.img_7"
+        v-if="dossier[0].projet.img_7"
         :src="
           require('@/assets/projects/' +
-            proj[0].slug +
+            dossier[0].slug +
             '/' +
-            proj[0].projet.img_7)
+            dossier[0].projet.img_7)
         "
         class="w-full"
       />
@@ -295,19 +295,46 @@
 </template>
 
 <script>
+import data from '@/datas/data.json'
+
 export default {
   name: 'Slug',
   layout: 'page',
-  async asyncData({ params, $axios }) {
+  asyncData({ params }) {
+    return {
+      slug: params.slug,
+    }
+  },
+
+  data() {
+    return {
+      proj: data.projects,
+      dossier: null,
+    }
+  },
+  watch: {
+    slug: {
+      immediate: true,
+      handler(slug) {
+        if (slug) {
+          this.dossier = this.proj.find((f) => {
+            return f.slug === this.slug
+          })
+        }
+      },
+    },
+  },
+
+  /* async asyncData({ params, $axios }) {
     const proj = await $axios.$get(
-      `http://localhost:3004/projects/?slug=${params.slug}`
+      `http://localhost:3004/projects/?slug=${params.slug}` 
     )
     return { proj }
-  },
+  }, */
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .header {
   height: 70vh;
   min-height: 70vh;
