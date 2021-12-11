@@ -1,6 +1,7 @@
 <template>
   <div
     class="
+      overflow-y-hidden
       relative
       flex
       justify-center
@@ -20,11 +21,11 @@
         <div
           class="
             relative
-            flex
+            flex flex-col
             tablet:w-1/2
             w-full
             tablet:h-screen
-            h-40v
+            h-90v
             tablet:mt-0
             mt-10
             justify-center
@@ -38,17 +39,37 @@
               ')',
           }"
         >
+          <!-- NOM RESPONSIVE-->
+          <h3
+            class="
+              tablet:hidden
+              relative
+              z-20
+              w-80%
+              mb-10
+              uppercase
+              text-center
+              font-fontTitle
+              text-mobile-h2
+              font-bold
+              text-offwhite
+            "
+          >
+            {{ post.name }}
+          </h3>
           <img
             :src="require(`../assets/imgProjects/${post.imgFirst}`)"
-            class="w-80% z-10 pb-12"
+            class="relative w-80% z-10 tablet:pb-12 pb-20"
           />
         </div>
 
         <!-- INFOS -->
         <div
           class="
+            tablet:flex
             relative
-            flex flex-row
+            hidden
+            flex-row
             tablet:w-1/2
             w-full
             flex-nowrap
@@ -166,7 +187,7 @@
           class="
             absolute
             tablet:bottom-120
-            bottom-40
+            bottom-120
             z-50
             py-4
             px-12
