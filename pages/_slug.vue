@@ -7,6 +7,7 @@
       w-full
       bg-offwhite
       overflow-y-scroll
+      pb-20
     "
   >
     <!-- RETURN -->
@@ -27,7 +28,7 @@
     </nuxt-link>
 
     <!-- HEADER ROND -->
-    <div class="w-80% flex justify-between items-center mt-20">
+    <div class="w-80% tablet:flex hidden justify-between items-center mt-20">
       <div class="flex flex-col py-10 px-5">
         <h1 class="text-6xl font-bold" :style="{ color: dossier.color }">
           {{ dossier.name }}
@@ -67,6 +68,53 @@
         />
       </div>
     </div>
+
+    <!-- HEADER RESPONSIVE -->
+    <div class="w-full tablet:hidden flex flex-col justify-center items-center">
+      <div
+        class="flex items-center bg-blue circle mb-10"
+        :style="{ backgroundColor: dossier.color }"
+      >
+        <img
+          :src="require(`@/assets/imgProjects/${dossier.imgFirst}`)"
+          class="w-90% relative z-10 mt-32 mx-auto"
+        />
+      </div>
+
+      <div class="w-full flex flex-col pb-10 px-5">
+        <h1
+          class="text-4xl font-bold break-words"
+          :style="{ color: dossier.color }"
+        >
+          {{ dossier.name }}
+        </h1>
+
+        <p class="py-8">
+          {{ dossier.techno }}
+        </p>
+        <p
+          class="w-90p border-l-2 border-solid pl-5 mt-5 mb-11"
+          :style="{ borderColor: dossier.color }"
+        >
+          {{ dossier.description }}
+        </p>
+
+        <a :href="dossier.site" target="_blank">
+          <div v-if="dossier.site" class="flex items-center flex-row">
+            <div
+              class="flex items-center justify-center goToSite mr-3 text-xl"
+              :style="{ backgroundColor: dossier.color }"
+            >
+              ↬
+            </div>
+            <div class="flex italic" :style="{ color: dossier.color }">
+              Aller sur {{ dossier.name }}
+            </div>
+          </div></a
+        >
+      </div>
+    </div>
+
     <!-- IMAGES PROJET -->
     <div v-if="dossier.projet" class="w-full">
       <!-- 0 -->
@@ -76,7 +124,8 @@
           class="
             relative
             titlePage
-            mt-3
+            tablet:mt-3
+            mt-12
             text-4xl
             z-30
             border-b-2 border-solid border-blue
@@ -103,7 +152,8 @@
           class="
             relative
             titlePage
-            mt-3
+            tablet:mt-3
+            mt-12
             text-4xl
             z-30
             border-b-2 border-solid border-blue
@@ -131,7 +181,8 @@
           class="
             relative
             titlePage
-            mt-3
+            tablet:mt-3
+            mt-8
             text-4xl
             z-30
             border-b-2 border-solid border-blue
@@ -159,7 +210,8 @@
           class="
             relative
             titlePage
-            mt-3
+            tablet:mt-3
+            mt-12
             text-4xl
             z-30
             border-b-2 border-solid border-blue
@@ -187,7 +239,8 @@
           class="
             relative
             titlePage
-            mt-3
+            tablet:mt-3
+            mt-12
             text-4xl
             z-30
             border-b-2 border-solid border-blue
@@ -215,7 +268,8 @@
           class="
             relative
             titlePage
-            mt-3
+            tablet:mt-3
+            mt-12
             text-4xl
             z-30
             border-b-2 border-solid border-blue
@@ -243,7 +297,8 @@
           class="
             relative
             titlePage
-            mt-3
+            tablet:mt-3
+            mt-12
             text-4xl
             z-30
             border-b-2 border-solid border-blue
@@ -271,7 +326,8 @@
           class="
             relative
             titlePage
-            mt-3
+            tablet:mt-3
+            mt-12
             text-4xl
             z-30
             border-b-2 border-solid border-blue
@@ -349,19 +405,31 @@ export default {
 
 .close {
   position: fixed;
-  bottom: 62px;
-  right: 62px;
+  bottom: 20px;
+  right: 20px;
   width: max-content;
   z-index: 500;
+  @screen tablet {
+    position: fixed;
+    bottom: 62px;
+    right: 62px;
+    width: max-content;
+    z-index: 500;
+  }
 }
 .close:hover {
   animation: shake 0.3s;
   animation-iteration-count: initial;
 }
 .circle {
-  min-width: 700px;
-  min-height: 70vh;
+  min-width: 100%;
+  min-height: 50vh;
   border-radius: 0 0 350px 350px;
+  @screen tablet {
+    min-width: 700px;
+    min-height: 70vh;
+    border-radius: 0 0 350px 350px;
+  }
 }
 .goToSite {
   min-width: 30px;
