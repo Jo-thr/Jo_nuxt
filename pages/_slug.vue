@@ -25,8 +25,9 @@
     >
       ✖
     </nuxt-link>
+
     <!-- HEADER ROND -->
-    <div class="w-80p flex justify-between items-center mt-20">
+    <div class="w-80% flex justify-between items-center mt-20">
       <div class="flex flex-col py-10 px-5">
         <h1 class="text-6xl font-bold" :style="{ color: dossier.color }">
           {{ dossier.name }}
@@ -67,11 +68,11 @@
       </div>
     </div>
     <!-- IMAGES PROJET -->
-    <div v-if="dossier.length > 0" class="w-full">
+    <div v-if="dossier.projet" class="w-full">
       <!-- 0 -->
-      <div class="w-75p text-left m-auto">
+      <div class="w-75% text-left m-auto">
         <p
-          v-if="dossier[0].projet.title_0"
+          v-if="dossier.projet.title_0"
           class="
             relative
             titlePage
@@ -82,23 +83,23 @@
             pb-2
           "
         >
-          {{ dossier[0].projet.title_0 }}
+          {{ dossier.projet.title_0 }}
         </p>
       </div>
       <img
-        v-if="dossier[0].projet.img_0 != null"
+        v-if="dossier.projet.img_0 != null"
         :src="
           require('@/assets/projects/' +
-            dossier[0].slug +
+            dossier.slug +
             '/' +
-            dossier[0].projet.img_0)
+            dossier.projet.img_0)
         "
         class="w-full"
       />
       <!-- 1 -->
-      <div class="w-75p text-left m-auto">
+      <div class="w-75% text-left m-auto">
         <p
-          v-if="dossier[0].projet.title_1"
+          v-if="dossier.projet.title_1"
           class="
             relative
             titlePage
@@ -109,24 +110,24 @@
             pb-2
           "
         >
-          {{ dossier[0].projet.title_1 }}
+          {{ dossier.projet.title_1 }}
         </p>
       </div>
       <img
-        v-if="dossier[0].projet.img_1"
+        v-if="dossier.projet.img_1"
         :src="
           require('@/assets/projects/' +
-            dossier[0].slug +
+            dossier.slug +
             '/' +
-            dossier[0].projet.img_1)
+            dossier.projet.img_1)
         "
         class="w-full"
       />
 
       <!-- 2 -->
-      <div class="w-75p text-left m-auto">
+      <div class="w-75% text-left m-auto">
         <p
-          v-if="dossier[0].projet.title_2"
+          v-if="dossier.projet.title_2"
           class="
             relative
             titlePage
@@ -137,24 +138,24 @@
             pb-2
           "
         >
-          {{ dossier[0].projet.title_2 }}
+          {{ dossier.projet.title_2 }}
         </p>
       </div>
       <img
-        v-if="dossier[0].projet.img_2"
+        v-if="dossier.projet.img_2"
         :src="
           require('@/assets/projects/' +
-            dossier[0].slug +
+            dossier.slug +
             '/' +
-            dossier[0].projet.img_2)
+            dossier.projet.img_2)
         "
         class="w-full"
       />
 
       <!-- 3 -->
-      <div class="w-75p text-left m-auto">
+      <div class="w-75% text-left m-auto">
         <p
-          v-if="dossier[0].projet.title_3"
+          v-if="dossier.projet.title_3"
           class="
             relative
             titlePage
@@ -165,24 +166,24 @@
             pb-2
           "
         >
-          {{ dossier[0].projet.title_3 }}
+          {{ dossier.projet.title_3 }}
         </p>
       </div>
       <img
-        v-if="dossier[0].projet.img_3"
+        v-if="dossier.projet.img_3"
         :src="
           require('@/assets/projects/' +
-            dossier[0].slug +
+            dossier.slug +
             '/' +
-            dossier[0].projet.img_3)
+            dossier.projet.img_3)
         "
         class="w-full"
       />
 
       <!-- 4 -->
-      <div class="w-75p text-left m-auto">
+      <div class="w-75% text-left m-auto">
         <p
-          v-if="dossier[0].projet.title_4"
+          v-if="dossier.projet.title_4"
           class="
             relative
             titlePage
@@ -193,24 +194,24 @@
             pb-2
           "
         >
-          {{ dossier[0].projet.title_4 }}
+          {{ dossier.projet.title_4 }}
         </p>
       </div>
       <img
-        v-if="dossier[0].projet.img_4"
+        v-if="dossier.projet.img_4"
         :src="
           require('@/assets/projects/' +
-            dossier[0].slug +
+            dossier.slug +
             '/' +
-            dossier[0].projet.img_4)
+            dossier.projet.img_4)
         "
         class="w-full"
       />
 
       <!-- 5 -->
-      <div class="w-75p text-left m-auto">
+      <div class="w-75% text-left m-auto">
         <p
-          v-if="dossier[0].projet.title_5"
+          v-if="dossier.projet.title_5"
           class="
             relative
             titlePage
@@ -221,24 +222,24 @@
             pb-2
           "
         >
-          {{ dossier[0].projet.title_5 }}
+          {{ dossier.projet.title_5 }}
         </p>
       </div>
       <img
-        v-if="dossier[0].projet.img_5"
+        v-if="dossier.projet.img_5"
         :src="
           require('@/assets/projects/' +
-            dossier[0].slug +
+            dossier.slug +
             '/' +
-            dossier[0].projet.img_5)
+            dossier.projet.img_5)
         "
         class="w-full"
       />
 
       <!-- 6 -->
-      <div class="w-75p text-left m-auto">
+      <div class="w-75% text-left m-auto">
         <p
-          v-if="dossier[0].projet.title_6"
+          v-if="dossier.projet.title_6"
           class="
             relative
             titlePage
@@ -249,24 +250,24 @@
             pb-2
           "
         >
-          {{ dossier[0].projet.title_6 }}
+          {{ dossier.projet.title_6 }}
         </p>
       </div>
       <img
-        v-if="dossier[0].projet.img_6"
+        v-if="dossier.projet.img_6"
         :src="
           require('@/assets/projects/' +
-            dossier[0].slug +
+            dossier.slug +
             '/' +
-            dossier[0].projet.img_6)
+            dossier.projet.img_6)
         "
         class="w-full"
       />
 
       <!-- 7 -->
-      <div class="w-75p text-left m-auto">
+      <div class="w-75% text-left m-auto">
         <p
-          v-if="dossier[0].projet.title_7"
+          v-if="dossier.projet.title_7"
           class="
             relative
             titlePage
@@ -277,16 +278,16 @@
             pb-2
           "
         >
-          {{ dossier[0].projet.title_7 }}
+          {{ dossier.projet.title_7 }}
         </p>
       </div>
       <img
-        v-if="dossier[0].projet.img_7"
+        v-if="dossier.projet.img_7"
         :src="
           require('@/assets/projects/' +
-            dossier[0].slug +
+            dossier.slug +
             '/' +
-            dossier[0].projet.img_7)
+            dossier.projet.img_7)
         "
         class="w-full"
       />

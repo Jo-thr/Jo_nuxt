@@ -1,7 +1,6 @@
 <template>
   <div
     class="
-      overflow-y-hidden
       relative
       flex
       justify-center
