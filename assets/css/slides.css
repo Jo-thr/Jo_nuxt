@@ -8,7 +8,6 @@
 .slick-next {
   font-size: 0;
   line-height: 0;
-
   position: absolute;
   top: 50%;
   z-index: 5000;
@@ -156,4 +155,48 @@
   opacity: 1;
   color: #002fc7;
   content: '■';
+}
+@media (max-width: 767px) {
+  .slick-prev,
+  .slick-next {
+    display: none;
+    opacity: 0;
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    z-index: 5000;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    align-items: center !important;
+  }
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    margin: 0 2px;
+    padding: 0;
+    cursor: pointer;
+  }
+  .slick-dots li button:before {
+    font-family: 'Cormorant';
+    font-size: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    content: '⁃';
+    text-align: center;
+    opacity: 0.25;
+    color: #002fc7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }

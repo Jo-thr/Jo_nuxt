@@ -14,8 +14,27 @@
       id="shake"
       class="relative flex flex-col justify-center items-center w-full"
     >
-      <h1 class="text-white font-size">JO•THR</h1>
-      <h3 class="text-offwhite uppercase spacing tracking-widest">
+      <h1
+        class="
+          alignFont
+          font-fontTitle font-bold
+          text-center text-white
+          tablet:text-header-h1
+          text-mobile-h1
+        "
+      >
+        JO•THR
+      </h1>
+      <h3
+        class="
+          tablet:flex
+          hidden
+          text-offwhite
+          uppercase
+          spacing
+          tracking-widest
+        "
+      >
         - A front-end developper & ui designer -
       </h3>
       <img src="../assets/icons/hand-peace-white.png" class="hello" />
@@ -29,26 +48,29 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .hello {
-  opacity: 0;
-  position: absolute;
+  @apply opacity-0 absolute z-30;
   width: 60px;
-  z-index: 30;
   margin-left: 40%;
   margin-bottom: 22vh;
   transition: all 200ms ease-in-out;
 }
 
-.font-size {
-  font-size: 12rem;
-  line-height: 100%;
+.alignFont {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+
+  @screen tablet {
+    writing-mode: horizontal-tb;
+  }
 }
 
 #shake:hover > .hello {
   opacity: 1 !important;
   transform: rotate(15deg);
 }
+
 @keyframes shake {
   0% {
     transform: translate(1px, 1px) rotate(0deg);

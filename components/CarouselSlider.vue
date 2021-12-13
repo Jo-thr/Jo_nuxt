@@ -14,39 +14,22 @@
       <div
         v-for="post in posts"
         :key="post.id"
-        class="position justify-center items-center w-full"
+        class="flex position justify-center items-center w-full"
       >
-        <!-- BOUTON -->
-        <button
-          class="
-            absolute
-            bottom-120
-            z-50
-            py-4
-            px-12
-            bg-blue
-            border-white border-opacity-0 border-4
-            text-white
-            hover:cursor-pointer
-            font-bold
-            uppercase
-            hover:border-blue hover:border-4 hover:text-blue hover:bg-white
-            btnBottom
-          "
-        >
-          <nuxt-link :to="post.slug"> voir le projet</nuxt-link>
-        </button>
-
         <!-- IMAGE & BACKGROUND -->
         <div
           class="
             relative
-            flex
-            w-50p
-            h-screen
+            flex flex-col
+            tablet:w-1/2
+            w-full
+            tablet:h-screen
+            h-90v
+            tablet:mt-0
+            mt-10
             justify-center
             items-center
-            bg-indigo-100 bg-cover bg-center
+            bg-cover bg-center
           "
           :style="{
             backgroundImage:
@@ -55,46 +38,109 @@
               ')',
           }"
         >
+          <!-- NOM RESPONSIVE-->
+          <h3
+            class="
+              tablet:hidden
+              relative
+              z-20
+              w-80%
+              mb-10
+              uppercase
+              text-center
+              font-fontTitle
+              text-mobile-h2
+              font-bold
+              text-offwhite
+            "
+          >
+            {{ post.name }}
+          </h3>
           <img
             :src="require(`../assets/imgProjects/${post.imgFirst}`)"
-            class="w-80p z-10 pb-12"
+            class="relative w-80% z-10 tablet:pb-12 pb-20"
           />
         </div>
 
         <!-- INFOS -->
         <div
           class="
+            tablet:flex
             relative
-            flex flex-row
-            w-50p
+            hidden
+            flex-row
+            tablet:w-1/2
+            w-full
             flex-nowrap
             justify-center
             items-center
             pb-16
+            tablet:-mt-0
+            -mt-9
           "
         >
           <!-- COLONNE DE GAUCHE -->
-          <div class="flex flex-col w-60p justify-center items-end">
+          <div
+            class="
+              flex flex-col
+              tablet:w-3/5
+              w-90%
+              justify-center
+              tablet:items-end
+              items-center
+            "
+          >
             <!-- CATEGORIE -->
-            <div class="w-max uppercase py-4 px-8 shadowBlue ml-32 mb-0.5">
+            <div
+              class="
+                tablet:flex
+                hidden
+                w-max
+                uppercase
+                py-4
+                px-8
+                shadowBlue
+                tablet:ml-32
+                ml-0
+                mb-0.5
+                bg-offwhite
+              "
+            >
               {{ post.categorie }}
             </div>
             <!-- NOM -->
-            <h1
+            <h3
               class="
                 flex-wrap
                 w-auto
-                text-right
-                py-8
-                px-10
+                tablet:py-8
+                py-4
+                tablet:px-10
+                px-5
+                font-fontTitle
+                uppercase
                 shadowBlue
+                textTitleProj
                 text-blue
+                bg-offwhite
               "
             >
               {{ post.name }}
-            </h1>
+            </h3>
             <!-- DESCRIPTION -->
-            <div class="w-full p-5 px-7 shadowBlue text-justify mt-0.5 ml-0.5">
+            <div
+              class="
+                tablet:w-full
+                w-90%
+                p-5
+                px-7
+                shadowBlue
+                textParagraph
+                mt-0.5
+                tablet:ml-0.5
+                ml-0
+              "
+            >
               <p>{{ post.description }}</p>
             </div>
           </div>
@@ -102,8 +148,10 @@
           <!-- COLONNE DE DROITE -->
           <div
             class="
-              flex flex-col
-              w-20p
+              tablet:flex
+              hidden
+              flex-col
+              w-20%
               justify-center
               items-start
               text-left
@@ -132,6 +180,28 @@
             </div>
           </div>
         </div>
+
+        <!-- BOUTON -->
+        <button
+          class="
+            absolute
+            tablet:bottom-120
+            bottom-120
+            z-50
+            py-4
+            px-12
+            bg-blue
+            border-white border-opacity-0 border-4
+            text-white
+            hover:cursor-pointer
+            font-bold
+            uppercase
+            hover:border-blue hover:border-4 hover:text-blue hover:bg-white
+            btnBottom
+          "
+        >
+          <nuxt-link :to="post.slug"> voir le projet</nuxt-link>
+        </button>
       </div>
     </VueSlickCarousel>
   </div>
@@ -166,7 +236,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .position {
   display: flex !important;
   flex-direction: row !important;
@@ -184,5 +254,35 @@ export default {
   color: #002fc7 !important;
   font-weight: 700 !important;
   font-style: normal !important;
+}
+.textTitleProj {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: right;
+}
+.textParagraph {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: justify;
+}
+@media (max-width: 767px) {
+  .position {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .textTitleProj {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+  }
+  .textParagraph {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: justify;
+  }
 }
 </style>
