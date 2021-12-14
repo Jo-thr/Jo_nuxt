@@ -10,11 +10,27 @@
         w-full
         bg-offwhite
         h-screen
+        tablet:overflow-y-hidden
+        overflow-y-scroll
+        tablet:my-0
+        my-10
+        tablet:py-0
+        py-10
       "
     >
       <!-- CONTAINER LEFT -->
       <div
-        class="flex flex-col h-screen w-55% justify-center items-start pl-20"
+        class="
+          flex flex-col
+          tablet:h-screen
+          h-auto
+          tablet:w-55%
+          w-full
+          justify-center
+          items-start
+          tablet:pl-20
+          pl-8
+        "
       >
         <div
           class="
@@ -44,8 +60,8 @@
           class="flex flex-col container-form"
           @submit.prevent="onSubmit()"
         >
-          <div class="bg-white flex flex-row shadow-md">
-            <div class="flex flex-col w-25% p-6">
+          <div class="bg-white flex tablet:flex-row flex-col shadow-md">
+            <div class="flex flex-col tablet:w-25% w-full p-6">
               <input
                 v-model="name"
                 type="text"
@@ -54,7 +70,7 @@
                 required="required"
               />
             </div>
-            <div class="flex flex-col w-25% p-6">
+            <div class="flex flex-col tablet:w-25% w-full p-6">
               <input
                 v-model="email"
                 type="email"
@@ -63,7 +79,7 @@
                 required="required"
               />
             </div>
-            <div class="flex flex-col w-50% p-6">
+            <div class="flex flex-col tablet:w-50% w-full p-6">
               <textarea
                 v-model="message"
                 rows="4"
@@ -98,7 +114,7 @@
         </form>
       </div>
       <!-- CONTAINER RIGHT -->
-      <div class="flex h-screen w-45% bg-topography"></div>
+      <div class="tablet:flex hidden h-screen w-45% bg-topography"></div>
     </div>
   </div>
 </template>
@@ -150,8 +166,12 @@ export default {
 
 <style lang="scss" scoped>
 .container-form {
-  @apply h-20v z-30;
-  width: 180%;
+  @apply h-auto z-30;
+  width: 90%;
+  @screen tablet {
+    @apply h-20v z-30;
+    width: 180%;
+  }
 }
 .bg-topography {
   @apply bg-cover bg-no-repeat bg-center bg-opacity-5 bg-blue;
