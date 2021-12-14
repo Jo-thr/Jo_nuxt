@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed z-50">
+  <div class="fixed z-50 font-paragraph">
     <div class="fixed tablet:top-60 top-20 tablet:left-60 left-20 indexMargin">
       <router-link to="/">
         <img src="../assets/logo_jothr.png" class="logo" />
@@ -53,7 +53,7 @@
               <li class="hoverContour">Projets</li></router-link
             >
             <router-link
-              to="/"
+              to="/contact"
               class="flex flex-row items-center cursor-pointer"
             >
               <span class="text-orange text-xl mr-8">04</span>

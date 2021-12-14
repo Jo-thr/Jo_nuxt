@@ -1,5 +1,14 @@
 <template>
-  <div class="relative flex flex-col items-center w-full bg-offwhite">
+  <div
+    class="
+      relative
+      flex flex-col
+      items-center
+      w-full
+      bg-offwhite
+      font-paragraph
+    "
+  >
     <div class="container flex flex-col items-center">
       <div class="bg-blue w-full bg-header-about mt-40"></div>
       <div
@@ -18,7 +27,7 @@
       >
         Tout savoir sur moi
       </div>
-      <p class="w-70% text-justify my-14 font-paragraph text-desktop-paragraph">
+      <p class="w-70% text-justify my-14 text-desktop-paragraph">
         Depuis plusieurs années, je suis connecté professionnellement à
         l'industrie du développement Web et au design d'interfaces.<br /><br />
 
@@ -40,7 +49,7 @@
     <div class="bg-blue w-full h-60v mt-2"></div>
 
     <div class="container flex flex-col items-center">
-      <p class="w-70% text-justify my-14 font-paragraph text-desktop-paragraph">
+      <p class="w-70% text-justify my-14 text-desktop-paragraph">
         D'abord Designer d'interface, je me suis peu à peu spécialisé dans le
         développement front-end pour lequel j'ai développé une grande passion au
         point de vouloir m'y consacrer aujourd'hui : à temps plein !
@@ -65,6 +74,11 @@
 export default {
   name: 'About',
   layout: 'page',
+  head() {
+    return {
+      title: 'À propos | Jonathan Thr',
+    }
+  },
 }
 </script>
 
