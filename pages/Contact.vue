@@ -1,11 +1,12 @@
 <template>
-  <div class="font-paragraph">
+  <div>
     <div
       class="
         relative
         flex flex-row
         justify-center
         items-center
+        font-paragraph
         w-full
         bg-offwhite
         h-screen
@@ -48,12 +49,7 @@
               <input
                 v-model="name"
                 type="text"
-                class="
-                  form-control
-                  py-2
-                  pl-3
-                  border-b-2 border-blue border-solid
-                "
+                class="py-2 pl-3 border-b-2 border-blue border-solid"
                 placeholder="Votre nom & prénom"
                 required="required"
               />
@@ -62,12 +58,7 @@
               <input
                 v-model="email"
                 type="email"
-                class="
-                  form-control
-                  py-2
-                  pl-3
-                  border-b-2 border-blue border-solid
-                "
+                class="py-2 pl-3 border-b-2 border-blue border-solid"
                 placeholder="Adresse email"
                 required="required"
               />
@@ -75,22 +66,17 @@
             <div class="flex flex-col w-50% p-6">
               <textarea
                 v-model="message"
-                type="text"
                 rows="4"
-                class="
-                  form-control
-                  py-2
-                  pl-3
-                  border-b-2 border-r-2 border-blue border-solid
-                "
+                type="text"
+                class="py-2 pl-3 border-b-2 border-r-2 border-blue border-solid"
                 placeholder="Votre message"
                 required="required"
               ></textarea>
             </div>
             <hr />
-            <div v-if="isSuccess" class="success">
-              We received your submission, thank you!
-            </div>
+          </div>
+          <div v-if="isSuccess === true" class="success mt-4 -mb-10 text-blue">
+            Votre message est arrivé dans ma boite mail, merci !
           </div>
           <button
             type="submit"
@@ -122,9 +108,6 @@ import axios from 'axios'
 export default {
   name: 'Contact',
   layout: 'page',
-  props: {
-    msg: String,
-  },
   data() {
     return {
       loading: true,
@@ -141,20 +124,20 @@ export default {
   },
   methods: {
     onSubmit() {
-      const data = {
+      const formData = {
         name: this.name,
         email: this.email,
         message: this.message,
       }
       axios
-        .post('https://formspree.io/f/meqpygjr', data, {
-          headers: {
-            Accept: 'application/json',
-          },
-        })
+        .post(
+          'https://getform.io/f/aeb3677e-5246-498d-b244-623e68cd618e',
+          formData
+        )
         .then(
           (response) => {
             this.isSuccess = !!response.data.success
+            alert('Message envoyé !')
           },
           (response) => {
             // Error
