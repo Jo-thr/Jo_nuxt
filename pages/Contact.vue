@@ -24,8 +24,8 @@
           flex flex-col
           tablet:h-screen
           h-auto
-          tablet:w-55%
-          w-full
+          w-55%
+          mobile:w-full
           justify-center
           items-start
           tablet:pl-20
@@ -45,7 +45,7 @@
         >
           Contact
         </div>
-        <p class="w-90% py-20">
+        <p class="w-90% py-20 tablet:flex hidden">
           Partir d’une page blanche ou d’un cahier des charges de 100 pages
           Évoluer dans le secteur du e-commerce, du tourisme, ou de l’industrie,
           en direction d’un site internet responsive 100% administrable ou d’un
@@ -57,11 +57,11 @@
         <form
           accept-charset="UTF-8"
           method="POST"
-          class="flex flex-col container-form"
+          class="flex flex-col container-form tablet:m-0 mt-10"
           @submit.prevent="onSubmit()"
         >
           <div class="bg-white flex tablet:flex-row flex-col shadow-md">
-            <div class="flex flex-col tablet:w-25% w-full p-6">
+            <div class="flex flex-col tablet:w-1/4 w-full p-6">
               <input
                 v-model="name"
                 type="text"
@@ -70,7 +70,7 @@
                 required="required"
               />
             </div>
-            <div class="flex flex-col tablet:w-25% w-full p-6">
+            <div class="flex flex-col tablet:w-1/4 w-full p-6">
               <input
                 v-model="email"
                 type="email"
@@ -79,7 +79,7 @@
                 required="required"
               />
             </div>
-            <div class="flex flex-col tablet:w-50% w-full p-6">
+            <div class="flex flex-col tablet:w-1/2 w-full p-6">
               <textarea
                 v-model="message"
                 rows="4"
