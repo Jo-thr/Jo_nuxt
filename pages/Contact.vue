@@ -46,7 +46,7 @@
           Contact
         </div>
         <p class="w-90% py-20">
-          Partir d’une page blanche ou d’un cahier des charges de 100 pages.
+          Partir d’une page blanche ou d’un cahier des charges de 100 pages
           Évoluer dans le secteur du e-commerce, du tourisme, ou de l’industrie,
           en direction d’un site internet responsive 100% administrable ou d’un
           consumer magazine… Je peux vous accompagner sur tous les terrains.
