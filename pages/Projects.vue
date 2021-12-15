@@ -8,6 +8,7 @@
       h-screen
       w-full
       bg-offwhite
+      font-paragraph
     "
   >
     <CarouselSlider />
@@ -20,6 +21,11 @@ export default {
   name: 'Projects',
   components: { CarouselSlider },
   layout: 'page',
+  head() {
+    return {
+      title: 'Projets | Jonathan Thr',
+    }
+  },
 }
 </script>
 

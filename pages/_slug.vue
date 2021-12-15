@@ -8,6 +8,7 @@
       bg-offwhite
       overflow-y-scroll
       pb-20
+      font-paragraph
     "
   >
     <!-- RETURN -->
@@ -367,6 +368,12 @@ export default {
     return {
       proj: data.projects,
       dossier: null,
+    }
+  },
+
+  head() {
+    return {
+      title: this.dossier.name + ' | Jonathan Thr',
     }
   },
   watch: {

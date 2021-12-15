@@ -45,6 +45,11 @@
 <script>
 export default {
   layout: 'page',
+  head() {
+    return {
+      title: 'Hello Jonathan Thr',
+    }
+  },
 }
 </script>
 
