@@ -10,7 +10,11 @@
       bg-offwhite
     "
   >
-    <VueSlickCarousel v-bind="settings" class="flex w-full h-screen">
+    <VueSlickCarousel
+      v-bind="settings"
+      ref="carousel"
+      class="flex w-full h-screen"
+    >
       <div
         v-for="post in posts"
         :key="post.id"
@@ -74,134 +78,74 @@
             flex-nowrap
             justify-center
             items-center
-            pb-16
-            tablet:-mt-0
-            -mt-9
           "
         >
-          <!-- COLONNE DE GAUCHE -->
           <div
             class="
               flex flex-col
-              tablet:w-3/5
-              w-90%
               justify-center
-              tablet:items-end
-              items-center
+              items-start
+              ml-14
+              mr-14
+              px-14
+              border-l-4
+              w-full
+              h-96
+              text-blue
             "
           >
-            <!-- CATEGORIE -->
-            <div
-              class="
-                tablet:flex
-                hidden
-                w-max
-                uppercase
-                py-4
-                px-8
-                shadowBlue
-                tablet:ml-32
-                ml-0
-                mb-0.5
-                bg-offwhite
-              "
-            >
-              {{ post.categorie }}
+            <div class="flex flex-row">
+              <button @click="showPrev">
+                <img
+                  class="mr-4 hover:scale-90 transition ease-in-out delay-100"
+                  src="@/assets/icons/prev.svg"
+                />
+              </button>
+              <button @click="showNext">
+                <img src="@/assets/icons/next.svg" />
+              </button>
             </div>
-            <!-- NOM -->
+            <p class="flex uppercase pt-8 text-sm">{{ post.categorie }}</p>
             <h3
               class="
-                flex-wrap
                 w-auto
                 tablet:py-8
                 py-4
                 tablet:px-10
                 px-5
+                my-5
                 font-fontTitle
                 uppercase
-                shadowBlue
                 textTitleProj
-                text-blue
                 bg-offwhite
+                border-2 border-solid
               "
             >
               {{ post.name }}
             </h3>
-            <!-- DESCRIPTION -->
-            <div
+            <p class="text-sm" v-html="post.short_description" />
+            <button
               class="
-                tablet:w-full
-                w-90%
-                p-5
-                px-7
-                shadowBlue
-                textParagraph
-                mt-0.5
-                tablet:ml-0.5
-                ml-0
+                relative
+                mt-6
+                mr-10
+                z-50
+                py-4
+                px-12
+                bg-blue
+                border-white border-opacity-0 border-2
+                text-white
+                hover:cursor-pointer
+                font-bold
+                uppercase
+                hover:border-blue hover:border-2 hover:text-blue hover:bg-white
+                btnBottom
               "
             >
-              <p>{{ post.description }}</p>
-            </div>
-          </div>
-
-          <!-- COLONNE DE DROITE -->
-          <div
-            class="
-              tablet:flex
-              hidden
-              flex-col
-              w-20%
-              justify-center
-              items-start
-              text-left
-              ml-0.5
-            "
-          >
-            <div class="flex w-full px-6 py-4 shadowBlue mt-0.5">
-              <p><b class="text-blue">Poste :</b> {{ post.poste }}</p>
-            </div>
-            <div class="flex w-full px-6 py-4 shadowBlue mt-0.5">
-              <p><b class="text-blue">Techno :</b> {{ post.techno }}</p>
-            </div>
-            <div class="flex w-full px-6 py-4 shadowBlue mt-0.5">
-              <p><b class="text-blue">Font :</b> {{ post.font }}</p>
-            </div>
-            <div
-              v-if="post.site"
-              class="flex w-full px-6 py-4 shadowBlue mt-0.5"
-            >
-              <p>
-                <b class="text-blue">Site : </b>
-                <a :href="post.site" target="_blank" class="hoverWeb"
-                  >Aperçu <span class="text-blue font-semibold">→</span></a
-                >
-              </p>
-            </div>
+              <nuxt-link :to="post.slug"> voir le projet</nuxt-link>
+            </button>
           </div>
         </div>
-
-        <!-- BOUTON -->
-        <button
-          class="
-            absolute
-            tablet:bottom-120
-            bottom-120
-            z-50
-            py-4
-            px-12
-            bg-blue
-            border-white border-opacity-0 border-4
-            text-white
-            hover:cursor-pointer
-            font-bold
-            uppercase
-            hover:border-blue hover:border-4 hover:text-blue hover:bg-white
-            btnBottom
-          "
-        >
-          <nuxt-link :to="post.slug"> voir le projet</nuxt-link>
-        </button>
       </div>
     </VueSlickCarousel>
   </div>
@@ -223,7 +167,7 @@ export default {
     return {
       posts: datas.projects,
       settings: {
-        arrows: true,
+        arrows: false,
         dots: true,
         edgeFriction: 0.35,
         infinite: true,
@@ -233,6 +177,14 @@ export default {
       },
     }
   },
+  methods: {
+    showPrev() {
+      this.$refs.carousel.prev()
+    },
+    showNext() {
+      this.$refs.carousel.next()
+    },
+  },
 }
 </script>
 
@@ -241,31 +193,11 @@ export default {
   display: flex !important;
   flex-direction: row !important;
 }
-.shadowBlue {
-  box-shadow: 0px 0px 0px 2px #002fc7 !important;
-}
-.hoverWeb {
-  font-style: italic;
-  z-index: 6000;
-}
-.hoverWeb:hover {
-  z-index: 6000;
-  cursor: pointer !important;
-  color: #002fc7 !important;
-  font-weight: 700 !important;
-  font-style: normal !important;
-}
 .textTitleProj {
   font-size: 42px;
   font-weight: 700;
   line-height: 48px;
-  text-align: right;
-}
-.textParagraph {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  text-align: justify;
+  text-align: left;
 }
 @media (max-width: 767px) {
   .position {
@@ -277,12 +209,6 @@ export default {
     font-weight: 700;
     line-height: 36px;
     text-align: center;
-  }
-  .textParagraph {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 20px;
-    text-align: justify;
   }
 }
 </style>

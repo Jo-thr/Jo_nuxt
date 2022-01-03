@@ -117,21 +117,52 @@
     </div>
 
     <!-- IMAGES PROJET -->
-    <div v-if="dossier.projet" class="w-full">
+    <div
+      v-if="dossier.projet"
+      id="gallery"
+      class="w-full flex flex-col items-center"
+    >
+      <img
+        class="w-8 mb-40"
+        src="@/assets/icons/bottom.png"
+        @click="scrollIntoView()"
+      />
+      <!-- MISSION -->
+      <div v-if="dossier.mission" class="w-78% text-left m-auto">
+        <p
+          class="
+            relative
+            tablet:mt-3
+            mt-12
+            text-2xl
+            font-bold
+            italic
+            z-30
+            border-b-2 border-solid
+            pb-2
+          "
+          :style="{ color: dossier.color, borderColor: dossier.color }"
+        >
+          Ma mission
+        </p>
+        <p class="pt-6 mb-40 font-paragraph leading-7">{{ dossier.mission }}</p>
+      </div>
       <!-- 0 -->
-      <div class="w-75% text-left m-auto">
+      <div class="w-78% text-left m-auto">
         <p
           v-if="dossier.projet.title_0"
           class="
             relative
-            titlePage
             tablet:mt-3
             mt-12
-            text-4xl
+            text-2xl
+            font-bold
+            italic
             z-30
-            border-b-2 border-solid border-blue
+            border-b-2 border-solid
             pb-2
           "
+          :style="{ color: dossier.color, borderColor: dossier.color }"
         >
           {{ dossier.projet.title_0 }}
         </p>
@@ -147,19 +178,21 @@
         class="w-full"
       />
       <!-- 1 -->
-      <div class="w-75% text-left m-auto">
+      <div class="w-78% text-left m-auto">
         <p
           v-if="dossier.projet.title_1"
           class="
             relative
-            titlePage
             tablet:mt-3
             mt-12
-            text-4xl
+            text-2xl
+            font-bold
+            italic
             z-30
-            border-b-2 border-solid border-blue
+            border-b-2 border-solid
             pb-2
           "
+          :style="{ color: dossier.color, borderColor: dossier.color }"
         >
           {{ dossier.projet.title_1 }}
         </p>
@@ -176,19 +209,21 @@
       />
 
       <!-- 2 -->
-      <div class="w-75% text-left m-auto">
+      <div class="w-78% text-left m-auto">
         <p
           v-if="dossier.projet.title_2"
           class="
             relative
-            titlePage
             tablet:mt-3
             mt-8
-            text-4xl
+            text-2xl
+            font-bold
+            italic
             z-30
-            border-b-2 border-solid border-blue
+            border-b-2 border-solid
             pb-2
           "
+          :style="{ color: dossier.color, borderColor: dossier.color }"
         >
           {{ dossier.projet.title_2 }}
         </p>
@@ -205,19 +240,21 @@
       />
 
       <!-- 3 -->
-      <div class="w-75% text-left m-auto">
+      <div class="w-78% text-left m-auto">
         <p
           v-if="dossier.projet.title_3"
           class="
             relative
-            titlePage
             tablet:mt-3
             mt-12
-            text-4xl
+            text-2xl
+            font-bold
+            italic
             z-30
-            border-b-2 border-solid border-blue
+            border-b-2 border-solid
             pb-2
           "
+          :style="{ color: dossier.color, borderColor: dossier.color }"
         >
           {{ dossier.projet.title_3 }}
         </p>
@@ -234,19 +271,21 @@
       />
 
       <!-- 4 -->
-      <div class="w-75% text-left m-auto">
+      <div class="w-78% text-left m-auto">
         <p
           v-if="dossier.projet.title_4"
           class="
             relative
-            titlePage
             tablet:mt-3
             mt-12
-            text-4xl
+            text-2xl
+            font-bold
+            italic
             z-30
-            border-b-2 border-solid border-blue
+            border-b-2 border-solid
             pb-2
           "
+          :style="{ color: dossier.color, borderColor: dossier.color }"
         >
           {{ dossier.projet.title_4 }}
         </p>
@@ -263,19 +302,21 @@
       />
 
       <!-- 5 -->
-      <div class="w-75% text-left m-auto">
+      <div class="w-78% text-left m-auto">
         <p
           v-if="dossier.projet.title_5"
           class="
             relative
-            titlePage
             tablet:mt-3
             mt-12
-            text-4xl
+            text-2xl
+            font-bold
+            italic
             z-30
-            border-b-2 border-solid border-blue
+            border-b-2 border-solid
             pb-2
           "
+          :style="{ color: dossier.color, borderColor: dossier.color }"
         >
           {{ dossier.projet.title_5 }}
         </p>
@@ -292,19 +333,21 @@
       />
 
       <!-- 6 -->
-      <div class="w-75% text-left m-auto">
+      <div class="w-78% text-left m-auto">
         <p
           v-if="dossier.projet.title_6"
           class="
             relative
-            titlePage
             tablet:mt-3
             mt-12
-            text-4xl
+            text-2xl
+            font-bold
+            italic
             z-30
-            border-b-2 border-solid border-blue
+            border-b-2 border-solid
             pb-2
           "
+          :style="{ color: dossier.color, borderColor: dossier.color }"
         >
           {{ dossier.projet.title_6 }}
         </p>
@@ -321,19 +364,21 @@
       />
 
       <!-- 7 -->
-      <div class="w-75% text-left m-auto">
+      <div class="w-78% text-left m-auto">
         <p
           v-if="dossier.projet.title_7"
           class="
             relative
-            titlePage
             tablet:mt-3
             mt-12
-            text-4xl
+            text-2xl
+            font-bold
+            italic
             z-30
-            border-b-2 border-solid border-blue
+            border-b-2 border-solid
             pb-2
           "
+          :style="{ color: dossier.color, borderColor: dossier.color }"
         >
           {{ dossier.projet.title_7 }}
         </p>
@@ -386,6 +431,12 @@ export default {
           })
         }
       },
+    },
+  },
+  methods: {
+    scrollIntoView() {
+      const el = document.getElementById('gallery')
+      el.scrollIntoView({ behavior: 'smooth' })
     },
   },
 
@@ -443,11 +494,6 @@ export default {
   min-height: 30px;
   color: #fff;
   content: '↬';
-}
-.titlePage {
-  color: #fcfcfc;
-  text-shadow: -0.6px 0 #002fc7, 0 0.6px #002fc7, 0.6px 0 #002fc7,
-    0 -0.6px #002fc7;
 }
 @keyframes shake {
   0% {

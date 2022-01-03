@@ -240,7 +240,7 @@ export default {
   text-decoration: none;
 }
 .activeLink > li {
-  color: #002fc7;
+  color: #0123ff;
   transform: rotate(-5deg);
   text-shadow: -1px 0 #fcfcfc, 0 1px #fcfcfc, 1px 0 #fcfcfc, 0 -1px #fcfcfc;
 }
@@ -272,7 +272,7 @@ export default {
   height: 84.8vh;
   align-items: center;
   justify-content: center;
-  background-color: #002fc7;
+  background-color: #0123ff;
   transform: translateX(120%);
   transition: all 300ms ease-in;
   opacity: 0;
@@ -291,7 +291,7 @@ export default {
   animation-iteration-count: initial;
 }
 .lines {
-  background-color: #002fc7;
+  background-color: #0123ff;
   width: 100%;
   height: 3px;
   margin: 3px 0;
@@ -320,7 +320,7 @@ export default {
     height: 90.8vh;
     align-items: center;
     justify-content: center;
-    background-color: #002fc7;
+    background-color: #0123ff;
     transform: translateX(120%);
     transition: all 300ms ease-in;
     opacity: 0;
