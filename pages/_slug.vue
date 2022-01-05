@@ -90,11 +90,11 @@
           {{ dossier.name }}
         </h1>
 
-        <p class="py-8">
+        <p class="py-8 mobile:text-sm">
           {{ dossier.techno }}
         </p>
         <p
-          class="w-90p border-l-2 border-solid pl-5 mt-5 mb-11"
+          class="w-90p border-l-2 border-solid pl-5 mt-5 mb-11 mobile:text-sm"
           :style="{ borderColor: dossier.color }"
         >
           {{ dossier.description }}
@@ -108,7 +108,10 @@
             >
               ↬
             </div>
-            <div class="flex italic" :style="{ color: dossier.color }">
+            <div
+              class="flex italic mobile:text-sm"
+              :style="{ color: dossier.color }"
+            >
               Aller sur {{ dossier.name }}
             </div>
           </div></a
@@ -134,7 +137,8 @@
             relative
             tablet:mt-3
             mt-12
-            text-2xl
+            tablet:text-2xl
+            text-xl
             font-bold
             italic
             z-30
@@ -145,7 +149,9 @@
         >
           Ma mission
         </p>
-        <p class="pt-6 mb-40 font-paragraph leading-7">{{ dossier.mission }}</p>
+        <p class="pt-6 mb-40 font-paragraph leading-7 mobile:text-sm">
+          {{ dossier.mission }}
+        </p>
       </div>
       <!-- 0 -->
       <div class="w-78% text-left m-auto">
@@ -155,7 +161,8 @@
             relative
             tablet:mt-3
             mt-12
-            text-2xl
+            tablet:text-2xl
+            text-xl
             font-bold
             italic
             z-30
@@ -185,7 +192,8 @@
             relative
             tablet:mt-3
             mt-12
-            text-2xl
+            tablet:text-2xl
+            text-xl
             font-bold
             italic
             z-30
@@ -216,7 +224,8 @@
             relative
             tablet:mt-3
             mt-8
-            text-2xl
+            tablet:text-2xl
+            text-xl
             font-bold
             italic
             z-30
@@ -247,7 +256,8 @@
             relative
             tablet:mt-3
             mt-12
-            text-2xl
+            tablet:text-2xl
+            text-xl
             font-bold
             italic
             z-30
@@ -278,7 +288,8 @@
             relative
             tablet:mt-3
             mt-12
-            text-2xl
+            tablet:text-2xl
+            text-xl
             font-bold
             italic
             z-30
@@ -309,7 +320,8 @@
             relative
             tablet:mt-3
             mt-12
-            text-2xl
+            tablet:text-2xl
+            text-xl
             font-bold
             italic
             z-30
@@ -340,7 +352,8 @@
             relative
             tablet:mt-3
             mt-12
-            text-2xl
+            tablet:text-2xl
+            text-xl
             font-bold
             italic
             z-30
@@ -371,7 +384,8 @@
             relative
             tablet:mt-3
             mt-12
-            text-2xl
+            tablet:text-2xl
+            text-xl
             font-bold
             italic
             z-30

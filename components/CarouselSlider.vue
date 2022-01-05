@@ -28,9 +28,8 @@
             tablet:w-1/2
             w-full
             tablet:h-screen
-            h-90v
-            tablet:mt-0
-            mt-10
+            h-50v
+            mt-0
             justify-center
             items-center
             bg-cover bg-center
@@ -42,27 +41,9 @@
               ')',
           }"
         >
-          <!-- NOM RESPONSIVE-->
-          <h3
-            class="
-              tablet:hidden
-              relative
-              z-20
-              w-80%
-              mb-10
-              uppercase
-              text-center
-              font-fontTitle
-              text-mobile-h2
-              font-bold
-              text-offwhite
-            "
-          >
-            {{ post.name }}
-          </h3>
           <img
             :src="require(`../assets/imgProjects/${post.imgFirst}`)"
-            class="relative w-80% z-10 tablet:pb-12 pb-20"
+            class="relative w-80% z-10 pb-12 tablet:pt-0 pt-12"
           />
         </div>
 
@@ -71,7 +52,6 @@
           class="
             tablet:flex
             relative
-            hidden
             flex-row
             tablet:w-1/2
             w-full
@@ -83,23 +63,25 @@
           <div
             class="
               flex flex-col
-              justify-center
-              items-start
-              ml-14
-              mr-14
-              px-14
-              border-l-4
+              tablet:justify-center
+              justify-start
+              tablet:items-start
+              items-center
+              tablet:ml-14 tablet:mr-14
+              mr-0
+              ml-0
+              tablet:px-14
+              px-0
+              tablet:border-l-4
+              border-0
               w-full
               h-96
               text-blue
             "
           >
-            <div class="flex flex-row">
+            <div class="flex flex-row tablet:-mt-0 -mt-4">
               <button @click="showPrev">
-                <img
-                  class="mr-4 hover:scale-90 transition ease-in-out delay-100"
-                  src="@/assets/icons/prev.svg"
-                />
+                <img class="tablet:mr-4 mr-8" src="@/assets/icons/prev.svg" />
               </button>
               <button @click="showNext">
                 <img src="@/assets/icons/next.svg" />
@@ -109,6 +91,7 @@
             <h3
               class="
                 w-auto
+                max-w-full
                 tablet:py-8
                 py-4
                 tablet:px-10
@@ -123,12 +106,16 @@
             >
               {{ post.name }}
             </h3>
-            <p class="text-sm" v-html="post.short_description" />
+            <p
+              class="text-sm mobile:text-center"
+              v-html="post.short_description"
+            />
             <button
               class="
                 relative
                 mt-6
-                mr-10
+                tablet:mr-10
+                mr-0
                 z-50
                 py-4
                 px-12
