@@ -5,17 +5,17 @@
     "catchphrase": "INSPIRER, CRÉER, DÉVELOPPER.",
     "introduction": "Développeur Full-Stack & Designer Ux Freelance, je réponds à vos demandes de développement web et mobile."
   },
-  "a_propos": {
+  "about": {
     "header": {
       "title": "Jonathan Thr",
       "img": "header-about.jpg",
       "description": "Un jeune développeur aux multiples casquettes à votre service.",
-      "specialities": {
-        "0": "Front-end",
-        "1": "Back-end",
-        "2": "Ui / Ux",
-        "3": "Webdesign"
-      }
+      "specialities": [
+        { "name": "Front-end" },
+        { "name": "Back-end" },
+        { "name": "Ui / Ux" },
+        { "name": "Webdesign" }
+      ]
     },
     "bring": {
       "intro": "Plutôt cartésien et structuré, l'organisation et la solution vont de paire.",
