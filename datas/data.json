@@ -6,8 +6,53 @@
     "introduction": "Développeur Full-Stack & Designer Ux Freelance, je réponds à vos demandes de développement web et mobile."
   },
   "a_propos": {
-    "metier": "Développeur",
-    "spec": "Front-End"
+    "header": {
+      "title": "Jonathan Thr",
+      "img": "header-about.jpg",
+      "description": "Un jeune développeur aux multiples casquettes à votre service.",
+      "specialities": {
+        "0": "Front-end",
+        "1": "Back-end",
+        "2": "Ui / Ux",
+        "3": "Webdesign"
+      }
+    },
+    "bring": {
+      "intro": "Plutôt cartésien et structuré, l'organisation et la solution vont de paire.",
+      "img": "bring-img.jpg",
+      "values": [
+        {
+          "id": "01",
+          "title": "Des idées",
+          "description": "Ma créativité et ma curiosité donneront vie à vos idées pour un résultat sur-mesure."
+        },
+        {
+          "id": "02",
+          "title": "Une expérience",
+          "description": "En perpétuel veille sur les dernières technologies afin d'offrir le résultat le plus waouh"
+        },
+        {
+          "id": "03",
+          "title": "Une écoute",
+          "description": "Identifier des besoins et adopter les retours client sont essentiels à l'évolution d'un projet"
+        }
+      ]
+    },
+    "skills": {
+      "intro": "L'apprentissage s'effectue avec la curiosité et la passion, voici mes attraits professionnels du moment :",
+      "spec": [
+        { "name": "SASS" },
+        { "name": "Tailwind" },
+        { "name": "Vue.js" },
+        { "name": "React.js" },
+        { "name": "Nuxt.js" },
+        { "name": "MongoDB" },
+        { "name": "Node.js" },
+        { "name": "Laravel" },
+        { "name": "Laravel Nova" },
+        { "name": "Figma" }
+      ]
+    }
   },
 
   "reseaux": {
