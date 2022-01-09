@@ -45,7 +45,7 @@
         >
           Contact
         </div>
-        <p class="w-90% py-20 tablet:flex hidden">
+        <p class="w-90% py-14 tablet:flex hidden">
           Partir d’une page blanche ou d’un cahier des charges de 100 pages
           Évoluer dans le secteur du e-commerce, du tourisme, ou de l’industrie,
           en direction d’un site internet responsive 100% administrable ou d’un
@@ -97,7 +97,7 @@
           <button
             type="submit"
             class="
-              mt-20
+              mt-14
               py-4
               px-12
               max-w-max
