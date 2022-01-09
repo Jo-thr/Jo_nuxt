@@ -15,9 +15,11 @@
       <div
         class="
           bg-blue
-          w-full
+          tablet:w-full
+          w-80%
           bg-header-about
-          mt-52
+          tablet:mt-52
+          mt-28
           bg-cover bg-top
           border-blue border-solid border-4
         "
@@ -31,11 +33,14 @@
       <div
         class="
           bg-offwhite
-          w-70%
-          pt-12
+          tablet:w-3/4
+          w-full
+          tablet:pt-12
+          pt-8
           -mt-16
           font-fontTitle
-          text-header-h2
+          tablet:text-header-h2
+          text-mobile-h2
           uppercase
           font-bold
           text-blue
@@ -45,14 +50,21 @@
         {{ about.header.title }}
       </div>
       <div class="mt-10 w-52 border-t-2 border-solid border-blue"></div>
-      <p class="w-80 mt-10 text-desktop-paragraph">
+      <p class="tablet:w-80 w-70% mt-10 text-desktop-paragraph">
         {{ about.header.description }}
       </p>
-      <div class="flex flex-row my-16">
+      <div class="flex tablet:flex-row flex-col tablet:my-16 my-10">
         <div
           v-for="(spe, index) in about.header.specialities"
           :key="index"
-          class="flex flex-col justify-center items-center px-8"
+          class="
+            flex flex-col
+            justify-center
+            items-center
+            px-8
+            tablet:my-0
+            my-3
+          "
         >
           <div
             class="h-2 w-28 bg-center bg-cover bg-no-repeat"
@@ -61,7 +73,7 @@
                 'url(' + require('../assets/images/bar.png') + ')',
             }"
           ></div>
-          <p class="mt-2 text-blue italic">{{ spe.name }}</p>
+          <p class="tablet:mt-2 mt-1 text-blue italic">{{ spe.name }}</p>
         </div>
       </div>
     </div>
@@ -69,26 +81,30 @@
     <!-- BRING SECTION -->
 
     <div class="container flex flex-col items-center">
-      <p class="w-80 mt-14 text-desktop-paragraph">
+      <p class="tablet:w-80 w-70% mt-14 text-desktop-paragraph">
         {{ about.bring.intro }}
       </p>
       <div class="mt-10 mb-14">
         <div
           v-for="(value, index) in about.bring.values"
           :key="index"
-          class="flex flex-row items-center justify-center"
+          class="flex tablet:flex-row flex-col items-center justify-center"
         >
           <!-- LEFT CONTAINER -->
           <div
             class="
               flex flex-col
-              text-right
-              border-r-2 border-solid border-blue
+              tablet:text-right
+              text-left
+              tablet:border-r-2 tablet:border-b-0
+              border-r-0 border-b-2 border-solid border-blue
               justify-end
-              items-end
+              tablet:items-end
+              items-center
               my-10
               p-5
-              w-40
+              tablet:w-40
+              w-70%
             "
           >
             <div
@@ -111,13 +127,30 @@
             >
               <span class="-mr-1 rotate-6 transform">{{ value.id }}</span>
             </div>
-            <div class="font-fontTitle text-3xl text-blue uppercase font-bold">
+            <div
+              class="
+                font-fontTitle
+                tablet:text-3xl
+                text-2xl text-blue
+                uppercase
+                font-bold
+              "
+            >
               {{ value.title }}
             </div>
           </div>
 
           <!-- RIGHT CONTAINER -->
-          <div class="p-5 text-left w-30% text-desktop-paragraph">
+          <div
+            class="
+              tablet:p-5
+              p-2
+              text-left
+              tablet:w-1/3
+              w-70%
+              text-desktop-paragraph
+            "
+          >
             {{ value.description }}
           </div>
         </div>
@@ -134,10 +167,19 @@
           ')',
       }"
     ></div>
-    <div class="my-14 w-96 text-desktop-paragraph">
+    <div class="my-14 tablet:w-96 w-70% text-desktop-paragraph">
       {{ about.skills.intro }}
     </div>
-    <div class="flex flex-wrap items-center justify-center w-50% mx-auto">
+    <div
+      class="
+        flex flex-wrap
+        items-center
+        justify-center
+        tablet:w-1/2
+        w-70%
+        mx-auto
+      "
+    >
       <div v-for="(spec, index) in about.skills.spec" :key="index">
         <div
           class="
@@ -160,7 +202,7 @@
       </div>
     </div>
 
-    <div class="my-14 w-96 text-desktop-paragraph">
+    <div class="my-14 tablet:w-96 w-70% text-desktop-paragraph">
       {{ about.skills.skill }}
     </div>
     <div class="flex flex-wrap mb-40 w-70% items-center justify-center mx-auto">
@@ -205,14 +247,14 @@
           'url(' + require('../assets/images/topo-london.jpg') + ')',
       }"
     >
-      <p class="w-96">
+      <p class="tablet:w-96 w-70% text-desktop-paragraph">
         {{ about.footer.title }}
       </p>
-      <div class="flex flex-row justify-between w-35% mt-8">
-        <div class="w-60 py-2 px-4 bg-offwhite text-blue">
+      <div class="flex tablet:flex-row flex-col items-center w-35% mt-8">
+        <div class="w-60 mx-2 py-2 px-4 bg-offwhite text-blue tablet:mb-0 mb-4">
           {{ about.footer.coffee }}
         </div>
-        <div class="w-60 py-2 px-4 bg-offwhite text-blue">
+        <div class="w-60 mx-2 py-2 px-4 bg-offwhite text-blue">
           {{ about.footer.cv }}
         </div>
       </div>
