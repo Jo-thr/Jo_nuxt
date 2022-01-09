@@ -8,7 +8,7 @@
   "about": {
     "header": {
       "title": "Jonathan Thr",
-      "img": "header-about.jpg",
+      "img": "header-about",
       "description": "Un jeune développeur aux multiples casquettes à votre service.",
       "specialities": [
         { "name": "Front-end" },
@@ -19,7 +19,7 @@
     },
     "bring": {
       "intro": "Plutôt cartésien et structuré, l'organisation et la solution vont de paire.",
-      "img": "bring-img.jpg",
+      "img": "bring-img",
       "values": [
         {
           "id": "01",
@@ -46,12 +46,27 @@
         { "name": "Vue.js" },
         { "name": "React.js" },
         { "name": "Nuxt.js" },
-        { "name": "MongoDB" },
         { "name": "Node.js" },
         { "name": "Laravel" },
         { "name": "Laravel Nova" },
         { "name": "Figma" }
+      ],
+      "skill": "Et en ce qui concerne mes motivations externes au monde professionnel, je suis très dévoué à :",
+      "others": [
+        { "name": "Le basketball" },
+        { "name": "L'art, la photo" },
+        { "name": "Les heures de rando" },
+        { "name": "Mon chien" },
+        { "name": "Le bricolage" },
+        { "name": "La musique, piano et guitare" },
+        { "name": "L'activité sportive en général" },
+        { "name": "..." }
       ]
+    },
+    "footer": {
+      "title": "Qu'est-ce qui vous ferait plaisir, maintenant que vous en savez un peu plus sur moi ?",
+      "coffee": "Discutons ensemble autour d'un café, ou thé ?",
+      "cv": "Ton cv pourrait m'intéresser, donne !"
     }
   },
 
