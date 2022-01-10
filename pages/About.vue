@@ -95,7 +95,7 @@
             class="
               flex flex-col
               tablet:text-right
-              text-left
+              text-center
               tablet:border-r-2 tablet:border-b-0
               border-r-0 border-b-2 border-solid border-blue
               justify-end
@@ -176,7 +176,7 @@
         items-center
         justify-center
         tablet:w-1/2
-        w-70%
+        w-90%
         mx-auto
       "
     >
