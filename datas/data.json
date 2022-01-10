@@ -5,9 +5,69 @@
     "catchphrase": "INSPIRER, CRÉER, DÉVELOPPER.",
     "introduction": "Développeur Full-Stack & Designer Ux Freelance, je réponds à vos demandes de développement web et mobile."
   },
-  "a_propos": {
-    "metier": "Développeur",
-    "spec": "Front-End"
+  "about": {
+    "header": {
+      "title": "Jonathan Thr",
+      "img": "header-about",
+      "description": "Un jeune développeur aux multiples casquettes à votre service.",
+      "specialities": [
+        { "name": "Front-end" },
+        { "name": "Back-end" },
+        { "name": "Ui / Ux" },
+        { "name": "Webdesign" }
+      ]
+    },
+    "bring": {
+      "intro": "Plutôt cartésien et structuré, l'organisation et la solution vont de paire.",
+      "img": "bring-img",
+      "values": [
+        {
+          "id": "01",
+          "title": "Des idées",
+          "description": "Ma créativité et ma curiosité donneront vie à vos idées pour un résultat sur-mesure."
+        },
+        {
+          "id": "02",
+          "title": "Une expérience",
+          "description": "En perpétuel veille sur les dernières technologies afin d'offrir le résultat le plus waouh"
+        },
+        {
+          "id": "03",
+          "title": "Une écoute",
+          "description": "Identifier des besoins et adopter les retours client sont essentiels à l'évolution d'un projet"
+        }
+      ]
+    },
+    "skills": {
+      "intro": "L'apprentissage s'effectue avec la curiosité et la passion, voici mes attraits professionnels du moment :",
+      "spec": [
+        { "name": "SASS" },
+        { "name": "Tailwind" },
+        { "name": "Vue.js" },
+        { "name": "React.js" },
+        { "name": "Nuxt.js" },
+        { "name": "Node.js" },
+        { "name": "Laravel" },
+        { "name": "Laravel Nova" },
+        { "name": "Figma" }
+      ],
+      "skill": "Et en ce qui concerne mes motivations externes au monde professionnel, je suis très dévoué à :",
+      "others": [
+        { "name": "Le basketball" },
+        { "name": "L'art, la photo" },
+        { "name": "Les heures de rando" },
+        { "name": "Mon chien" },
+        { "name": "Le bricolage" },
+        { "name": "La musique, piano et guitare" },
+        { "name": "L'activité sportive en général" },
+        { "name": "..." }
+      ]
+    },
+    "footer": {
+      "title": "Qu'est-ce qui vous ferait plaisir, maintenant que vous en savez un peu plus sur moi ?",
+      "coffee": "Discutons ensemble autour d'un café, ou thé ?",
+      "cv": "Ton cv pourrait m'intéresser, donne !"
+    }
   },
 
   "reseaux": {
