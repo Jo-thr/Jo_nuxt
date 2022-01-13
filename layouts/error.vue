@@ -9,7 +9,7 @@
       text-blue text-center
     "
   >
-    <h1 v-if="error.statusCode === 404">LOOSER !!! Erreur 404</h1>
+    <h1 v-if="error.statusCode === 404" class="mb-10">LOOSER !!! Erreur 404</h1>
     <div v-else>
       <img class="max-w-3xl h-auto" src="@/assets/images/dog.png" />
       <h1 class="text-blue text-8xl font-fontTitle mt-20 mb-4 font-bold">

@@ -281,9 +281,11 @@
             {{ about.footer.coffee }}
           </button></router-link
         >
-        <button class="cta-footer tablet:ml-4 ml-0" @click="newTab()">
-          {{ about.footer.cv }}
-        </button>
+        <a href="/CV_Jonathan_Thr.pdf" target="_blank">
+          <button class="cta-footer tablet:ml-4 ml-0">
+            {{ about.footer.cv }}
+          </button></a
+        >
       </div>
     </div>
     <div class="bg-blue w-full h-10v flex justify-end items-start">
@@ -294,6 +296,7 @@
 
 <script>
 import datas from '@/datas/data.json'
+
 export default {
   name: 'About',
   layout: 'page',
@@ -306,12 +309,6 @@ export default {
     return {
       title: 'À propos | Jonathan Thr',
     }
-  },
-  methods: {
-    newTab() {
-      const pdf = '../assets/cv.pdf'
-      window.open(pdf, '_blank')
-    },
   },
 }
 </script>
