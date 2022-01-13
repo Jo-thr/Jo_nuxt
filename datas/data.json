@@ -41,23 +41,24 @@
     "skills": {
       "intro": "L'apprentissage s'effectue avec la curiosité et la passion, voici mes attraits professionnels du moment :",
       "spec": [
-        { "name": "SASS" },
-        { "name": "Tailwind" },
-        { "name": "Vue.js" },
-        { "name": "React.js" },
-        { "name": "Nuxt.js" },
-        { "name": "Node.js" },
-        { "name": "Laravel" },
-        { "name": "Laravel Nova" },
-        { "name": "Figma" }
+        { "name": "Figma", "categorie": "Design" },
+        { "name": "Laravel", "categorie": "Back" },
+        { "name": "Laravel Nova", "categorie": "Back" },
+        { "name": "Node.js", "categorie": "Back" },
+        { "name": "Nuxt.js", "categorie": "Front" },
+        { "name": "React.js", "categorie": "Front" },
+        { "name": "SASS", "categorie": "Front" },
+        { "name": "Suite Adobe", "categorie": "Design" },
+        { "name": "Tailwind", "categorie": "Front" },
+        { "name": "Vue.js", "categorie": "Front" }
       ],
       "skill": "Et en ce qui concerne mes motivations externes au monde professionnel, je suis très dévoué à :",
       "others": [
+        { "name": "L'art" },
         { "name": "Le basketball" },
-        { "name": "L'art, la photo" },
-        { "name": "Les heures de rando" },
-        { "name": "Mon chien" },
         { "name": "Le bricolage" },
+        { "name": "Les heures de rando" },
+        { "name": "La photo" },
         { "name": "La musique, piano et guitare" },
         { "name": "L'activité sportive en général" },
         { "name": "..." }

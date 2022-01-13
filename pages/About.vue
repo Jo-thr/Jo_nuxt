@@ -21,7 +21,7 @@
           tablet:mt-52
           mt-28
           bg-cover bg-top
-          border-blue border-solid border-4
+          border-blue border-solid border-8
         "
         :style="{
           backgroundImage:
@@ -53,35 +53,14 @@
       <p class="tablet:w-3/5 w-70% mt-10 text-desktop-paragraph">
         {{ about.header.description }}
       </p>
-      <div class="flex tablet:flex-row flex-col tablet:mt-36 mt-10">
-        <div
-          v-for="(spe, index) in about.header.specialities"
-          :key="index"
-          class="
-            flex flex-col
-            justify-center
-            items-center
-            px-8
-            tablet:my-0
-            my-3
-          "
-        >
-          <div
-            class="h-2 w-28 bg-center bg-cover bg-no-repeat"
-            :style="{
-              backgroundImage:
-                'url(' + require('../assets/images/bar.png') + ')',
-            }"
-          ></div>
-          <p class="tablet:mt-2 mt-1 text-blue italic">{{ spe.name }}</p>
-        </div>
-      </div>
     </div>
 
     <!-- BRING SECTION -->
 
     <div class="flex flex-col items-center">
-      <div class="flex flex-row mt-10 mb-36 justify-center w-80%">
+      <div
+        class="flex tablet:flex-row flex-col mt-10 mb-24 justify-center w-80%"
+      >
         <div
           v-for="(value, index) in about.bring.values"
           :key="index"
@@ -143,6 +122,23 @@
       </div>
     </div>
 
+    <!-- SPE -->
+    <div class="flex tablet:flex-row flex-col mb-24">
+      <div
+        v-for="(spe, index) in about.header.specialities"
+        :key="index"
+        class="flex flex-col justify-center items-center px-8 tablet:my-0 my-3"
+      >
+        <div
+          class="h-2 w-28 bg-center bg-cover bg-no-repeat"
+          :style="{
+            backgroundImage: 'url(' + require('../assets/images/bar.png') + ')',
+          }"
+        ></div>
+        <p class="tablet:mt-2 mt-1 text-blue italic">{{ spe.name }}</p>
+      </div>
+    </div>
+
     <!-- SKILLS SECTION -->
     <div
       class="w-full h-60v mt-2 bg-cover bg-center"
@@ -153,7 +149,16 @@
           ')',
       }"
     ></div>
-    <div class="my-14 tablet:w-96 w-70% text-desktop-paragraph">
+    <div
+      class="
+        tablet:mt-14 tablet:mb-14
+        mt-14
+        mb-10
+        tablet:w-96
+        w-70%
+        text-desktop-paragraph text-blue
+      "
+    >
       {{ about.skills.intro }}
     </div>
     <div
@@ -161,37 +166,67 @@
         flex flex-wrap
         items-center
         justify-center
-        tablet:w-1/2
-        w-90%
+        tablet:w-3/5
+        w-full
         mx-auto
       "
     >
-      <div v-for="(spec, index) in about.skills.spec" :key="index">
+      <div
+        v-for="(spec, index) in about.skills.spec"
+        :key="index"
+        class="
+          flex
+          bg-white
+          text-blue
+          w-32
+          h-28
+          text-left
+          tablet:m-5
+          m-2
+          p-6
+          border-solid border-blue border-2
+          hover:bg-blue hover:text-offwhite
+          group
+        "
+      >
         <div
-          class="
-            flex
-            items-center
-            justify-center
-            text-offwhite
-            w-20
-            h-20
-            m-5
-            bg-contain bg-center bg-no-repeat
-          "
-          :style="{
-            backgroundImage:
-              'url(' + require('../assets/images/square.png') + ')',
-          }"
+          class="flex flex-col items-start justify-center hover:text-offwhite"
         >
-          {{ spec.name }}
+          <p class="flex opacity-75 text-xs mb-2">
+            {{ spec.categorie }}
+          </p>
+          <div
+            class="
+              flex
+              border-blue
+              group-hover:border-offwhite
+              border-solid border-t-4
+              w-16
+            "
+          ></div>
+          <p class="mt-2 flex font-bold">
+            {{ spec.name }}
+          </p>
         </div>
       </div>
     </div>
 
-    <div class="my-14 tablet:w-96 w-70% text-desktop-paragraph">
+    <div class="mt-10 mb-8 w-52 border-t-2 border-solid border-blue"></div>
+    <div class="mt-10 mb-14 tablet:w-96 w-70% text-desktop-paragraph text-blue">
       {{ about.skills.skill }}
     </div>
-    <div class="flex flex-wrap mb-40 w-70% items-center justify-center mx-auto">
+    <div
+      class="
+        flex flex-wrap
+        mb-6
+        p-8
+        w-full
+        items-center
+        justify-center
+        mx-auto
+        bg-blue
+      "
+    >
       <div v-for="(other, index) in about.skills.others" :key="index">
         <div
           class="
@@ -200,16 +235,14 @@
             justify-center
             text-offwhite
             w-max
-            py-2
+            tablet:py-2
+            py-1
             px-4
-            mx-5
-            my-3
+            mx-2
+            tablet:my-3
+            my-0
             bg-cover bg-center bg-no-repeat
           "
-          :style="{
-            backgroundImage:
-              'url(' + require('../assets/images/square.png') + ')',
-          }"
         >
           {{ other.name }}
         </div>
@@ -218,16 +251,37 @@
 
     <!-- FOOTER -->
 
-    <div class="flex flex-col w-full h-50v mb-20 justify-center items-center">
-      <h2 class="tablet:w-3/5 w-70% font-fontTitle text-blue text-header-h2">
+    <div
+      class="
+        flex flex-col
+        w-full
+        tablet:h-50v
+        h-70v
+        mb-20
+        justify-center
+        items-center
+      "
+    >
+      <h2
+        class="
+          tablet:w-3/5
+          w-70%
+          font-fontTitle
+          text-blue
+          tablet:text-header-h2
+          text-mobile-h2
+        "
+      >
         {{ about.footer.title }}
       </h2>
       <div class="mt-10 w-52 border-t-2 border-solid border-blue"></div>
       <div class="flex tablet:flex-row flex-col items-center mt-8">
-        <button class="cta-footer mr-4">
-          {{ about.footer.coffee }}
-        </button>
-        <button class="cta-footer ml-4">
+        <router-link to="/contact" class="cursor-pointer">
+          <button class="cta-footer tablet:mr-4 mr-0 tablet:my-0 my-4">
+            {{ about.footer.coffee }}
+          </button></router-link
+        >
+        <button class="cta-footer tablet:ml-4 ml-0" @click="newTab()">
           {{ about.footer.cv }}
         </button>
       </div>
@@ -253,6 +307,12 @@ export default {
       title: 'À propos | Jonathan Thr',
     }
   },
+  methods: {
+    newTab() {
+      const pdf = '../assets/cv.pdf'
+      window.open(pdf, '_blank')
+    },
+  },
 }
 </script>
 
@@ -261,7 +321,7 @@ export default {
   height: 420px;
 }
 .cta-footer {
-  @apply text-blue px-16 py-4 bg-offwhite border-2 border-solid border-blue text-center cursor-pointer;
+  @apply text-blue tablet:px-16 px-8 py-4 bg-offwhite border-2 border-solid border-blue text-center cursor-pointer;
   -webkit-box-shadow: 8px 8px 0 0 #0123ff;
   -moz-box-shadow: 8px 8px 0 0 #0123ff;
   box-shadow: 8px 8px 0 0 #0123ff;
