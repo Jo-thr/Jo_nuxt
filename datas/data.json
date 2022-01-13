@@ -9,7 +9,7 @@
     "header": {
       "title": "Jonathan Thr",
       "img": "header-about",
-      "description": "Un jeune développeur front-end aux multiples casquettes à votre service. Plutôt cartésien et structuré, l'organisation et la solution vont de paire.",
+      "description": "Jeune développeur front-end aux multiples casquettes à votre service, je peux vous aider à enrichir une idée, à la développer et la mettre en exergue. Je suis naturellement cartésien et structuré, l'organisation et la solution pour votre projet iront de pair.",
       "specialities": [
         { "name": "Front-end" },
         { "name": "Back-end" },
@@ -29,12 +29,12 @@
         {
           "id": "02",
           "title": "Une expérience",
-          "description": "En perpétuel veille sur les dernières technologies afin d'offrir le résultat le plus waouh"
+          "description": "En perpétuelle veille sur les dernières technologies afin d'offrir le résultat le plus waouh !"
         },
         {
           "id": "03",
           "title": "Une écoute",
-          "description": "Identifier des besoins et adopter les retours client sont essentiels à l'évolution d'un projet"
+          "description": "Identifier des besoins et adopter les retours client sont nécessaires à l'évolution d'un projet."
         }
       ]
     },
@@ -84,7 +84,7 @@
       "name": "France TV Lab",
       "categorie": "Développement Front",
       "short_description": "Tout le monde connais France TV,<br>mais qu'est-ce France TV Lab ?",
-      "description": "France TV Lab permet aux partenaires agences et annonceurs de prendre la parole différemment autour des piliers fondateurs de la marque media que sont la télévision et le digital. Celle-ci met en avant toute l'innovation chez France Télévisions : AR, VR, son binaural, IA et data sont au service de la narration. Testez avec eux !",
+      "description": "France TV Lab permet aux partenaires agences et annonceurs de prendre la parole différemment autour des piliers fondateurs de la marque média que sont la télévision et le digital. Celle-ci met en avant toute l'innovation chez France Télévisions : AR, VR, son binaural, IA et data sont au service de la narration. Testez avec eux !",
       "imgBgColor": "bg-FTV",
       "imgFirst": "FTV-MOCKUP.png",
       "font": "France Tv Lab",
@@ -107,8 +107,8 @@
       "slug": "parisshopping",
       "name": "Paris Shopping",
       "categorie": "Webdesign & Ui",
-      "short_description": "Le e-shop qui références uniquement<br>les boutiques parisiennes indépendantes.",
-      "description": "Paris.Shopping met à l’honneur les meilleures boutiques et marques parisiennes, et propose chaque semaine LA sélection des produits préférés des parisiens : les plus stylés, les plus tendance, les plus so chic, bref… les plus parisiens. Pour que chacun, qu’il vienne en voisin ou depuis l’autre bout du monde, puisse accéder aux meilleures adresses de shopping. Et à l’esprit de Paris.",
+      "short_description": "Le e-shop qui référence uniquement<br>les boutiques parisiennes indépendantes.",
+      "description": "Paris.Shopping met à l’honneur les meilleures boutiques et marques parisiennes, et propose chaque semaine LA sélection des produits préférés des Parisiens : les plus stylés, les plus tendances, les plus so chic, bref… les plus parisiens. Pour que chacun, qu’ils viennent en voisin ou depuis l’autre bout du monde, puisse accéder aux meilleures adresses de shopping. Et à l’esprit de Paris.",
       "imgBgColor": "bg-PPS",
       "imgFirst": "PARIS-SHOPPING-MOCKUP.png",
       "font": "Radikal",
@@ -184,7 +184,7 @@
       "techno": "Vue.js, Tailwind",
       "site": "https://www.kerastase.fr",
       "color": "#DF9993",
-      "mission": "Développement du nouveau site vitrine concernant la gamme Chroma Absolut destinée aux particuliers et aux professionnels. Ce site est consultable seulement en salon de coiffure. J’ai développer celle-ci en Vue.js accompagnée de Tailwinds. Pas de back-office à mettre en place.",
+      "mission": "Développement du nouveau site vitrine concernant la gamme Chroma Absolut destinée aux particuliers et aux professionnels. Ce site est consultable seulement en salon de coiffure. J’ai développé celle-ci en Vue.js accompagnée de Tailwinds. Pas de back-office à mettre en place.",
       "projet": {
         "img_0": "00-KERA.png",
         "title_0": "Storybook",
@@ -198,7 +198,7 @@
       "name": "One4You",
       "categorie": "Webdesign & Ui",
       "short_description": "Faites vos achats en ligne, et recevez <br>une partie en cashback, easy non ?",
-      "description": "En charge de la gestion globale de l’identité visuelle de One4You. J'assure la cohérence et construis l’image de One4You, la fait évoluer dans le respect des contraintes économiques et des objectifs stratégiques et commerciaux définis par la direction générale. Je conçois et coordonne l’ensemble des supports qui véhiculent l’identité visuelle de One4You, ainsi que des marques, enseignes et jeunes talents qui lui sont rattachées.",
+      "description": "En charge de la gestion globale de l’identité visuelle de One4You. J'assure la cohérence et construis l’image de One4You, la fait évoluer dans le respect des contraintes économiques et des objectifs stratégiques et commerciaux définis par la direction générale. Je conçois et coordonne l’ensemble des supports qui véhiculent l’identité visuelle de One4You, ainsi que des marques, enseignes et jeunes talents qui lui sont rattachés.",
       "imgBgColor": "bg-O4Y",
       "imgFirst": "ONE4YOU-MOCKUP.png",
       "font": "Campton",
@@ -227,8 +227,8 @@
       "slug": "maelyspdl",
       "name": "Maëlys PDL",
       "categorie": "Développement Full-Stack",
-      "short_description": "Elle anticipe les tendances de la mode<br>et imprime sa griffe à vos futurs vêtements",
-      "description": "Née Nantaise, et revendiquant la part de Bretagne en elle, Maëlys atterri à Paris suite à ces études de Stylisme. Après son passage à L’Atelier Chardon Savard, elle se passionne pour l’art fin, l’élégance, le délicat, c’est donc le milieu du Luxe qui s’impose à elle, puis s'installe à Genève. Elle partage son temps entre des projets de couture, de broderie, de dessin, sa passion pour le monde animal et son Piano. Niveau mode, elle a un attrait pour tout ce qui est ancien, une attirance pour les belles coupes, et un travail du textile très particulier. Notamment pour la broderie.",
+      "short_description": "Elle anticipe les tendances de la mode,<br>imprime sa griffe à vos futurs vêtements",
+      "description": "Née Nantaise, et revendiquant la part de Bretagne en elle, Maëlys atterrie à Paris suite à ces études de Stylisme. Après son passage à L’Atelier Chardon Savard, elle se passionne pour l’art fin, l’élégance, le délicat, c’est donc le milieu du Luxe qui s’impose à elle, puis s'installe à Genève. Elle partage son temps entre des projets de couture, de broderie, de dessin, sa passion pour le monde animal et son Piano. Niveau mode, elle a un attrait pour tout ce qui est ancien, une attirance pour les belles coupes, et un travail du textile très particulier. Notamment pour la broderie.",
       "imgBgColor": "bg-MAE",
       "imgFirst": "MAELYS-MOCKUP.png",
       "font": "Lato",
@@ -236,7 +236,7 @@
       "techno": "React.js, Figma",
       "site": "https://www.maelys-pdl.fr",
       "color": "#E2BF8F",
-      "mission": "Création et développement d’un portfolio pour une styliste, avec de la mise en avant de projets, téléchargement de cv et présentation de soi. Contrainte chromatique sur des tons beiges et marrons.",
+      "mission": "Création et développement d’un portfolio pour une styliste, avec de la mise en avant de projets, téléchargement de cv et présentation de soi. Contrainte chromatique sur des tons beige et marron.",
       "projet": {
         "img_0": "00-MAE.png",
         "title_0": "Storybook",
@@ -251,7 +251,7 @@
       "slug": "joweather",
       "name": "Jo Weather",
       "categorie": "Développement Full-Stack",
-      "short_description": "Accédez à votre Station Météo Intelligente.<br>Elle vous livre les secrets de votre environnement",
+      "short_description": "Accédez à votre Station Météo Intelligente.<br> Elle vous livre les secrets de votre environnement.",
       "description": "Cette application météo utilisera la géolocalisation HTML pour détecter automatiquement la latitude et la longitude de l'utilisateur, puis utilisera ces coordonnées pour déterminer la météo à l'aide d'une API. Comme vous l'avez probablement vu dans l'aperçu ci-dessus, nous allons afficher la température actuelle, un bref résumé des jours à venir et les coordonnées en fonction de l'emplacement de l'utilisateur.",
       "imgBgColor": "bg-JW",
       "imgFirst": "WEATHER-MOCKUP.png",
@@ -260,7 +260,7 @@
       "techno": "Vue.js, Adobe XD",
       "site": "https://jo-thr.github.io/Jo.Weather/",
       "color": "#FB723F",
-      "mission": "Développement d’une station météo en Vue.js faisant des appels à une API externe et une demande de géolocalisation. Projet personnel d’il y a quelques année pour se former à ce framework.",
+      "mission": "Développement d’une station météo en Vue.js faisant des appels à une API externe et une demande de géolocalisation. Projet personnel d’il y a quelques années pour se former à ce framework.",
       "projet": {
         "img_0": "00-JW.png",
         "title_0": "Storybook",
@@ -274,7 +274,7 @@
       "name": "Village Map",
       "categorie": "Webdesign & Ui",
       "short_description": "Pourquoi faire ces achats quand on a<br>tout ce qu'il nous faut en bas de chez soi ?",
-      "description": "Village Map, l’e-shop de Paris, met à l’honneur les meilleures boutiques indépendantes et commerces de proximité parisiens. Village Map propose chaque semaine LA sélection des produits préférés des parisiens : les plus stylés, les plus tendance, les plus so chic, bref… les plus parisiens. Pour que chacun, qu’il vienne en voisin ou depuis l’autre bout du monde, puisse accéder aux meilleures adresses de shopping. Et à l’esprit de Paris.",
+      "description": "Village Map, l’e-shop de Paris, met à l’honneur les meilleures boutiques indépendantes et commerces de proximité parisiens. Village Map propose chaque semaine LA sélection des produits préférés des Parisiens : les plus stylés, les plus tendances, les plus so chic, bref… les plus parisiens. Pour que chacun, qu’ils viennent en voisin ou depuis l’autre bout du monde, puisse accéder aux meilleures adresses de shopping. Et à l’esprit de Paris.",
       "imgBgColor": "bg-VM",
       "imgFirst": "VILLAGEMAP-MOCKUP.png",
       "font": "Lato",
