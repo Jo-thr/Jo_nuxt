@@ -89,16 +89,16 @@
       "imgFirst": "FTV-MOCKUP.png",
       "font": "France Tv Lab",
       "poste": "Developpeur Front-end",
-      "techno": "Nuxt.js, Tailwind, Laravel 7",
+      "techno": "Nuxt.js, Tailwind, Laravel 7, Docker",
       "site": "https://www.francetvlab.fr",
       "color": "#0123FF",
       "mission": "Refondre le site de France TV Lab plus intuitive, correspondant à de nombreux critères d'accessibilités et de vidéos interactives (leur domaine). Utilisation du framework Vue.js accompagné de tailwinds pour le front et de Laravel Nova pour le back.",
       "projet": {
-        "img_1": "01-FTV.png",
+        "img_1": "00-FTV.png",
         "title_1": "Storybook",
-        "img_2": "02-FTV.png",
+        "img_2": "01-FTV.png",
         "title_2": "Rubrique Page",
-        "img_3": "03-FTV.png",
+        "img_3": "02-FTV.png",
         "title_3": "Article Page"
       }
     },
@@ -145,7 +145,30 @@
       "techno": "Nuxt.js, Tailwind, Laravel 7",
       "site": "https://wedigital.garden",
       "color": "#36A364",
-      "projet": {}
+      "mission": "Refondre le site de WeDigital.Garden avec l’utilisation du framework Vue.js accompagné de tailwinds pour le front et de Laravel Nova pour le back-office pour l’ajout de nouvelles fonctionnalités, création de nouvelles pages du site ainsi que la gestion du changement de langue.",
+      "projet": {
+        "img_0": "00-WDG.png",
+        "title_0": "Storybook",
+        "img_1": "01-WDG.png",
+        "title_1": "Home Page",
+        "img_2": "02-WDG.png",
+        "title_2": "Methods Page",
+
+        "img_3": "03-WDG.png",
+        "title_3": "Team Page",
+
+        "img_4": "04-WDG.png",
+        "title_4": "Culture Page",
+
+        "img_5": "05-WDG.png",
+        "title_5": "Projects Page",
+
+        "img_6": "06-WDG.png",
+        "title_6": "Project Page",
+
+        "img_7": "07-WDG.png",
+        "title_7": "Mention Page"
+      }
     },
     {
       "id": 4,
@@ -161,7 +184,13 @@
       "techno": "Vue.js, Tailwind",
       "site": "https://www.kerastase.fr",
       "color": "#DF9993",
-      "projet": {}
+      "mission": "Développement du nouveau site vitrine concernant la gamme Chroma Absolut destinée aux particuliers et aux professionnels. Ce site est consultable seulement en salon de coiffure. J’ai développer celle-ci en Vue.js accompagnée de Tailwinds. Pas de back-office à mettre en place.",
+      "projet": {
+        "img_0": "00-KERA.png",
+        "title_0": "Storybook",
+        "img_1": "01-KERA.png",
+        "title_1": "Consumer Page & Profesionnal Page"
+      }
     },
     {
       "id": 5,
@@ -177,6 +206,7 @@
       "techno": "Prestashop, Suite adobe",
       "site": "https://www.one4you.com",
       "color": "#50E1C3",
+      "mission": "Création de toute l’identité visuelle de One4You, élaboration d’une charte graphique pour ensuite créer tous les supports nécessaires. Création de supports print (carte de visite, présentations commerciales, packaging, ..) et de supports web (maquettes et développement du site e-commerce, emailing, support de contact, vidéo, réseaux sociaux).",
       "projet": {
         "img_0": "00-O4Y.png",
         "title_0": "Storybook",
@@ -206,6 +236,7 @@
       "techno": "React.js, Figma",
       "site": "https://www.maelys-pdl.fr",
       "color": "#E2BF8F",
+      "mission": "Création et développement d’un portfolio pour une styliste, avec de la mise en avant de projets, téléchargement de cv et présentation de soi. Contrainte chromatique sur des tons beiges et marrons.",
       "projet": {
         "img_0": "00-MAE.png",
         "title_0": "Storybook",
@@ -229,8 +260,13 @@
       "techno": "Vue.js, Adobe XD",
       "site": "https://jo-thr.github.io/Jo.Weather/",
       "color": "#FB723F",
-
-      "projet": {}
+      "mission": "Développement d’une station météo en Vue.js faisant des appels à une API externe et une demande de géolocalisation. Projet personnel d’il y a quelques année pour se former à ce framework.",
+      "projet": {
+        "img_0": "00-JW.png",
+        "title_0": "Storybook",
+        "img_1": "01-JW.png",
+        "title_1": "Home Page"
+      }
     },
     {
       "id": 10,
@@ -245,6 +281,7 @@
       "poste": "Responsable Artistique",
       "techno": "Wordpress",
       "color": "#027D8C",
+      "mission": "Création de toute l’identité visuelle de Village Map, élaboration d’une charte graphique pour ensuite créer tous les supports nécessaires. Création de supports print (carte de visite, présentations commerciales, packaging, ..) et de supports web (maquettes et développement du site e-commerce, emailing, support de contact, vidéo, réseaux sociaux).",
       "projet": {
         "img_0": "00-VM.png",
         "title_0": "Storybook",
