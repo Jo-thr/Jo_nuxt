@@ -50,10 +50,10 @@
         {{ about.header.title }}
       </div>
       <div class="mt-10 w-52 border-t-2 border-solid border-blue"></div>
-      <p class="tablet:w-80 w-70% mt-10 text-desktop-paragraph">
+      <p class="tablet:w-3/5 w-70% mt-10 text-desktop-paragraph">
         {{ about.header.description }}
       </p>
-      <div class="flex tablet:flex-row flex-col tablet:my-16 my-10">
+      <div class="flex tablet:flex-row flex-col tablet:mt-36 mt-10">
         <div
           v-for="(spe, index) in about.header.specialities"
           :key="index"
@@ -80,30 +80,24 @@
 
     <!-- BRING SECTION -->
 
-    <div class="container flex flex-col items-center">
-      <p class="tablet:w-80 w-70% mt-14 text-desktop-paragraph">
-        {{ about.bring.intro }}
-      </p>
-      <div class="mt-10 mb-14">
+    <div class="flex flex-col items-center">
+      <div class="flex flex-row mt-10 mb-36 justify-center w-80%">
         <div
           v-for="(value, index) in about.bring.values"
           :key="index"
-          class="flex tablet:flex-row flex-col items-center justify-center"
+          class="flex flex-col items-center justify-center"
         >
           <!-- LEFT CONTAINER -->
           <div
             class="
               flex flex-col
-              tablet:text-right
               text-center
-              tablet:border-r-2 tablet:border-b-0
               border-r-0 border-b-2 border-solid border-blue
-              justify-end
-              tablet:items-end
+              justify-center
               items-center
               my-10
               p-5
-              tablet:w-40
+              tablet:w-4/5
               w-70%
             "
           >
@@ -127,15 +121,7 @@
             >
               <span class="-mr-1 rotate-6 transform">{{ value.id }}</span>
             </div>
-            <div
-              class="
-                font-fontTitle
-                tablet:text-3xl
-                text-2xl text-blue
-                uppercase
-                font-bold
-              "
-            >
+            <div class="font-fontTitle tablet:text-3xl text-2xl text-blue py-2">
               {{ value.title }}
             </div>
           </div>
@@ -143,11 +129,11 @@
           <!-- RIGHT CONTAINER -->
           <div
             class="
-              tablet:p-5
-              p-2
+              tablet:px-8 tablet:py-0
+              py-1
+              px-2
               text-left
-              tablet:w-1/3
-              w-70%
+              w-90%
               text-desktop-paragraph
             "
           >
@@ -231,33 +217,23 @@
     </div>
 
     <!-- FOOTER -->
-    <div
-      class="
-        flex flex-col
-        w-full
-        h-50v
-        mb-20
-        bg-cover bg-no-repeat bg-center
-        justify-center
-        items-center
-        text-offwhite text-desktop-paragraph
-      "
-      :style="{
-        backgroundImage:
-          'url(' + require('../assets/images/topo-london.jpg') + ')',
-      }"
-    >
-      <p class="tablet:w-96 w-70% text-desktop-paragraph">
+
+    <div class="flex flex-col w-full h-50v mb-20 justify-center items-center">
+      <h2 class="tablet:w-3/5 w-70% font-fontTitle text-blue text-header-h2">
         {{ about.footer.title }}
-      </p>
-      <div class="flex tablet:flex-row flex-col items-center w-35% mt-8">
-        <div class="w-60 mx-2 py-2 px-4 bg-offwhite text-blue tablet:mb-0 mb-4">
+      </h2>
+      <div class="mt-10 w-52 border-t-2 border-solid border-blue"></div>
+      <div class="flex tablet:flex-row flex-col items-center mt-8">
+        <button class="cta-footer mr-4">
           {{ about.footer.coffee }}
-        </div>
-        <div class="w-60 mx-2 py-2 px-4 bg-offwhite text-blue">
+        </button>
+        <button class="cta-footer ml-4">
           {{ about.footer.cv }}
-        </div>
+        </button>
       </div>
+    </div>
+    <div class="bg-blue w-full h-10v flex justify-end items-start">
+      <img src="../assets/icons/hand-peace-blue.png" class="hello" />
     </div>
   </div>
 </template>
@@ -283,5 +259,68 @@ export default {
 <style lang="scss" scoped>
 .bg-header-about {
   height: 420px;
+}
+.cta-footer {
+  @apply text-blue px-16 py-4 bg-offwhite border-2 border-solid border-blue text-center cursor-pointer;
+  -webkit-box-shadow: 8px 8px 0 0 #0123ff;
+  -moz-box-shadow: 8px 8px 0 0 #0123ff;
+  box-shadow: 8px 8px 0 0 #0123ff;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.3s;
+  text-decoration: none;
+
+  &:hover {
+    -webkit-box-shadow: 0 0 0 8px #0123ff;
+    -moz-box-shadow: 0 0 0 8px #0123ff;
+    box-shadow: 0 0 0 8px #0123ff;
+    animation: shake 0.3s;
+    animation-iteration-count: initial;
+  }
+}
+.hello {
+  @apply opacity-100 relative z-30 mr-10;
+  width: 60px;
+  top: -70px;
+  transform: rotate(15deg);
+  &:hover {
+    transform: rotate(15deg);
+    animation: shake 0.3s;
+    animation-iteration-count: initial;
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 </style>

@@ -9,7 +9,7 @@
     "header": {
       "title": "Jonathan Thr",
       "img": "header-about",
-      "description": "Un jeune développeur aux multiples casquettes à votre service.",
+      "description": "Un jeune développeur front-end aux multiples casquettes à votre service. Plutôt cartésien et structuré, l'organisation et la solution vont de paire.",
       "specialities": [
         { "name": "Front-end" },
         { "name": "Back-end" },
@@ -65,8 +65,8 @@
     },
     "footer": {
       "title": "Qu'est-ce qui vous ferait plaisir, maintenant que vous en savez un peu plus sur moi ?",
-      "coffee": "Discutons ensemble autour d'un café, ou thé ?",
-      "cv": "Ton cv pourrait m'intéresser, donne !"
+      "coffee": "Discuter, prendre un café",
+      "cv": "Interressant, voici mon cv "
     }
   },
 
