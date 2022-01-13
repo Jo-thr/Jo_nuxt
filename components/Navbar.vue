@@ -64,7 +64,7 @@
       </div>
       <div
         class="
-          w-40p
+          w-40%
           h-60v
           tablet:flex
           hidden
@@ -74,7 +74,7 @@
           p-12
         "
       >
-        <ul class="leading-6 text-xl text-left">
+        <ul class="leading-6 text-lg text-left">
           <li class="p-6">Je veux lancer <br />mon site e-commerce</li>
           <li class="p-6">Je veux refondre ou <br />développer mon site</li>
 
@@ -82,8 +82,8 @@
             Je veux créer ou enrichir <br />mon identité visuelle
           </li>
           <router-link
-            to="/"
-            class="text-3xl font-bold flex flex-row items-center"
+            to="/contact"
+            class="text-2xl font-bold flex flex-row items-center"
             ><span class="text-orange text-3xl mr-2 ml-6">→</span>
             <li class="p-6">
               Il est temps de prendre <br />un café ensemble alors !
