@@ -72,7 +72,7 @@
               ml-0
               tablet:px-14
               px-0
-              tablet:border-l-4
+              tablet:border-l-6
               border-0
               w-full
               h-96
@@ -112,6 +112,7 @@
             />
             <button
               class="
+                hover:animate-wizz
                 relative
                 mt-6
                 tablet:mr-10
@@ -120,12 +121,12 @@
                 py-4
                 px-12
                 bg-blue
-                border-white border-opacity-0 border-2
+                border-white border-opacity-0 border-6
                 text-white
                 hover:cursor-pointer
                 font-bold
                 uppercase
-                hover:border-blue hover:border-2 hover:text-blue hover:bg-white
+                hover:border-blue hover:border-6 hover:text-blue hover:bg-white
                 btnBottom
               "
             >
@@ -178,24 +179,23 @@ export default {
 <style lang="scss" scoped>
 .position {
   display: flex !important;
-  flex-direction: row !important;
+  flex-direction: column !important;
+  @screen tablet {
+    display: flex !important;
+    flex-direction: row !important;
+  }
 }
 .textTitleProj {
-  font-size: 42px;
+  font-size: 30px;
   font-weight: 700;
-  line-height: 48px;
-  text-align: left;
-}
-@media (max-width: 767px) {
-  .position {
-    display: flex !important;
-    flex-direction: column !important;
-  }
-  .textTitleProj {
-    font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+
+  @screen tablet {
+    font-size: 42px;
     font-weight: 700;
-    line-height: 36px;
-    text-align: center;
+    line-height: 48px;
+    text-align: left;
   }
 }
 </style>

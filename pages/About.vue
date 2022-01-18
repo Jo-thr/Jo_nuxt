@@ -277,19 +277,31 @@
       <div class="mt-10 w-52 border-t-2 border-solid border-blue"></div>
       <div class="flex tablet:flex-row flex-col items-center mt-8">
         <router-link to="/contact" class="cursor-pointer">
-          <button class="cta-footer tablet:mr-4 mr-0 tablet:my-0 my-4">
+          <button
+            class="
+              cta-footer
+              tablet:mr-4
+              mr-0
+              tablet:my-0
+              my-4
+              hover:animate-wizz
+            "
+          >
             {{ about.footer.coffee }}
           </button></router-link
         >
         <a href="/CV_Jonathan_Thr.pdf" target="_blank">
-          <button class="cta-footer tablet:ml-4 ml-0">
+          <button class="cta-footer tablet:ml-4 ml-0 hover:animate-wizz">
             {{ about.footer.cv }}
           </button></a
         >
       </div>
     </div>
     <div class="bg-blue w-full h-10v flex justify-end items-start">
-      <img src="../assets/icons/hand-peace-blue.png" class="hello" />
+      <img
+        src="../assets/icons/hand-peace-blue.png"
+        class="hello hover:animate-wizz"
+      />
     </div>
   </div>
 </template>
@@ -330,8 +342,6 @@ export default {
     -webkit-box-shadow: 0 0 0 8px #0123ff;
     -moz-box-shadow: 0 0 0 8px #0123ff;
     box-shadow: 0 0 0 8px #0123ff;
-    animation: shake 0.3s;
-    animation-iteration-count: initial;
   }
 }
 .hello {
@@ -341,43 +351,6 @@ export default {
   transform: rotate(15deg);
   &:hover {
     transform: rotate(15deg);
-    animation: shake 0.3s;
-    animation-iteration-count: initial;
-  }
-}
-@keyframes shake {
-  0% {
-    transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    transform: translate(1px, -2px) rotate(-1deg);
   }
 }
 </style>

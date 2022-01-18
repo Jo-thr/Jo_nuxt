@@ -80,6 +80,24 @@ module.exports = {
         '90v': '90vh',
         screen: '100vh',
       },
+      animation: {
+        wizz: 'shake 0.3s',
+      },
+      keyframes: {
+        shake: {
+          '0%': { transform: 'translate(1px, 1px)' + 'rotate(0deg)' },
+          '10%': { transform: 'translate(-1px, -2px)' + 'rotate(0deg)' },
+          '20%': { transform: 'translate(-3px, 0px)' + 'rotate(0deg)' },
+          '30%': { transform: 'translate(3px, 2px)' + 'rotate(0deg)' },
+          '40%': { transform: 'translate(1px, -1px)' + 'rotate(0deg)' },
+          '50%': { transform: 'translate(-1px, 2px)' + 'rotate(0deg)' },
+          '60%': { transform: 'translate(-3px, 1px)' + 'rotate(0deg)' },
+          '70%': { transform: 'translate(3px, 1px)' + 'rotate(0deg)' },
+          '80%': { transform: 'translate(-1px, -1px)' + 'rotate(0deg)' },
+          '90%': { transform: 'translate(1px, 2px)' + 'rotate(0deg)' },
+          '100%': { transform: 'translate(1px, -2px)' + 'rotate(0deg)' },
+        },
+      },
     },
     borderWidth: {
       DEFAULT: '1px',
@@ -105,6 +123,7 @@ module.exports = {
       textDecoration: ['hover', 'focus'],
       scale: ['hover', 'focus'],
       borderWidth: ['hover', 'focus'],
+      animation: ['hover', 'focus'],
     },
   },
   plugins: [percentageWidth],

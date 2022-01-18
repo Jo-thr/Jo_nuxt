@@ -16,6 +16,7 @@
       to="/projects"
       class="
         close
+        hover:animate-wizz
         border-blue border-solid border-6
         px-3
         py-1
@@ -100,7 +101,7 @@
           {{ dossier.description }}
         </p>
 
-        <a :href="dossier.site" target="_blank">
+        <a :href="dossier.site" target="_blank" class="hover:animate-wizz">
           <div v-if="dossier.site" class="flex items-center flex-row">
             <div
               class="flex items-center justify-center goToSite mr-3 text-xl"
@@ -453,13 +454,6 @@ export default {
       el.scrollIntoView({ behavior: 'smooth' })
     },
   },
-
-  /* async asyncData({ params, $axios }) {
-    const proj = await $axios.$get(
-      `http://localhost:3004/projects/?slug=${params.slug}` 
-    )
-    return { proj }
-  }, */
 }
 </script>
 
@@ -476,25 +470,17 @@ export default {
 }
 
 .close {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: max-content;
+  @apply fixed bottom-5 right-20 w-max;
   z-index: 500;
   @screen tablet {
-    position: fixed;
+    @apply fixed  w-max;
     bottom: 62px;
     right: 62px;
-    width: max-content;
     z-index: 500;
   }
 }
-.close:hover {
-  animation: shake 0.3s;
-  animation-iteration-count: initial;
-}
 .circle {
-  min-width: 100%;
+  @apply min-w-full;
   min-height: 50vh;
   border-radius: 0 0 350px 350px;
   @screen tablet {
@@ -504,44 +490,9 @@ export default {
   }
 }
 .goToSite {
+  @apply text-offwhite;
   min-width: 30px;
   min-height: 30px;
-  color: #fff;
   content: '↬';
-}
-@keyframes shake {
-  0% {
-    transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    transform: translate(1px, -2px) rotate(-1deg);
-  }
 }
 </style>

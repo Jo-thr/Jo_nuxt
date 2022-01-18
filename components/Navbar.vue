@@ -2,7 +2,7 @@
   <div class="fixed z-50 font-paragraph">
     <div class="fixed tablet:top-60 top-20 tablet:left-60 left-20 indexMargin">
       <router-link to="/">
-        <img src="../assets/logo_jothr.png" class="logo" />
+        <img src="../assets/logo_jothr.png" class="logo hover:animate-wizz" />
       </router-link>
     </div>
 
@@ -34,7 +34,9 @@
               class="flex flex-row items-center cursor-pointer"
             >
               <span class="text-orange text-xl mr-8">01</span>
-              <li class="hoverContour">Acceuil</li></router-link
+              <li class="hoverContour hover:animate-wizz">
+                Acceuil
+              </li></router-link
             >
             <router-link
               to="/about"
@@ -42,7 +44,9 @@
               active-class="activeLink"
             >
               <span class="text-orange text-xl mr-8">02</span>
-              <li class="hoverContour">About</li></router-link
+              <li class="hoverContour hover:animate-wizz">
+                About
+              </li></router-link
             >
             <router-link
               to="/projects"
@@ -50,14 +54,18 @@
               active-class="activeLink"
             >
               <span class="text-orange text-xl mr-8">03</span>
-              <li class="hoverContour">Projets</li></router-link
+              <li class="hoverContour hover:animate-wizz">
+                Projets
+              </li></router-link
             >
             <router-link
               to="/contact"
               class="flex flex-row items-center cursor-pointer"
             >
               <span class="text-orange text-xl mr-8">04</span>
-              <li class="hoverContour">Contact</li></router-link
+              <li class="hoverContour hover:animate-wizz">
+                Contact
+              </li></router-link
             >
           </ul>
         </nav>
@@ -85,7 +93,7 @@
             to="/contact"
             class="text-2xl font-bold flex flex-row items-center"
             ><span class="text-orange text-3xl mr-2 ml-6">→</span>
-            <li class="p-6">
+            <li class="p-6 hover:animate-wizz">
               Il est temps de prendre <br />un café ensemble alors !
             </li></router-link
           >
@@ -115,14 +123,14 @@
         "
       >
         <ul class="leading-10 tablet:font-bold">
-          <li class="tablet:py-2">
+          <li class="tablet:py-2 hover:animate-wizz">
             <a :href="reseaux.instagram" target="_blank">INSTAGRAM</a>
           </li>
-          <li class="tablet:py-2">
+          <li class="tablet:py-2 hover:animate-wizz">
             <a :href="reseaux.linkedin" target="_blank">LINKEDIN</a>
           </li>
 
-          <li class="tablet:py-2">
+          <li class="tablet:py-2 hover:animate-wizz">
             <a :href="reseaux.github" target="_blank">GITHUB</a>
           </li>
         </ul>
@@ -140,7 +148,8 @@
         px-4
         text-blue
         border-6 border-blue border-solid
-        hamburguer
+        hamburger
+        hover:animate-wizz
         indexMargin
         tablet:right-60
         right-20
@@ -176,18 +185,14 @@ export default {
   },
   mounted() {
     // Using Vanilla JS
-    document
-      .querySelector('.hamburguer')
-      .addEventListener('click', function () {
-        document.querySelector('.full-menu').classList.toggle('active')
-        document
-          .querySelector('.hamburguer')
-          .classList.toggle('close-hamburguer')
-      })
+    document.querySelector('.hamburger').addEventListener('click', function () {
+      document.querySelector('.full-menu').classList.toggle('active')
+      document.querySelector('.hamburger').classList.toggle('close-hamburger')
+    })
 
     document.querySelector('.lien').addEventListener('click', function () {
       document.querySelector('.full-menu').classList.toggle('active')
-      document.querySelector('.hamburguer').classList.toggle('close-hamburguer')
+      document.querySelector('.hamburger').classList.toggle('close-hamburger')
     })
   },
 }
@@ -199,10 +204,6 @@ export default {
 }
 .logo {
   width: 200px;
-}
-.logo:hover {
-  animation: shake 0.3s;
-  animation-iteration-count: initial;
 }
 .bottomToTop {
   writing-mode: vertical-lr;
@@ -226,21 +227,19 @@ export default {
   z-index: 60;
 }
 .lien {
-  font-size: 4rem;
-}
-
-.full-menu li:hover {
-  animation: shake 0.3s;
-  animation-iteration-count: initial;
+  font-size: 2.5rem;
+  @screen tablet {
+    font-size: 4rem;
+  }
 }
 .activeLink {
-  text-decoration: line-through;
+  @apply line-through;
 }
 .activeLink > span {
-  text-decoration: none;
+  @apply no-underline;
 }
 .activeLink > li {
-  color: #0123ff;
+  @apply text-blue;
   transform: rotate(-5deg);
   text-shadow: -1px 0 #fcfcfc, 0 1px #fcfcfc, 1px 0 #fcfcfc, 0 -1px #fcfcfc;
 }
@@ -265,105 +264,44 @@ export default {
 }
 
 .full-menu {
-  position: relative;
-  width: 91.4vw;
-  top: 80px;
-  display: none;
-  height: 84.8vh;
-  align-items: center;
-  justify-content: center;
-  background-color: #0123ff;
+  @apply relative top-10 hidden items-center justify-center bg-blue opacity-0;
+  width: 81.2vw;
+  height: 90.8vh;
   transform: translateX(120%);
   transition: all 300ms ease-in;
-  opacity: 0;
+  @screen tablet {
+    @apply relative  hidden items-center justify-center bg-blue opacity-0;
+    width: 91.4vw;
+    top: 80px;
+    height: 84.8vh;
+    transform: translateX(120%);
+    transition: all 300ms ease-in;
+  }
 }
 .full-menu ul {
   list-style: none;
 }
 .full-menu.active {
-  display: flex;
+  @apply flex opacity-100 z-30;
   transform: translateX(0%);
-  opacity: 1;
-  z-index: 30;
-}
-.hamburguer:hover {
-  animation: shake 0.3s;
-  animation-iteration-count: initial;
 }
 .lines {
-  background-color: #0123ff;
-  width: 100%;
+  @apply bg-blue w-full;
   height: 3px;
   margin: 3px 0;
   transition: all 450ms ease-in;
 }
 
-.close-hamburguer .lines {
-  cursor: pointer;
+.close-hamburger .lines {
+  @apply cursor-pointer;
 }
-.close-hamburguer .line-top {
+.close-hamburger .line-top {
   transform: translateY(200%) rotate(45deg);
 }
-.close-hamburguer .line-mid {
+.close-hamburger .line-mid {
   opacity: 0;
 }
-.close-hamburguer .line-bottom {
+.close-hamburger .line-bottom {
   transform: translateY(-200%) rotate(135deg);
-}
-
-@media (max-width: 767px) {
-  .full-menu {
-    position: relative;
-    width: 81.2vw;
-    top: 40px;
-    display: none;
-    height: 90.8vh;
-    align-items: center;
-    justify-content: center;
-    background-color: #0123ff;
-    transform: translateX(120%);
-    transition: all 300ms ease-in;
-    opacity: 0;
-  }
-
-  .lien {
-    font-size: 2.5rem;
-  }
-}
-
-@keyframes shake {
-  0% {
-    transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    transform: translate(1px, -2px) rotate(-1deg);
-  }
 }
 </style>
