@@ -81,10 +81,13 @@
           >
             <div class="flex flex-row tablet:-mt-0 -mt-4">
               <button @click="showPrev">
-                <img class="tablet:mr-4 mr-8" src="@/assets/icons/prev.svg" />
+                <img
+                  class="tablet:mr-4 mr-8 hover:animate-wizz"
+                  src="@/assets/icons/prev.svg"
+                />
               </button>
               <button @click="showNext">
-                <img src="@/assets/icons/next.svg" />
+                <img class="hover:animate-wizz" src="@/assets/icons/next.svg" />
               </button>
             </div>
             <p class="flex uppercase pt-8 text-sm">{{ post.categorie }}</p>

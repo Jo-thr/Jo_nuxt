@@ -30,7 +30,10 @@
     </nuxt-link>
 
     <!-- HEADER ROND -->
-    <div class="w-80% tablet:flex hidden justify-between items-center mt-20">
+    <div
+      id="top"
+      class="w-80% tablet:flex hidden justify-between items-center mt-20"
+    >
       <div class="flex flex-col py-10 px-5">
         <h1 class="text-6xl font-bold" :style="{ color: dossier.color }">
           {{ dossier.name }}
@@ -154,6 +157,7 @@
           {{ dossier.mission }}
         </p>
       </div>
+
       <!-- 0 -->
       <div class="w-78% text-left m-auto">
         <p
