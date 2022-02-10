@@ -271,9 +271,9 @@ export default {
   transition: all 300ms ease-in;
   @screen tablet {
     @apply relative  hidden items-center justify-center bg-blue opacity-0;
-    width: 91.4vw;
+    width: 89.6vw;
     top: 80px;
-    height: 84.8vh;
+    height: 83.1vh;
     transform: translateX(120%);
     transition: all 300ms ease-in;
   }
