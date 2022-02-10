@@ -8,7 +8,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Jonathan Thr',
+    title: 'Jonathan Thuayre',
     htmlAttrs: {
       lang: 'fr',
     },
@@ -19,7 +19,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          "Intégrateur et développeur front-end spécialiste en vue.js, j'accompagne les agences et les DA dans leurs projet web. Bienvenue dans mon portfolio !",
+          "Intégrateur et développeur front-end spécialisé en vue.js, j'accompagne les agences et les DA dans leurs projet web. Bienvenue dans mon portfolio !",
       },
       { name: 'format-detection', content: 'telephone=no' },
     ],
